@@ -1,9 +1,5 @@
 import matplotlib
 matplotlib.use("Agg")
-
-# Import config FIRST to set up threads globally
-from config import Z_DIM, D_HIDDEN, DEVICE, NUM_THREADS
-
 import xgboost as xgb
 import torch
 import numpy as np
@@ -11,27 +7,24 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 import torch.optim as optim
 import torch.nn as nn
-from models import Decoder, Embedder
+from models import Decoder, Embedder, StrongDecoder
 from train2 import initialize_embedder, train_surrogate, train_xgb, improve_embedder, freeze
 from utils import standardize, load_data_custom, get_z_features
 from analysis import final_embedding_analysis, representation_report, plot_embedding, plot_reconstruction
+from config import Z_DIM, D_HIDDEN, DEVICE
 
-NUM_LOOPS = 5
-EPOCHS_SURROGATE = 5
+NUM_LOOPS = 8
+EPOCHS_SURROGATE = 8
 EPOCHS_AE = 5
 EPOCHS_IMPROVE = 10
 
-# Thread configuration already set in config.py
-torch.set_num_threads(NUM_THREADS)
 
 if __name__ == "__main__":
     fpath = 'data/tejas.csv'
     print(f"Loading data from {fpath}")
     raw_X, raw_y = load_data_custom(fpath, 'TARGET')
 
-    raw_X_train, raw_X_test, y_train, y_test = train_test_split(
-        raw_X, raw_y, random_state=42, test_size=0.2, shuffle=True, stratify=raw_y
-    )
+    raw_X_train, raw_X_test, y_train, y_test = train_test_split(raw_X, raw_y, random_state=42, test_size=0.2, shuffle=True, stratify=raw_y)
 
     std_X_train = standardize(raw_X_train)
     std_X_test = standardize(raw_X_test, raw_X_train)
@@ -68,11 +61,6 @@ if __name__ == "__main__":
 
 
     for i in range(NUM_LOOPS):
-
-
-        print("torch.cuda.memory_allocated: %fGB"%(torch.cuda.memory_allocated(0)/1024/1024/1024))
-        print("torch.cuda.memory_reserved: %fGB"%(torch.cuda.memory_reserved(0)/1024/1024/1024))
-        print("torch.cuda.max_memory_reserved: %fGB"%(torch.cuda.max_memory_reserved(0)/1024/1024/1024))
         print(f"\n--- Cycle {i+1} / {NUM_LOOPS} ---")
 
         if surrogate is not None:
@@ -84,15 +72,20 @@ if __name__ == "__main__":
         Z_curr_test  = get_z_features(embedder, X_test_np)
 
         # 2. Teacher input = [Z_{k-1} | Z_k]
-        X_train_xgb = np.hstack([Z_prev_train, Z_curr_train])
-        X_test_xgb  = np.hstack([Z_prev_test,  Z_curr_test])
+        if i < 3:
+          X_train_xgb = np.hstack([Z_prev_train, Z_curr_train])
+          X_test_xgb  = np.hstack([Z_prev_test,  Z_curr_test])
+        else :
+          X_train_xgb = Z_curr_train
+          X_test_xgb  = Z_curr_test
 
-        # 3. TRAIN XGBOOST (On Augmented Data)
+
+        # 3. TRAIN XGBOOST (On Augmented Data)al
         print(f"     Training XGBoost on {X_train_xgb.shape[1]} features...")
         xgb_teacher = train_xgb(X_train_xgb, y_train, X_test_xgb, y_test)
         dtest = xgb.DMatrix(X_test_xgb, nthread=8)
         xgb_auc = roc_auc_score(y_test, xgb_teacher.predict(dtest))
-        print(f"     XGBoost AUC: {xgb_auc:.4f}")
+        # print(f"     XGBoost AUC: {xgb_auc:.4f}")
 
         # 4. Teacher labels (FULL VIEW)
         teacher_labels = xgb_teacher.predict(xgb.DMatrix(X_train_xgb))
@@ -131,10 +124,6 @@ if __name__ == "__main__":
     print("\n" + "="*80)
     print(f"{'TRAINING PROGRESS REPORT':^80}")
     print("="*80)
-    print(f"{'Stage':<25} | {'Distill MSE':<15} | {'Student AUC':<10}")
-    print("-" * 80)
-
-    print(f"{'0. XGBoost Teacher':<25} | {'0.00000':<15} | {teacher_auc:.4f}")
     # --- 6. ANALYSIS ---
     final_embedding_analysis(
     embedder=embedder,
@@ -212,7 +201,13 @@ if __name__ == "__main__":
     print("Centroid:", centroid_distance(Z_yours, y_test))
 
     # ---- Train decoder ONLY for your embedding
-    task_decoder = Decoder(Z_DIM, D_HIDDEN, input_dim).to(DEVICE)
+    # task_decoder = Decoder(Z_DIM, D_HIDDEN, input_dim).to(DEVICE)
+    task_decoder = StrongDecoder(
+    z_dim=Z_DIM,
+    hidden_dims=[Z_DIM, (Z_DIM + X_test_np.shape[1])//2, X_test_np.shape[1]],
+    out_dim=input_dim
+).to(DEVICE)
+
     for p in embedder.parameters(): p.requires_grad = False
 
     opt = optim.Adam(task_decoder.parameters(), lr=1e-3)
@@ -281,4 +276,29 @@ if __name__ == "__main__":
     plt.tight_layout()
     plt.savefig("plots/ae_recon.png", dpi=150)
     plt.close()
+
+
+    vec = X_test_np[0]
+
+    z = embedder(vec)
+
+    p = torch.randn(1, input_dim, device=DEVICE, requires_grad=True)
+
+    optimizer = torch.optim.Adam([p], lr=1e-2)
+    loss_fn = nn.MSELoss()
+
+    z_target = torch.tensor(z, device=DEVICE).unsqueeze(0)
+
+    for _ in range(500):
+        optimizer.zero_grad()
+        z_p = embedder(p)
+        loss = loss_fn(z_p, z_target)
+        loss.backward()
+        optimizer.step()
+
+    p_recon = p.detach().cpu().numpy()
+
+
+    print("og_vec : ", p)
+    print("recon_vec : ", p_recon)
 
