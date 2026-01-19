@@ -37,11 +37,16 @@ logger = logging.getLogger("RP_Analysis")
 # -----------------------------------------------------------------------------
 
 def load_data(filepath):
-    """Load dataset. Assumes last column is target."""
+    """Load dataset. Assumes first column is target."""
     try:
         df = pd.read_csv(filepath)
-        X = df.iloc[:, :-1].values
-        y = df.iloc[:, -1].values
+        y = df.iloc[:, 0].values  # First column is target
+        X = df.iloc[:, 1:].values  # Rest are features
+        
+        # Handle NaN values by replacing with 0
+        X = np.nan_to_num(X, nan=0.0)
+        y = np.nan_to_num(y, nan=0.0)
+        
         return X, y
     except Exception as e:
         logger.error(f"Failed to load {filepath}: {e}")
@@ -92,7 +97,7 @@ def train_xgb(X_train, y_train, X_val, y_val, X_test, y_test, params):
             X_train, y_train,
             eval_set=[(X_val, y_val)],
             verbose=False,
-            early_stopping_rounds=10
+            # early_stopping_rounds=10
         )
         
         y_pred = model.predict(X_test)
@@ -129,7 +134,8 @@ def run_tuning(X_train, y_train, X_val, y_val, X_test, y_test, n_trials=20):
         }
         
         model = xgb.XGBClassifier(**params)
-        model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False, early_stopping_rounds=10)
+        # model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False, early_stopping_rounds=10)
+        model.fit(X_train, y_train, eval_set=[(X_val, y_val)], verbose=False)
         preds = model.predict(X_val)
         return f1_score(y_val, preds, zero_division=0)
 
