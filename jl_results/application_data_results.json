@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "frozen": {
+      "accuracy": 0.9196949742288995,
+      "f1": 0.03327461342728518,
+      "auc": 0.7558933297880522,
+      "precision": 0.5902777777777778,
+      "recall": 0.017119838872104734
+    },
+    "tuned": {
+      "accuracy": 0.9133863388777783,
+      "f1": 0.09543216165732722,
+      "auc": 0.7120985477706498,
+      "precision": 0.3041125541125541,
+      "recall": 0.05659617321248741
+    },
+    "best_params": {
+      "n_estimators": 196,
+      "max_depth": 7,
+      "learning_rate": 0.2957413970794966,
+      "subsample": 0.6648422529245377,
+      "colsample_bytree": 0.8403361280374216,
+      "reg_lambda": 0.0010396819326808026,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "n_jobs": 1,
+      "thread_count": 1,
+      "tree_method": "hist",
+      "random_state": 42,
+      "verbosity": 0
+    }
+  },
+  "projections": [
+    {
+      "dim": 

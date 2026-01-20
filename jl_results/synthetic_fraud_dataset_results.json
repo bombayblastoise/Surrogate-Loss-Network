@@ -1,0 +1,34 @@
+{
+  "baseline": {
+    "frozen": {
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "tuned": {
+      "accuracy": 1.0,
+      "f1": 1.0,
+      "auc": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "best_params": {
+      "n_estimators": 106,
+      "max_depth": 10,
+      "learning_rate": 0.1205712628744377,
+      "subsample": 0.7993292420985183,
+      "colsample_bytree": 0.5780093202212182,
+      "reg_lambda": 0.004207053950287938,
+      "objective": "binary:logistic",
+      "eval_metric": "logloss",
+      "n_jobs": 1,
+      "thread_count": 1,
+      "tree_method": "hist",
+      "random_state": 42,
+      "verbosity": 0
+    }
+  },
+  "projections": []
+}
