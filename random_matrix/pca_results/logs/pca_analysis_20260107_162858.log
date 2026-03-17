@@ -1,0 +1,69 @@
+2026-01-07 16:28:58 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_162858.log
+2026-01-07 16:28:58 | INFO     | ================================================================================
+2026-01-07 16:28:58 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-07 16:28:58 | INFO     | 
+2026-01-07 16:28:58 | INFO     | ################################################################################
+2026-01-07 16:28:58 | INFO     | Processing dataset: creditcard_sparse
+2026-01-07 16:28:58 | INFO     | ################################################################################
+2026-01-07 16:28:58 | INFO     | 
+2026-01-07 16:28:58 | INFO     | ================================================================================
+2026-01-07 16:28:58 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: creditcard_sparse
+2026-01-07 16:28:58 | INFO     | ================================================================================
+2026-01-07 16:28:58 | INFO     | Dataset shape: (284807, 30)
+2026-01-07 16:28:58 | INFO     | Original features: 30
+2026-01-07 16:28:58 | INFO     | Using frozen default hyperparameters
+2026-01-07 16:28:58 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-07 16:28:59 | INFO     | Baseline: F1=0.7902 | AUC=0.9771 | Acc=0.9992
+2026-01-07 16:28:59 | INFO     | Testing 16 PCA configurations...
+2026-01-07 16:28:59 | INFO     | Precomputing PCA transformations...
+2026-01-07 16:29:00 | INFO     | Running 6 batches in parallel...
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 18 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 16 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 14 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 12 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 10 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 9 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 8 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 7 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 6 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 5 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 4 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 3 components
+2026-01-07 16:29:04 | INFO     | F1 dropped below 0.6902 at 2 components
+2026-01-07 16:29:04 | INFO     | 
+2026-01-07 16:29:04 | INFO     | Frozen Model Summary:
+2026-01-07 16:29:04 | INFO     |   Baseline F1: 0.7902
+2026-01-07 16:29:04 | INFO     |   Best PCA F1: 0.7512
+2026-01-07 16:29:04 | INFO     |   Performance drop: 4.9%
+2026-01-07 16:29:04 | INFO     | 
+2026-01-07 16:29:04 | INFO     | ================================================================================
+2026-01-07 16:29:04 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: creditcard_sparse
+2026-01-07 16:29:04 | INFO     | ================================================================================
+2026-01-07 16:29:04 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-07 16:29:05 | INFO     | Dataset shape: (284807, 30)
+2026-01-07 16:29:05 | INFO     | Original features: 30
+2026-01-07 16:29:05 | INFO     | Tuning hyperparameters for ALL ORIGINAL FEATURES...
+2026-01-07 16:29:17 | INFO     | Baseline: F1=0.7707 | AUC=0.9705 | Acc=0.9992
+2026-01-07 16:29:17 | INFO     | Testing 16 PCA configurations...
+2026-01-07 16:29:17 | INFO     | Optimizing for 27 components...
+2026-01-07 16:29:30 | INFO     | Optimizing for 24 components...
+2026-01-07 16:29:43 | INFO     | Optimizing for 21 components...
+2026-01-07 16:29:54 | INFO     | Optimizing for 18 components...
+2026-01-07 16:30:04 | INFO     | Optimizing for 16 components...
+2026-01-07 16:30:14 | INFO     | Optimizing for 14 components...
+2026-01-07 16:30:24 | INFO     | Optimizing for 12 components...
+2026-01-07 16:30:32 | INFO     | Optimizing for 10 components...
+2026-01-07 16:30:41 | INFO     | Optimizing for 9 components...
+2026-01-07 16:30:48 | INFO     | Optimizing for 8 components...
+2026-01-07 16:30:54 | INFO     | F1 dropped below 0.6707, stopping
+2026-01-07 16:30:54 | INFO     | 
+2026-01-07 16:30:54 | INFO     | Tuned Model Summary:
+2026-01-07 16:30:54 | INFO     |   Baseline F1: 0.7707
+2026-01-07 16:30:54 | INFO     |   Best PCA F1: 0.7826
+2026-01-07 16:30:54 | INFO     |   Performance drop: -1.5%
+2026-01-07 16:30:54 | INFO     | 
+2026-01-07 16:30:54 | INFO     | ================================================================================
+2026-01-07 16:30:54 | INFO     | Generating plots and reports...
+2026-01-07 16:30:54 | INFO     | ================================================================================
+2026-01-07 16:30:55 | INFO     | Saved plot to: pca_results/creditcard_sparse/pca_summary_creditcard_sparse.png
+2026-01-07 16:30:55 | INFO     | Saved JSON report to: pca_results/creditcard_sparse/pca_report_creditcard_sparse.json

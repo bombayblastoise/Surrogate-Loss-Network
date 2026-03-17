@@ -1,0 +1,50 @@
+2026-01-13 17:10:07 | INFO     | Logging to: pca_results/logs/pca_analysis_20260113_171007.log
+2026-01-13 17:10:07 | INFO     | ================================================================================
+2026-01-13 17:10:07 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-13 17:10:07 | INFO     | 
+2026-01-13 17:10:07 | INFO     | ################################################################################
+2026-01-13 17:10:07 | INFO     | Processing dataset: small
+2026-01-13 17:10:07 | INFO     | ################################################################################
+2026-01-13 17:10:07 | INFO     | 
+2026-01-13 17:10:07 | INFO     | ================================================================================
+2026-01-13 17:10:07 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: small
+2026-01-13 17:10:07 | INFO     | ================================================================================
+2026-01-13 17:10:07 | INFO     | Dataset shape: (1999, 121)
+2026-01-13 17:10:07 | INFO     | Original features: 121
+2026-01-13 17:10:07 | INFO     | Using frozen default hyperparameters
+2026-01-13 17:10:07 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-13 17:10:07 | INFO     | Baseline: F1=0.1864 | AUC=0.6940 | Acc=0.4325
+2026-01-13 17:10:07 | INFO     | Testing 28 PCA configurations...
+2026-01-13 17:10:07 | INFO     | Precomputing PCA transformations...
+2026-01-13 17:10:07 | INFO     | Running 10 batches in parallel...
+2026-01-13 17:10:09 | INFO     | F1 dropped below 0.0864 at 97 components
+2026-01-13 17:10:09 | INFO     | F1 dropped below 0.0864 at 87 components
+2026-01-13 17:10:09 | INFO     | F1 dropped below 0.0864 at 78 components
+2026-01-13 17:10:09 | INFO     | 
+2026-01-13 17:10:09 | INFO     | Frozen Model Summary:
+2026-01-13 17:10:09 | INFO     |   Baseline F1: 0.1864
+2026-01-13 17:10:09 | INFO     |   Best PCA F1: 0.2190
+2026-01-13 17:10:09 | INFO     |   Performance drop: -17.5%
+2026-01-13 17:10:09 | INFO     | 
+2026-01-13 17:10:09 | INFO     | ================================================================================
+2026-01-13 17:10:09 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: small
+2026-01-13 17:10:09 | INFO     | ================================================================================
+2026-01-13 17:10:09 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-13 17:10:09 | INFO     | Dataset shape: (1999, 121)
+2026-01-13 17:10:09 | INFO     | Original features: 121
+2026-01-13 17:10:09 | INFO     | Tuning hyperparameters for ALL ORIGINAL FEATURES...
+2026-01-13 17:10:09 | INFO     | Baseline: F1=0.2766 | AUC=0.7407 | Acc=0.8300
+2026-01-13 17:10:09 | INFO     | Testing 28 PCA configurations...
+2026-01-13 17:10:09 | INFO     | Optimizing for 108 components...
+2026-01-13 17:10:13 | INFO     | F1 dropped below 0.1766, stopping
+2026-01-13 17:10:13 | INFO     | 
+2026-01-13 17:10:13 | INFO     | Tuned Model Summary:
+2026-01-13 17:10:13 | INFO     |   Baseline F1: 0.2766
+2026-01-13 17:10:13 | INFO     |   Best PCA F1: 0.1702
+2026-01-13 17:10:13 | INFO     |   Performance drop: 38.5%
+2026-01-13 17:10:13 | INFO     | 
+2026-01-13 17:10:13 | INFO     | ================================================================================
+2026-01-13 17:10:13 | INFO     | Generating plots and reports...
+2026-01-13 17:10:13 | INFO     | ================================================================================
+2026-01-13 17:10:13 | INFO     | Saved plot to: pca_results/small/pca_summary_small.png
+2026-01-13 17:10:13 | INFO     | Saved JSON report to: pca_results/small/pca_report_small.json

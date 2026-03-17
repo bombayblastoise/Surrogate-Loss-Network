@@ -1,0 +1,39 @@
+2026-01-07 16:31:03 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_163103.log
+2026-01-07 16:31:03 | INFO     | ================================================================================
+2026-01-07 16:31:03 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-07 16:31:03 | INFO     | 
+2026-01-07 16:31:03 | INFO     | ################################################################################
+2026-01-07 16:31:03 | INFO     | Processing dataset: GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1
+2026-01-07 16:31:03 | INFO     | ################################################################################
+2026-01-07 16:31:03 | INFO     | 
+2026-01-07 16:31:03 | INFO     | ================================================================================
+2026-01-07 16:31:03 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1
+2026-01-07 16:31:03 | INFO     | ================================================================================
+2026-01-07 16:31:03 | INFO     | Dataset shape: (1600, 1000)
+2026-01-07 16:31:03 | INFO     | Original features: 1000
+2026-01-07 16:31:03 | INFO     | Using frozen default hyperparameters
+2026-01-07 16:31:03 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-07 16:31:03 | INFO     | Baseline: F1=0.6325 | AUC=0.4881 | Acc=0.4625
+2026-01-07 16:31:03 | INFO     | Testing 48 PCA configurations...
+2026-01-07 16:31:03 | INFO     | Precomputing PCA transformations...
+2026-01-07 16:31:07 | INFO     | Running 16 batches in parallel...
+2026-01-07 16:31:09 | INFO     | 
+2026-01-07 16:31:09 | INFO     | Frozen Model Summary:
+2026-01-07 16:31:09 | INFO     |   Baseline F1: 0.6325
+2026-01-07 16:31:09 | INFO     |   Best PCA F1: 0.6402
+2026-01-07 16:31:09 | INFO     |   Performance drop: -1.2%
+2026-01-07 16:31:09 | INFO     | 
+2026-01-07 16:31:09 | INFO     | ================================================================================
+2026-01-07 16:31:09 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1
+2026-01-07 16:31:09 | INFO     | ================================================================================
+2026-01-07 16:31:09 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-07 16:31:09 | INFO     | Dataset shape: (1600, 1000)
+2026-01-07 16:31:09 | INFO     | Original features: 1000
+2026-01-07 16:31:09 | INFO     | Tuning hyperparameters for ALL ORIGINAL FEATURES...
+2026-01-07 16:31:10 | ERROR    | Error running tuned analysis for GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1: n_components=1000 must be between 0 and min(n_samples, n_features)=960 with svd_solver='full'
+2026-01-07 16:31:10 | INFO     | 
+2026-01-07 16:31:10 | INFO     | ================================================================================
+2026-01-07 16:31:10 | INFO     | Generating plots and reports...
+2026-01-07 16:31:10 | INFO     | ================================================================================
+2026-01-07 16:31:10 | INFO     | Saved plot to: pca_results/GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1/pca_summary_GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1.png
+2026-01-07 16:31:10 | INFO     | Saved JSON report to: pca_results/GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1/pca_report_GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1.json

@@ -1,0 +1,22 @@
+2026-01-07 16:14:35 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_161435.log
+2026-01-07 16:14:35 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_161435.log
+2026-01-07 16:14:35 | INFO     | ================================================================================
+2026-01-07 16:14:35 | INFO     | ================================================================================
+2026-01-07 16:14:35 | INFO     | Parallelization: Using 1 CPU cores
+2026-01-07 16:14:35 | INFO     | Parallelization: Using 1 CPU cores
+2026-01-07 16:14:35 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_161435.log
+2026-01-07 16:14:35 | INFO     | ================================================================================
+2026-01-07 16:14:35 | INFO     | Parallelization: Using 1 CPU cores
+2026-01-07 16:14:35 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_161435.log
+2026-01-07 16:14:35 | INFO     | ================================================================================
+2026-01-07 16:14:35 | INFO     | Parallelization: Using 1 CPU cores
+2026-01-07 16:14:35 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_161435.log
+2026-01-07 16:14:35 | INFO     | ================================================================================
+2026-01-07 16:14:35 | INFO     | Parallelization: Using 1 CPU cores
+2026-01-07 16:14:35 | WARNING  | Skipping dataset test_data: target is not binary (unique values: [-30.59188414 -30.13717272 -30.09397712 -30.08215618 -30.061893
+ -29.98898235 -29.9472886  -29.88090732 -29.7206928  -29.65769909])
+2026-01-07 16:14:35 | WARNING  | Skipping dataset test_data: target is not binary (unique values: [-30.59188414 -30.13717272 -30.09397712 -30.08215618 -30.061893
+ -29.98898235 -29.9472886  -29.88090732 -29.7206928  -29.65769909])
+2026-01-07 16:14:35 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_161435.log
+2026-01-07 16:14:35 | INFO     | ================================================================================
+2026-01-07 16:14:35 | INFO     | Parallelization: Using 1 CPU cores

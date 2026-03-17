@@ -1,0 +1,14 @@
+{
+  "timestamp": "2025-12-25T15:09:49.381809",
+  "params": {
+    "n_estimators": 68,
+    "max_depth": 4,
+    "learning_rate": 0.20616995910873692,
+    "lambda_": 0.1771611360412841,
+    "gamma": 0.38746422872065867,
+    "min_child_weight": 4.873868192482736,
+    "objective_type": "classification",
+    "n_bins": 64,
+    "use_sparsity_split": true
+  }
+}

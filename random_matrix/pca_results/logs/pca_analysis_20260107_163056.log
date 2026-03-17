@@ -1,0 +1,52 @@
+2026-01-07 16:30:56 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_163056.log
+2026-01-07 16:30:56 | INFO     | ================================================================================
+2026-01-07 16:30:56 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-07 16:30:56 | INFO     | 
+2026-01-07 16:30:56 | INFO     | ################################################################################
+2026-01-07 16:30:56 | INFO     | Processing dataset: synthetic_fraud_dataset
+2026-01-07 16:30:56 | INFO     | ################################################################################
+2026-01-07 16:30:56 | INFO     | 
+2026-01-07 16:30:56 | INFO     | ================================================================================
+2026-01-07 16:30:56 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: synthetic_fraud_dataset
+2026-01-07 16:30:56 | INFO     | ================================================================================
+2026-01-07 16:30:56 | INFO     | Dataset shape: (10000, 9)
+2026-01-07 16:30:56 | INFO     | Original features: 9
+2026-01-07 16:30:56 | INFO     | Using frozen default hyperparameters
+2026-01-07 16:30:56 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-07 16:30:56 | INFO     | Baseline: F1=1.0000 | AUC=1.0000 | Acc=1.0000
+2026-01-07 16:30:56 | INFO     | Testing 7 PCA configurations...
+2026-01-07 16:30:56 | INFO     | Precomputing PCA transformations...
+2026-01-07 16:30:56 | INFO     | Running 3 batches in parallel...
+2026-01-07 16:30:56 | INFO     | 
+2026-01-07 16:30:56 | INFO     | Frozen Model Summary:
+2026-01-07 16:30:56 | INFO     |   Baseline F1: 1.0000
+2026-01-07 16:30:56 | INFO     |   Best PCA F1: 1.0000
+2026-01-07 16:30:56 | INFO     |   Performance drop: 0.0%
+2026-01-07 16:30:56 | INFO     | 
+2026-01-07 16:30:56 | INFO     | ================================================================================
+2026-01-07 16:30:56 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: synthetic_fraud_dataset
+2026-01-07 16:30:56 | INFO     | ================================================================================
+2026-01-07 16:30:56 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-07 16:30:56 | INFO     | Dataset shape: (10000, 9)
+2026-01-07 16:30:56 | INFO     | Original features: 9
+2026-01-07 16:30:56 | INFO     | Tuning hyperparameters for ALL ORIGINAL FEATURES...
+2026-01-07 16:30:57 | INFO     | Baseline: F1=0.9838 | AUC=1.0000 | Acc=0.9985
+2026-01-07 16:30:57 | INFO     | Testing 7 PCA configurations...
+2026-01-07 16:30:57 | INFO     | Optimizing for 8 components...
+2026-01-07 16:30:58 | INFO     | Optimizing for 7 components...
+2026-01-07 16:30:58 | INFO     | Optimizing for 6 components...
+2026-01-07 16:30:59 | INFO     | Optimizing for 5 components...
+2026-01-07 16:30:59 | INFO     | Optimizing for 4 components...
+2026-01-07 16:31:00 | INFO     | Optimizing for 3 components...
+2026-01-07 16:31:00 | INFO     | Optimizing for 2 components...
+2026-01-07 16:31:01 | INFO     | 
+2026-01-07 16:31:01 | INFO     | Tuned Model Summary:
+2026-01-07 16:31:01 | INFO     |   Baseline F1: 0.9838
+2026-01-07 16:31:01 | INFO     |   Best PCA F1: 0.9892
+2026-01-07 16:31:01 | INFO     |   Performance drop: -0.6%
+2026-01-07 16:31:01 | INFO     | 
+2026-01-07 16:31:01 | INFO     | ================================================================================
+2026-01-07 16:31:01 | INFO     | Generating plots and reports...
+2026-01-07 16:31:01 | INFO     | ================================================================================
+2026-01-07 16:31:01 | INFO     | Saved plot to: pca_results/synthetic_fraud_dataset/pca_summary_synthetic_fraud_dataset.png
+2026-01-07 16:31:01 | INFO     | Saved JSON report to: pca_results/synthetic_fraud_dataset/pca_report_synthetic_fraud_dataset.json

@@ -1,0 +1,52 @@
+2026-01-07 16:23:13 | INFO     | Logging to: pca_results/logs/pca_analysis_20260107_162313.log
+2026-01-07 16:23:13 | INFO     | ================================================================================
+2026-01-07 16:23:13 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-07 16:23:13 | INFO     | 
+2026-01-07 16:23:13 | INFO     | ################################################################################
+2026-01-07 16:23:13 | INFO     | Processing dataset: card_transdata
+2026-01-07 16:23:13 | INFO     | ################################################################################
+2026-01-07 16:23:13 | INFO     | 
+2026-01-07 16:23:13 | INFO     | ================================================================================
+2026-01-07 16:23:13 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: card_transdata
+2026-01-07 16:23:13 | INFO     | ================================================================================
+2026-01-07 16:23:13 | INFO     | Dataset shape: (1000000, 7)
+2026-01-07 16:23:13 | INFO     | Original features: 7
+2026-01-07 16:23:13 | INFO     | Using frozen default hyperparameters
+2026-01-07 16:23:13 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-07 16:23:16 | INFO     | Baseline: F1=0.9669 | AUC=0.9997 | Acc=0.9941
+2026-01-07 16:23:16 | INFO     | Testing 5 PCA configurations...
+2026-01-07 16:23:16 | INFO     | Precomputing PCA transformations...
+2026-01-07 16:23:16 | INFO     | Running 2 batches in parallel...
+2026-01-07 16:23:26 | INFO     | F1 dropped below 0.8669 at 2 components
+2026-01-07 16:23:26 | INFO     | 
+2026-01-07 16:23:26 | INFO     | Frozen Model Summary:
+2026-01-07 16:23:26 | INFO     |   Baseline F1: 0.9669
+2026-01-07 16:23:26 | INFO     |   Best PCA F1: 0.9762
+2026-01-07 16:23:26 | INFO     |   Performance drop: -1.0%
+2026-01-07 16:23:26 | INFO     | 
+2026-01-07 16:23:26 | INFO     | ================================================================================
+2026-01-07 16:23:26 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: card_transdata
+2026-01-07 16:23:26 | INFO     | ================================================================================
+2026-01-07 16:23:26 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-07 16:23:26 | INFO     | Dataset shape: (1000000, 7)
+2026-01-07 16:23:26 | INFO     | Original features: 7
+2026-01-07 16:23:26 | INFO     | Tuning hyperparameters for ALL ORIGINAL FEATURES...
+2026-01-07 16:23:48 | INFO     | Baseline: F1=0.9888 | AUC=0.9999 | Acc=0.9980
+2026-01-07 16:23:48 | INFO     | Testing 5 PCA configurations...
+2026-01-07 16:23:48 | INFO     | Optimizing for 6 components...
+2026-01-07 16:24:14 | INFO     | Optimizing for 5 components...
+2026-01-07 16:24:42 | INFO     | Optimizing for 4 components...
+2026-01-07 16:25:07 | INFO     | Optimizing for 3 components...
+2026-01-07 16:25:27 | INFO     | Optimizing for 2 components...
+2026-01-07 16:25:56 | INFO     | F1 dropped below 0.8888, stopping
+2026-01-07 16:25:56 | INFO     | 
+2026-01-07 16:25:56 | INFO     | Tuned Model Summary:
+2026-01-07 16:25:56 | INFO     |   Baseline F1: 0.9888
+2026-01-07 16:25:56 | INFO     |   Best PCA F1: 0.9888
+2026-01-07 16:25:56 | INFO     |   Performance drop: -0.0%
+2026-01-07 16:25:56 | INFO     | 
+2026-01-07 16:25:56 | INFO     | ================================================================================
+2026-01-07 16:25:56 | INFO     | Generating plots and reports...
+2026-01-07 16:25:56 | INFO     | ================================================================================
+2026-01-07 16:25:56 | INFO     | Saved plot to: pca_results/card_transdata/pca_summary_card_transdata.png
+2026-01-07 16:25:56 | INFO     | Saved JSON report to: pca_results/card_transdata/pca_report_card_transdata.json

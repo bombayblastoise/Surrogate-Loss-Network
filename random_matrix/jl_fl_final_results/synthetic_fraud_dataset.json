@@ -1,0 +1,324 @@
+{
+    "frozen": {
+        "baseline": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "threshold": 0.1
+        },
+        "experiments": [
+            {
+                "split_method": "random",
+                "target_dim": 19,
+                "accuracy": 0.9985,
+                "precision": 0.98989898989899,
+                "f1": 0.9849246231155779,
+                "auc": 0.9999684210526316,
+                "threshold": 0.9099999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 20,
+                "accuracy": 0.9975,
+                "precision": 0.9797979797979798,
+                "f1": 0.9748743718592965,
+                "auc": 0.9999473684210527,
+                "threshold": 0.7599999999999997
+            },
+            {
+                "split_method": "random",
+                "target_dim": 21,
+                "accuracy": 0.9985,
+                "precision": 0.9801980198019802,
+                "f1": 0.9850746268656716,
+                "auc": 0.9999421052631579,
+                "threshold": 0.7199999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 22,
+                "accuracy": 0.9995,
+                "precision": 1.0,
+                "f1": 0.9949748743718593,
+                "auc": 0.9999789473684211,
+                "threshold": 0.8399999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 23,
+                "accuracy": 0.9985,
+                "precision": 0.98989898989899,
+                "f1": 0.9849246231155779,
+                "auc": 0.9999894736842105,
+                "threshold": 0.8999999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 19,
+                "accuracy": 0.999,
+                "precision": 0.9803921568627451,
+                "f1": 0.9900990099009901,
+                "auc": 0.9999842105263158,
+                "threshold": 0.8599999999999995
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 20,
+                "accuracy": 0.9995,
+                "precision": 0.9900990099009901,
+                "f1": 0.9950248756218906,
+                "auc": 1.0,
+                "threshold": 0.7799999999999997
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 21,
+                "accuracy": 0.9985,
+                "precision": 0.970873786407767,
+                "f1": 0.9852216748768473,
+                "auc": 0.9999473684210527,
+                "threshold": 0.8799999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 22,
+                "accuracy": 0.997,
+                "precision": 0.9607843137254902,
+                "f1": 0.9702970297029703,
+                "auc": 0.9998473684210525,
+                "threshold": 0.9299999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 23,
+                "accuracy": 0.9985,
+                "precision": 0.970873786407767,
+                "f1": 0.9852216748768473,
+                "auc": 1.0,
+                "threshold": 0.6699999999999997
+            }
+        ]
+    },
+    "tuned": {
+        "baseline": {
+            "accuracy": 1.0,
+            "precision": 1.0,
+            "f1": 1.0,
+            "auc": 1.0,
+            "threshold": 0.1
+        },
+        "experiments": [
+            {
+                "split_method": "random",
+                "target_dim": 19,
+                "accuracy": 0.999,
+                "precision": 0.99,
+                "f1": 0.99,
+                "auc": 0.9999736842105262,
+                "threshold": 0.7799999999999997,
+                "best_params": {
+                    "n_estimators": 195,
+                    "max_depth": 6,
+                    "learning_rate": 0.0913456273148068,
+                    "reg_lambda": 0.10751827940713644,
+                    "subsample": 0.8469817891972085,
+                    "colsample_bytree": 0.9193086824158574,
+                    "scale_pos_weight": 1.1921456824187229,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "random",
+                "target_dim": 20,
+                "accuracy": 0.998,
+                "precision": 0.98,
+                "f1": 0.98,
+                "auc": 0.9998842105263158,
+                "threshold": 0.30999999999999994,
+                "best_params": {
+                    "n_estimators": 200,
+                    "max_depth": 6,
+                    "learning_rate": 0.19715184255697482,
+                    "reg_lambda": 0.101961741017584,
+                    "subsample": 0.8700857191344269,
+                    "colsample_bytree": 0.9035051710026214,
+                    "scale_pos_weight": 1.2395538047044004,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "random",
+                "target_dim": 21,
+                "accuracy": 0.9995,
+                "precision": 1.0,
+                "f1": 0.9949748743718593,
+                "auc": 0.9999789473684211,
+                "threshold": 0.7499999999999997,
+                "best_params": {
+                    "n_estimators": 120,
+                    "max_depth": 6,
+                    "learning_rate": 0.1825563159902062,
+                    "reg_lambda": 0.10862348973937126,
+                    "subsample": 0.8732428970871787,
+                    "colsample_bytree": 0.6154900799844731,
+                    "scale_pos_weight": 3.453228592707906,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "random",
+                "target_dim": 22,
+                "accuracy": 0.999,
+                "precision": 1.0,
+                "f1": 0.98989898989899,
+                "auc": 0.9999789473684211,
+                "threshold": 0.8699999999999996,
+                "best_params": {
+                    "n_estimators": 146,
+                    "max_depth": 6,
+                    "learning_rate": 0.1825563159902062,
+                    "reg_lambda": 0.31568261225366784,
+                    "subsample": 0.6058163500649457,
+                    "colsample_bytree": 0.9630659181130071,
+                    "scale_pos_weight": 3.453228592707906,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "random",
+                "target_dim": 23,
+                "accuracy": 0.9985,
+                "precision": 1.0,
+                "f1": 0.9847715736040609,
+                "auc": 1.0,
+                "threshold": 0.7599999999999997,
+                "best_params": {
+                    "n_estimators": 143,
+                    "max_depth": 6,
+                    "learning_rate": 0.1971527382490312,
+                    "reg_lambda": 9.954092520256417,
+                    "subsample": 0.6031064918375411,
+                    "colsample_bytree": 0.7550376816255844,
+                    "scale_pos_weight": 1.1512062672107632,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 19,
+                "accuracy": 0.9995,
+                "precision": 0.9900990099009901,
+                "f1": 0.9950248756218906,
+                "auc": 1.0,
+                "threshold": 0.7899999999999996,
+                "best_params": {
+                    "n_estimators": 195,
+                    "max_depth": 6,
+                    "learning_rate": 0.0913456273148068,
+                    "reg_lambda": 0.10751827940713644,
+                    "subsample": 0.8469817891972085,
+                    "colsample_bytree": 0.9193086824158574,
+                    "scale_pos_weight": 1.1921456824187229,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 20,
+                "accuracy": 0.9995,
+                "precision": 1.0,
+                "f1": 0.9949748743718593,
+                "auc": 1.0,
+                "threshold": 0.8899999999999996,
+                "best_params": {
+                    "n_estimators": 153,
+                    "max_depth": 6,
+                    "learning_rate": 0.11318535246600066,
+                    "reg_lambda": 4.565818700137186,
+                    "subsample": 0.8398601961525555,
+                    "colsample_bytree": 0.7538532083536192,
+                    "scale_pos_weight": 3.8919023847062784,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 21,
+                "accuracy": 0.9985,
+                "precision": 0.970873786407767,
+                "f1": 0.9852216748768473,
+                "auc": 0.9999842105263158,
+                "threshold": 0.6399999999999997,
+                "best_params": {
+                    "n_estimators": 180,
+                    "max_depth": 6,
+                    "learning_rate": 0.08341106432362087,
+                    "reg_lambda": 0.10994335574766201,
+                    "subsample": 0.9879639408647978,
+                    "colsample_bytree": 0.9329770563201687,
+                    "scale_pos_weight": 1.713225614529628,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 22,
+                "accuracy": 0.998,
+                "precision": 0.9705882352941176,
+                "f1": 0.9801980198019802,
+                "auc": 0.999978947368421,
+                "threshold": 0.8999999999999996,
+                "best_params": {
+                    "n_estimators": 196,
+                    "max_depth": 3,
+                    "learning_rate": 0.19961837193620555,
+                    "reg_lambda": 0.6306321069370228,
+                    "subsample": 0.6940355149756877,
+                    "colsample_bytree": 0.7570107744202391,
+                    "scale_pos_weight": 2.050348236563277,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 23,
+                "accuracy": 0.9995,
+                "precision": 0.9900990099009901,
+                "f1": 0.9950248756218906,
+                "auc": 1.0,
+                "threshold": 0.8699999999999996,
+                "best_params": {
+                    "n_estimators": 198,
+                    "max_depth": 5,
+                    "learning_rate": 0.0636301721905459,
+                    "reg_lambda": 0.19857699236220638,
+                    "subsample": 0.833290861586531,
+                    "colsample_bytree": 0.9991293294808036,
+                    "scale_pos_weight": 3.4441736417167275,
+                    "objective": "binary:logistic",
+                    "n_jobs": 1,
+                    "verbosity": 0
+                }
+            }
+        ]
+    }
+}

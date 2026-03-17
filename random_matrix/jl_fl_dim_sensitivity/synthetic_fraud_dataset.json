@@ -1,0 +1,45 @@
+{
+    "dataset_name": "synthetic_fraud_dataset",
+    "n_features_orig": 9,
+    "baseline": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "auc": 1.0,
+        "threshold": 0.1
+    },
+    "sweep_results": [
+        {
+            "accuracy": 0.96375,
+            "precision": 1.0,
+            "f1": 0.43137254901960786,
+            "auc": 0.773359375,
+            "threshold": 0.8500000000000002,
+            "n_dim": 1
+        },
+        {
+            "accuracy": 0.975625,
+            "precision": 0.9361702127659575,
+            "f1": 0.6929133858267716,
+            "auc": 0.9433675986842105,
+            "threshold": 0.9000000000000002,
+            "n_dim": 2
+        },
+        {
+            "accuracy": 0.9875,
+            "precision": 1.0,
+            "f1": 0.8571428571428571,
+            "auc": 0.9698478618421053,
+            "threshold": 0.7000000000000002,
+            "n_dim": 3
+        },
+        {
+            "accuracy": 0.986875,
+            "precision": 1.0,
+            "f1": 0.8489208633093526,
+            "auc": 0.9706044407894737,
+            "threshold": 0.8000000000000002,
+            "n_dim": 4
+        }
+    ]
+}

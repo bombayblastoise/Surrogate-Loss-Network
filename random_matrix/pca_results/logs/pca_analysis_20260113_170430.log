@@ -1,0 +1,44 @@
+2026-01-13 17:04:30 | INFO     | Logging to: pca_results/logs/pca_analysis_20260113_170430.log
+2026-01-13 17:04:30 | INFO     | ================================================================================
+2026-01-13 17:04:30 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-13 17:04:30 | INFO     | Minimum recall threshold: 90% of baseline
+2026-01-13 17:04:30 | INFO     | F2 weight: 70%, Time weight: 30%
+2026-01-13 17:04:30 | INFO     | 
+2026-01-13 17:04:30 | INFO     | ################################################################################
+2026-01-13 17:04:30 | INFO     | Processing dataset: small
+2026-01-13 17:04:30 | INFO     | ################################################################################
+2026-01-13 17:04:30 | INFO     | 
+2026-01-13 17:04:30 | INFO     | ================================================================================
+2026-01-13 17:04:30 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: small
+2026-01-13 17:04:30 | INFO     | ================================================================================
+2026-01-13 17:04:30 | INFO     | Dataset shape: (1999, 121)
+2026-01-13 17:04:30 | INFO     | Original features: 121
+2026-01-13 17:04:30 | INFO     | Using frozen default hyperparameters
+2026-01-13 17:04:30 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-13 17:04:31 | INFO     | Baseline: F1=0.2280 | F2=0.3929 | AUC=0.7353 | Time=1.57s | Recall=0.7586
+2026-01-13 17:04:31 | INFO     | Testing 28 PCA configurations...
+2026-01-13 17:04:31 | INFO     | Precomputing PCA transformations...
+2026-01-13 17:04:32 | INFO     | Running 10 batches in parallel...
+2026-01-13 17:04:38 | INFO     | F1 dropped below 0.1280 at 108 components
+2026-01-13 17:04:38 | INFO     | F1 dropped below 0.1280 at 97 components
+2026-01-13 17:04:38 | INFO     | F1 dropped below 0.1280 at 87 components
+2026-01-13 17:04:38 | INFO     | F1 dropped below 0.1280 at 78 components
+2026-01-13 17:04:38 | INFO     | F1 dropped below 0.1280 at 70 components
+2026-01-13 17:04:38 | INFO     | 
+2026-01-13 17:04:38 | INFO     | Frozen Model Summary:
+2026-01-13 17:04:38 | INFO     |   Baseline F2: 0.3929
+2026-01-13 17:04:38 | INFO     |   Best PCA F2: 0.3506
+2026-01-13 17:04:38 | INFO     |   Best efficiency score: -0.3636
+2026-01-13 17:04:38 | INFO     |   Performance drop: 9.4%
+2026-01-13 17:04:38 | INFO     | 
+2026-01-13 17:04:38 | INFO     | ================================================================================
+2026-01-13 17:04:38 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: small
+2026-01-13 17:04:38 | INFO     | ================================================================================
+2026-01-13 17:04:38 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-13 17:04:38 | INFO     | Dataset shape: (1999, 121)
+2026-01-13 17:04:38 | INFO     | Original features: 121
+2026-01-13 17:04:38 | INFO     | Tuning hyperparameters for ALL ORIGINAL FEATURES...
+2026-01-13 17:06:42 | INFO     | Baseline: F1=0.1379 | F2=0.2508 | AUC=0.4865 | Time=0.87s | Recall=0.5517
+2026-01-13 17:06:42 | INFO     | Testing 28 PCA configurations...
+2026-01-13 17:06:42 | INFO     | Optimizing for 108 components...
+2026-01-13 17:08:54 | INFO     | Optimizing for 97 components...

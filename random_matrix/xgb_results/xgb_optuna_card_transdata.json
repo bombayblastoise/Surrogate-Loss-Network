@@ -1,0 +1,44 @@
+{
+  "dataset": "card_transdata",
+  "generated_at": "2026-01-10T13:23:06.911208",
+  "best_params": {
+    "n_estimators": 260,
+    "max_depth": 6,
+    "learning_rate": 0.04366548722287124,
+    "reg_lambda": 0.14156199880729428,
+    "gamma": 2.8340783163994985,
+    "min_child_weight": 4.849063385900575,
+    "subsample": 0.7370786397115846,
+    "colsample_bytree": 0.9997143856174442,
+    "objective": "binary:logistic",
+    "eval_metric": "logloss",
+    "tree_method": "hist",
+    "random_state": 42,
+    "n_jobs": 1,
+    "early_stopping_rounds": 10
+  },
+  "threshold": 0.45,
+  "metrics": {
+    "train": {
+      "f1": 0.8076854608005896,
+      "auc": 0.6337413594135677,
+      "accuracy": 0.6903133333333333,
+      "precision": 0.6778157055875481,
+      "recall": 0.9991165919397337
+    },
+    "val": {
+      "f1": 0.8069288168448783,
+      "auc": 0.609330380140695,
+      "accuracy": 0.68925,
+      "precision": 0.6767370971523852,
+      "recall": 0.9991460684529991
+    },
+    "test": {
+      "f1": 0.8071221593820753,
+      "auc": 0.6072485023568122,
+      "accuracy": 0.689485,
+      "precision": 0.6769454386321366,
+      "recall": 0.9992847914359543
+    }
+  }
+}

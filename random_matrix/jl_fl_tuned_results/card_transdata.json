@@ -1,0 +1,204 @@
+{
+    "frozen": {
+        "baseline": {
+            "accuracy": 0.99675,
+            "precision": 1.0,
+            "f1": 0.9810561902541385,
+            "auc": 0.9999732162891264,
+            "threshold": 0.9799999999999995
+        },
+        "experiments": [
+            {
+                "split_method": "random",
+                "target_dim": 17,
+                "accuracy": 0.9541,
+                "precision": 0.8164214378287719,
+                "f1": 0.6999803908752206,
+                "auc": 0.9839960397047498,
+                "threshold": 0.7799999999999997
+            },
+            {
+                "split_method": "random",
+                "target_dim": 18,
+                "accuracy": 0.95253,
+                "precision": 0.8247540050418801,
+                "f1": 0.6811740210893948,
+                "auc": 0.9835696297010565,
+                "threshold": 0.7799999999999997
+            },
+            {
+                "split_method": "random",
+                "target_dim": 19,
+                "accuracy": 0.957545,
+                "precision": 0.8254416449464234,
+                "f1": 0.7286613619659349,
+                "auc": 0.9859313755878496,
+                "threshold": 0.7599999999999997
+            },
+            {
+                "split_method": "random",
+                "target_dim": 20,
+                "accuracy": 0.95514,
+                "precision": 0.8320974162828819,
+                "f1": 0.7038161890928298,
+                "auc": 0.9849108610887936,
+                "threshold": 0.7899999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 21,
+                "accuracy": 0.958745,
+                "precision": 0.8658633264626605,
+                "f1": 0.72583485628842,
+                "auc": 0.9872852100331632,
+                "threshold": 0.7799999999999997
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 17,
+                "accuracy": 0.953105,
+                "precision": 0.8183246896118184,
+                "f1": 0.6895090541927368,
+                "auc": 0.983146280236195,
+                "threshold": 0.7899999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 18,
+                "accuracy": 0.953205,
+                "precision": 0.8145136307311028,
+                "f1": 0.6920672523278386,
+                "auc": 0.9836030948831862,
+                "threshold": 0.7699999999999997
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 19,
+                "accuracy": 0.956205,
+                "precision": 0.848489691545469,
+                "f1": 0.7079846641106852,
+                "auc": 0.985848731009975,
+                "threshold": 0.7799999999999997
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 20,
+                "accuracy": 0.953895,
+                "precision": 0.8575138504155124,
+                "f1": 0.682395894327145,
+                "auc": 0.9849114321386401,
+                "threshold": 0.8099999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 21,
+                "accuracy": 0.959685,
+                "precision": 0.8733745639073898,
+                "f1": 0.7320639351344166,
+                "auc": 0.9875604501042345,
+                "threshold": 0.7799999999999997
+            }
+        ]
+    },
+    "tuned": {
+        "baseline": {
+            "accuracy": 0.996885,
+            "precision": 0.9993483412322275,
+            "f1": 0.9818689793661418,
+            "auc": 0.9999738215016696,
+            "threshold": 0.9799999999999995
+        },
+        "experiments": [
+            {
+                "split_method": "random",
+                "target_dim": 17,
+                "accuracy": 0.97431,
+                "precision": 0.9282492540420512,
+                "f1": 0.8388937664618086,
+                "auc": 0.9949738442856809,
+                "threshold": 0.8899999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 18,
+                "accuracy": 0.975975,
+                "precision": 0.9349437276969531,
+                "f1": 0.8500920350669204,
+                "auc": 0.9957530272273035,
+                "threshold": 0.8899999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 19,
+                "accuracy": 0.978815,
+                "precision": 0.9453261600537995,
+                "f1": 0.8690303236376,
+                "auc": 0.99677080808379,
+                "threshold": 0.8899999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 20,
+                "accuracy": 0.97588,
+                "precision": 0.9413487690912895,
+                "f1": 0.848397234443746,
+                "auc": 0.9960600310841864,
+                "threshold": 0.8999999999999996
+            },
+            {
+                "split_method": "random",
+                "target_dim": 21,
+                "accuracy": 0.97985,
+                "precision": 0.9493552482127346,
+                "f1": 0.875801282051282,
+                "auc": 0.9970206309518533,
+                "threshold": 0.8899999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 17,
+                "accuracy": 0.97434,
+                "precision": 0.9420777547075249,
+                "f1": 0.8368099720172983,
+                "auc": 0.9956713741511796,
+                "threshold": 0.9099999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 18,
+                "accuracy": 0.97452,
+                "precision": 0.9421003783822375,
+                "f1": 0.838160569105691,
+                "auc": 0.9955787910493568,
+                "threshold": 0.8999999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 19,
+                "accuracy": 0.97849,
+                "precision": 0.9431107524712528,
+                "f1": 0.8670252225519288,
+                "auc": 0.9966897331094455,
+                "threshold": 0.8899999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 20,
+                "accuracy": 0.975515,
+                "precision": 0.9396925227113906,
+                "f1": 0.8459626938441698,
+                "auc": 0.9959432603230152,
+                "threshold": 0.8999999999999996
+            },
+            {
+                "split_method": "ordered",
+                "target_dim": 21,
+                "accuracy": 0.97867,
+                "precision": 0.9567922571724853,
+                "f1": 0.8664621548863708,
+                "auc": 0.9969335554095412,
+                "threshold": 0.8999999999999996
+            }
+        ]
+    }
+}

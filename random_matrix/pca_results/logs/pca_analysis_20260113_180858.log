@@ -1,0 +1,24 @@
+2026-01-13 18:08:58 | INFO     | Logging to: pca_results/logs/pca_analysis_20260113_180858.log
+2026-01-13 18:08:58 | INFO     | ================================================================================
+2026-01-13 18:08:58 | WARNING  | ⚠ GPU not available - XGBoost not compiled with GPU support
+2026-01-13 18:08:58 | INFO     |   Install GPU-enabled XGBoost with: pip install xgboost-gpu-cu12
+2026-01-13 18:08:58 | INFO     |   Then reinstall or rebuild xgboost with GPU support enabled
+2026-01-13 18:08:58 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-13 18:08:58 | INFO     | Minimum recall threshold: 90% of baseline
+2026-01-13 18:08:58 | INFO     | F2 weight: 70%, Time weight: 30%
+2026-01-13 18:08:58 | INFO     | 
+2026-01-13 18:08:58 | INFO     | ################################################################################
+2026-01-13 18:08:58 | INFO     | Processing dataset: application_data
+2026-01-13 18:08:58 | INFO     | ################################################################################
+2026-01-13 18:08:58 | INFO     | 
+2026-01-13 18:08:58 | INFO     | ================================================================================
+2026-01-13 18:08:58 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: application_data
+2026-01-13 18:08:58 | INFO     | ================================================================================
+2026-01-13 18:08:59 | INFO     | Dataset shape: (307511, 121)
+2026-01-13 18:09:00 | INFO     | Original features: 121
+2026-01-13 18:09:00 | INFO     | Using frozen default hyperparameters
+2026-01-13 18:09:00 | INFO     | Testing with ALL ORIGINAL FEATURES...
+2026-01-13 18:09:04 | INFO     | Baseline: F1=0.2909 | F2=0.3378 | AUC=0.7472 | Time=3.59s | Recall=0.3784
+2026-01-13 18:09:04 | INFO     | Testing 28 PCA configurations...
+2026-01-13 18:09:04 | INFO     | Precomputing PCA transformations...
+2026-01-13 18:09:08 | INFO     | Running 10 batches in parallel...

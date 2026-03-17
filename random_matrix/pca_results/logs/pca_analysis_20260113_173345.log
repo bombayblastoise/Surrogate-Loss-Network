@@ -1,0 +1,26 @@
+2026-01-13 17:33:45 | INFO     | Logging to: pca_results/logs/pca_analysis_20260113_173345.log
+2026-01-13 17:33:45 | INFO     | ================================================================================
+2026-01-13 17:33:46 | WARNING  | ⚠ GPU not available, falling back to CPU: Invalid Input: 'gpu_hist', valid values are: {'approx', 'auto', 'exact', 'hist'}
+2026-01-13 17:33:46 | INFO     |   To enable GPU: ensure CUDA toolkit is installed and xgboost supports GPU
+2026-01-13 17:33:46 | INFO     | Parallelization: Using 32 CPU cores
+2026-01-13 17:33:46 | INFO     | Minimum recall threshold: 90% of baseline
+2026-01-13 17:33:46 | INFO     | F2 weight: 70%, Time weight: 30%
+2026-01-13 17:33:46 | INFO     | 
+2026-01-13 17:33:46 | INFO     | ################################################################################
+2026-01-13 17:33:46 | INFO     | Processing dataset: small
+2026-01-13 17:33:46 | INFO     | ################################################################################
+2026-01-13 17:33:46 | INFO     | 
+2026-01-13 17:33:46 | INFO     | ================================================================================
+2026-01-13 17:33:46 | INFO     | [SECTION 1: FROZEN MODEL] Dataset: small
+2026-01-13 17:33:46 | INFO     | ================================================================================
+2026-01-13 17:33:46 | ERROR    | Error running frozen analysis for small: Data file not found: /home/dpip/Desktop/XGBoost_implementation/datasets/small.csv
+2026-01-13 17:33:46 | INFO     | 
+2026-01-13 17:33:46 | INFO     | ================================================================================
+2026-01-13 17:33:46 | INFO     | [SECTION 2: OPTUNA-TUNED] Dataset: small
+2026-01-13 17:33:46 | INFO     | ================================================================================
+2026-01-13 17:33:46 | INFO     | Running Optuna optimization (30 trials per config)
+2026-01-13 17:33:46 | ERROR    | Error running tuned analysis for small: Data file not found: /home/dpip/Desktop/XGBoost_implementation/datasets/small.csv
+2026-01-13 17:33:46 | INFO     | 
+2026-01-13 17:33:46 | INFO     | ================================================================================
+2026-01-13 17:33:46 | INFO     | Generating plots and reports...
+2026-01-13 17:33:46 | INFO     | ================================================================================

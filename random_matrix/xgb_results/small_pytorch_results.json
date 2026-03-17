@@ -1,0 +1,588 @@
+{
+    "baseline": {
+        "frozen": {
+            "accuracy": 0.9275,
+            "f1": 0.17142857142857143,
+            "auc": 0.6558230318802862,
+            "precision": 0.5,
+            "recall": 0.10344827586206896
+        },
+        "tuned": {
+            "accuracy": 0.925,
+            "f1": 0.16666666666666666,
+            "auc": 0.685565573008644,
+            "precision": 0.42857142857142855,
+            "recall": 0.10344827586206896
+        },
+        "best_params": {
+            "n_layers": 3,
+            "hidden_dim_0": 211,
+            "hidden_dim_1": 227,
+            "hidden_dim_2": 255,
+            "dropout": 0.18565045697166546,
+            "lr": 0.0002805094210329639,
+            "batch_size": 128,
+            "weight_decay": 0.00013462530209834098
+        }
+    },
+    "experiments": [
+        {
+            "split_method": "random",
+            "target_dim": 2,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.43572822753043966,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.458964587786969,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 58,
+                "hidden_dim_1": 226,
+                "hidden_dim_2": 172,
+                "dropout": 0.23235920994105969,
+                "lr": 0.00013400367243354819,
+                "batch_size": 128,
+                "weight_decay": 8.178476574339548e-05
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 2,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5262570870898783,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5676178083465007,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 4,
+                "hidden_dim_0": 131,
+                "hidden_dim_1": 59,
+                "hidden_dim_2": 143,
+                "hidden_dim_3": 39,
+                "dropout": 0.4637281608315128,
+                "lr": 0.00032927591344236165,
+                "batch_size": 32,
+                "weight_decay": 4.366473592979636e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 12,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5745887164234594,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6005204944697463,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 58,
+                "hidden_dim_1": 226,
+                "hidden_dim_2": 172,
+                "dropout": 0.23235920994105969,
+                "lr": 0.00013400367243354819,
+                "batch_size": 128,
+                "weight_decay": 8.178476574339548e-05
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 12,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5609257365926201,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5770982433311647,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 71,
+                "hidden_dim_1": 159,
+                "hidden_dim_2": 256,
+                "dropout": 0.2607633694931583,
+                "lr": 0.00010137181476151921,
+                "batch_size": 128,
+                "weight_decay": 0.00019257915842054094
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 22,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6151129287108468,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6443907426340737,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 76,
+                "hidden_dim_1": 128,
+                "hidden_dim_2": 102,
+                "dropout": 0.3262452362725613,
+                "lr": 0.00011952270129143859,
+                "batch_size": 128,
+                "weight_decay": 0.0007306031920171934
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 22,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.552188865136165,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.682498373454782,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 58,
+                "hidden_dim_1": 226,
+                "hidden_dim_2": 172,
+                "dropout": 0.23235920994105969,
+                "lr": 0.00013400367243354819,
+                "batch_size": 128,
+                "weight_decay": 8.178476574339548e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 33,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5652941723208478,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.49474858258202437,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 2,
+                "hidden_dim_0": 250,
+                "hidden_dim_1": 219,
+                "dropout": 0.18493564427131048,
+                "lr": 0.0002310201887845295,
+                "batch_size": 128,
+                "weight_decay": 1.9762189340280066e-05
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 33,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6430895064597081,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6366762710289061,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 2,
+                "hidden_dim_0": 250,
+                "hidden_dim_1": 219,
+                "dropout": 0.18493564427131048,
+                "lr": 0.0002310201887845295,
+                "batch_size": 128,
+                "weight_decay": 1.9762189340280066e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 43,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5384329398642997,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5604610093874896,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 109,
+                "hidden_dim_1": 161,
+                "hidden_dim_2": 237,
+                "dropout": 0.40808051802736534,
+                "lr": 0.00011078910921946172,
+                "batch_size": 32,
+                "weight_decay": 1.7698148250692537e-05
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 43,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6329584533878613,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6602844130495399,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 4,
+                "hidden_dim_0": 107,
+                "hidden_dim_1": 33,
+                "hidden_dim_2": 95,
+                "hidden_dim_3": 33,
+                "dropout": 0.48108118060182725,
+                "lr": 0.0003841288543549785,
+                "batch_size": 32,
+                "weight_decay": 1.0591449064271778e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 54,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5808160609722093,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.925,
+                "f1": 0.0,
+                "auc": 0.5374105400130124,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 245,
+                "hidden_dim_1": 196,
+                "hidden_dim_2": 166,
+                "dropout": 0.1624074561769746,
+                "lr": 0.00020511104188433984,
+                "batch_size": 64,
+                "weight_decay": 0.000133112160807369
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 54,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6403940886699507,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6049818756389999,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 2,
+                "hidden_dim_0": 169,
+                "hidden_dim_1": 63,
+                "dropout": 0.21685785941408728,
+                "lr": 0.0005404103854647331,
+                "batch_size": 64,
+                "weight_decay": 3.489018845491386e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 64,
+            "frozen": {
+                "accuracy": 0.925,
+                "f1": 0.0,
+                "auc": 0.5899247141927688,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.592434241100474,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 245,
+                "hidden_dim_1": 196,
+                "hidden_dim_2": 166,
+                "dropout": 0.1624074561769746,
+                "lr": 0.00020511104188433984,
+                "batch_size": 64,
+                "weight_decay": 0.000133112160807369
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 64,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6643740124546891,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.638999907054559,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 84,
+                "hidden_dim_1": 126,
+                "hidden_dim_2": 96,
+                "dropout": 0.32202697813241754,
+                "lr": 0.00011520563786974602,
+                "batch_size": 128,
+                "weight_decay": 0.0007510032923080226
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 75,
+            "frozen": {
+                "accuracy": 0.9225,
+                "f1": 0.0,
+                "auc": 0.6118598382749326,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.925,
+                "f1": 0.0,
+                "auc": 0.6363974347058278,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 2,
+                "hidden_dim_0": 250,
+                "hidden_dim_1": 219,
+                "dropout": 0.18493564427131048,
+                "lr": 0.0002310201887845295,
+                "batch_size": 128,
+                "weight_decay": 1.9762189340280066e-05
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 75,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5570220280695232,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6003346035876941,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 2,
+                "hidden_dim_0": 169,
+                "hidden_dim_1": 63,
+                "dropout": 0.21685785941408728,
+                "lr": 0.0005404103854647331,
+                "batch_size": 64,
+                "weight_decay": 3.489018845491386e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 85,
+            "frozen": {
+                "accuracy": 0.9225,
+                "f1": 0.0,
+                "auc": 0.5509805744028256,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.5093410168231248,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 58,
+                "hidden_dim_1": 226,
+                "hidden_dim_2": 172,
+                "dropout": 0.23235920994105969,
+                "lr": 0.00013400367243354819,
+                "batch_size": 128,
+                "weight_decay": 8.178476574339548e-05
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 85,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6602844130495399,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6181801282647086,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 58,
+                "hidden_dim_1": 226,
+                "hidden_dim_2": 172,
+                "dropout": 0.23235920994105969,
+                "lr": 0.00013400367243354819,
+                "batch_size": 128,
+                "weight_decay": 8.178476574339548e-05
+            }
+        },
+        {
+            "split_method": "random",
+            "target_dim": 96,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6150199832698205,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.925,
+                "f1": 0.0625,
+                "auc": 0.5841620968491495,
+                "precision": 0.3333333333333333,
+                "recall": 0.034482758620689655
+            },
+            "best_params": {
+                "n_layers": 3,
+                "hidden_dim_0": 245,
+                "hidden_dim_1": 196,
+                "hidden_dim_2": 166,
+                "dropout": 0.1624074561769746,
+                "lr": 0.00020511104188433984,
+                "batch_size": 64,
+                "weight_decay": 0.000133112160807369
+            }
+        },
+        {
+            "split_method": "sequential",
+            "target_dim": 96,
+            "frozen": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6521052142392416,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "tuned": {
+                "accuracy": 0.9275,
+                "f1": 0.0,
+                "auc": 0.6302630355981039,
+                "precision": 0.0,
+                "recall": 0.0
+            },
+            "best_params": {
+                "n_layers": 4,
+                "hidden_dim_0": 98,
+                "hidden_dim_1": 34,
+                "hidden_dim_2": 249,
+                "hidden_dim_3": 134,
+                "dropout": 0.4106792061965541,
+                "lr": 0.00010128668571833256,
+                "batch_size": 32,
+                "weight_decay": 1.1468235069034277e-05
+            }
+        }
+    ]
+}
