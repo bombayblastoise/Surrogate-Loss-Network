@@ -1,0 +1,70 @@
+{
+  "dataset": "santander",
+  "run_id": 6,
+  "seed": 600,
+  "config": {
+    "emb_dim": 32,
+    "hidden_dim": 64,
+    "n_layers": 2,
+    "loss": "mse",
+    "lr": 0.01,
+    "activation": "relu"
+  },
+  "n_features": 200,
+  "embedding_dim": 32,
+  "timestamp": "2026-03-25T14:49:30.407924",
+  "raw": {
+    "best_params": {
+      "n_estimators": 199,
+      "max_depth": 4,
+      "learning_rate": 0.16023902392448888,
+      "reg_lambda": 0.24957584294203145,
+      "gamma": 1.4524338108389618,
+      "min_child_weight": 4.555960115822
+    },
+    "metrics": {
+      "accuracy": 0.84085,
+      "precision": 0.3597287807240586,
+      "recall": 0.733761422573475,
+      "f1": 0.48277543061423467,
+      "auc": 0.8799344204945017
+    },
+    "confusion_matrix": [
+      [
+        30663,
+        5288
+      ],
+      [
+        1078,
+        2971
+      ]
+    ]
+  },
+  "embedded": {
+    "best_params": {
+      "n_estimators": 71,
+      "max_depth": 4,
+      "learning_rate": 0.0066209179207991,
+      "reg_lambda": 5.127084533096224,
+      "gamma": 1.3550076165884963,
+      "min_child_weight": 0.13802368698398562
+    },
+    "metrics": {
+      "accuracy": 0.78885,
+      "precision": 0.28624210014584345,
+      "recall": 0.7270931094097308,
+      "f1": 0.41077159201897584,
+      "auc": 0.8439794933966507
+    },
+    "confusion_matrix": [
+      [
+        28610,
+        7341
+      ],
+      [
+        1105,
+        2944
+      ]
+    ]
+  }
+}

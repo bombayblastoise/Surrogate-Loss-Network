@@ -1,0 +1,64 @@
+[2026-03-25 15:16:35] ============================================================
+[2026-03-25 15:16:35] Method 3: A2QA Embeddings
+[2026-03-25 15:16:35] Distance: manhattan, Quantization: gumbel
+[2026-03-25 15:16:35] Results: /home/dpip/Desktop/XGBoost_implementation/results/method3_manhattan
+[2026-03-25 15:16:35] Log: /home/dpip/Desktop/XGBoost_implementation/results/method3_manhattan/execution_log_20260325_151635.txt
+[2026-03-25 15:16:35] 
+============================================================
+[2026-03-25 15:16:35] Dataset: creditcard, Run: 1, Seed: 100
+[2026-03-25 15:16:35] Quant: gumbel, Distance: manhattan
+[2026-03-25 15:16:35] Loading dataset: all_datasets/creditcard.csv
+[2026-03-25 15:16:35]   Loaded: 284807 samples, 29 features
+[2026-03-25 15:16:35]   Running raw baseline...
+[2026-03-25 15:18:40]   Raw F1: 0.7651
+[2026-03-25 15:18:40]     Training A2QA (quant=gumbel, dist=manhattan)
+[2026-03-25 15:18:40] ERROR: Error training A2QA
+one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 32]] is at version 1; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 267, in train_a2qa
+    loss_recon.backward()
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 32]] is at version 1; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+
+[2026-03-25 15:18:40] ERROR: FAILED: creditcard run 1
+one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 32]] is at version 1; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 376, in run_single_experiment
+    encoder, quantizer = train_a2qa(X_train, y_train, X.shape[1], seed, quantization, distance, log_file)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 267, in train_a2qa
+    loss_recon.backward()
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 32]] is at version 1; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+
+[2026-03-25 15:18:40] ERROR: CRITICAL ERROR
+one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 32]] is at version 1; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 437, in main
+    run_single_experiment(dataset, run_id, seed, args.quantization, args.distance, results_dir, log_file)
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 376, in run_single_experiment
+    encoder, quantizer = train_a2qa(X_train, y_train, X.shape[1], seed, quantization, distance, log_file)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 267, in train_a2qa
+    loss_recon.backward()
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/_tensor.py", line 625, in backward
+    torch.autograd.backward(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 354, in backward
+    _engine_run_backward(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 841, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 32]] is at version 1; expected version 0 instead. Hint: enable anomaly detection to find the operation that failed to compute its gradient, with torch.autograd.set_detect_anomaly(True).
+

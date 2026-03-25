@@ -1,0 +1,70 @@
+{
+  "dataset": "creditcard_sparse",
+  "run_id": 8,
+  "seed": 800,
+  "config": {
+    "emb_dim": 32,
+    "hidden_dim": 64,
+    "n_layers": 3,
+    "loss": "mse",
+    "lr": 0.001,
+    "activation": "relu"
+  },
+  "n_features": 29,
+  "embedding_dim": 32,
+  "timestamp": "2026-03-25T04:19:16.821158",
+  "raw": {
+    "best_params": {
+      "n_estimators": 182,
+      "max_depth": 8,
+      "learning_rate": 0.2657420916342445,
+      "reg_lambda": 1.1111631610636625,
+      "gamma": 0.4281850299682717,
+      "min_child_weight": 0.1013793095756364
+    },
+    "metrics": {
+      "accuracy": 0.999420666409185,
+      "precision": 0.8387096774193549,
+      "recall": 0.6933333333333334,
+      "f1": 0.7591240875912408,
+      "auc": 0.962348515478053
+    },
+    "confusion_matrix": [
+      [
+        56877,
+        10
+      ],
+      [
+        23,
+        52
+      ]
+    ]
+  },
+  "embedded": {
+    "best_params": {
+      "n_estimators": 141,
+      "max_depth": 3,
+      "learning_rate": 0.016923674436011595,
+      "reg_lambda": 2.4218822368641018,
+      "gamma": 1.911778181304279,
+      "min_child_weight": 0.6540512124629624
+    },
+    "metrics": {
+      "accuracy": 0.9971911098627155,
+      "precision": 0.2864321608040201,
+      "recall": 0.76,
+      "f1": 0.41605839416058393,
+      "auc": 0.9567468841738886
+    },
+    "confusion_matrix": [
+      [
+        56745,
+        142
+      ],
+      [
+        18,
+        57
+      ]
+    ]
+  }
+}

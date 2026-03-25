@@ -1,0 +1,93 @@
+[2026-03-25 19:06:56] ============================================================
+[2026-03-25 19:06:56] Method 3: A2QA Embeddings
+[2026-03-25 19:06:56] Distance: manhattan, Quantization: gumbel
+[2026-03-25 19:06:56] Results: results/method3_manhattan
+[2026-03-25 19:06:56] Log: results/method3_manhattan/execution_log_20260325_190656.txt
+[2026-03-25 19:06:56] 
+============================================================
+[2026-03-25 19:06:56] Dataset: creditcard, Run: 1, Seed: 100
+[2026-03-25 19:06:56] Quant: gumbel, Distance: manhattan
+[2026-03-25 19:06:56] Loading dataset: all_datasets/creditcard.csv
+[2026-03-25 19:06:57]   Loaded: 284807 samples, 29 features
+[2026-03-25 19:06:57]   Running raw baseline...
+[2026-03-25 19:06:57]     Class distribution - Pos: 365, Neg: 181911, Ratio: 498.39
+[2026-03-25 19:06:57] ERROR: Error in Optuna
+XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 336, in run_optuna_tuning
+    study.optimize(objective, n_trials=N_OPTUNA_TRIALS, show_progress_bar=False)
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 67, in _optimize
+    _optimize_sequential(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 164, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 262, in _run_trial
+    raise func_err
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 205, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 326, in objective
+    model.fit(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/xgboost/core.py", line 774, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+[2026-03-25 19:06:57] ERROR: FAILED: creditcard run 1
+XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 385, in run_single_experiment
+    best_params_raw = run_optuna_tuning(X_train, y_train, X_val, y_val, seed, log_file)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 336, in run_optuna_tuning
+    study.optimize(objective, n_trials=N_OPTUNA_TRIALS, show_progress_bar=False)
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 67, in _optimize
+    _optimize_sequential(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 164, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 262, in _run_trial
+    raise func_err
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 205, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 326, in objective
+    model.fit(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/xgboost/core.py", line 774, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+
+[2026-03-25 19:06:57] ERROR: CRITICAL ERROR
+XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 450, in main
+    run_single_experiment(dataset, run_id, seed, args.quantization, args.distance, results_dir, log_file)
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 385, in run_single_experiment
+    best_params_raw = run_optuna_tuning(X_train, y_train, X_val, y_val, seed, log_file)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 336, in run_optuna_tuning
+    study.optimize(objective, n_trials=N_OPTUNA_TRIALS, show_progress_bar=False)
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 67, in _optimize
+    _optimize_sequential(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 164, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 262, in _run_trial
+    raise func_err
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/optuna/study/_optimize.py", line 205, in _run_trial
+    value_or_values = func(trial)
+                      ^^^^^^^^^^^
+  File "/home/dpip/Desktop/XGBoost_implementation/method3_a2qa.py", line 326, in objective
+    model.fit(
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/xgboost/core.py", line 774, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+TypeError: XGBClassifier.fit() got an unexpected keyword argument 'early_stopping_rounds'
+

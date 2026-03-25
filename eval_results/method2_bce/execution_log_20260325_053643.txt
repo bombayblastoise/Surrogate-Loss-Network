@@ -1,0 +1,700 @@
+[2026-03-25 05:36:43] ============================================================
+[2026-03-25 05:36:43] Method 2: Surrogate Neural Network
+[2026-03-25 05:36:43] ============================================================
+[2026-03-25 05:36:43] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 05:36:43] Results dir: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce
+[2026-03-25 05:36:43] Log file: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/execution_log_20260325_053643.txt
+[2026-03-25 05:36:43] 
+============================================================
+[2026-03-25 05:36:43] Dataset: creditcard, Run: 1, Seed: 100
+[2026-03-25 05:36:43] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 05:36:43] ============================================================
+[2026-03-25 05:36:43] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 05:36:44]   Loaded: 284807 samples, 29 features
+[2026-03-25 05:36:44]   Train: 227845, Test: 56962
+[2026-03-25 05:36:44]   Running Optuna tuning for raw features...
+[2026-03-25 05:38:15]   Raw F1: 0.8321
+[2026-03-25 05:38:15]   Training XGBoost for surrogate targets...
+[2026-03-25 05:38:18]   Training embedding + surrogate networks...
+[2026-03-25 05:38:18]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 05:38:57]     Epoch 20/100, Loss: 0.009079
+[2026-03-25 05:39:36]     Epoch 40/100, Loss: 0.007528
+[2026-03-25 05:40:16]     Epoch 60/100, Loss: 0.007209
+[2026-03-25 05:40:56]     Epoch 80/100, Loss: 0.007136
+[2026-03-25 05:41:36]     Epoch 100/100, Loss: 0.006947
+[2026-03-25 05:41:36]     Training complete. Final loss: 0.006947
+[2026-03-25 05:41:36]   Creating embeddings...
+[2026-03-25 05:41:36]   Running Optuna tuning for embedded features...
+[2026-03-25 05:43:05]   Embedded F1: 0.7651
+[2026-03-25 05:43:05]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run1_results.json
+[2026-03-25 05:43:05] 
+============================================================
+[2026-03-25 05:43:05] Dataset: creditcard, Run: 2, Seed: 200
+[2026-03-25 05:43:05] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 05:43:05] ============================================================
+[2026-03-25 05:43:05] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 05:43:05]   Loaded: 284807 samples, 29 features
+[2026-03-25 05:43:05]   Train: 227845, Test: 56962
+[2026-03-25 05:43:05]   Running Optuna tuning for raw features...
+[2026-03-25 05:44:41]   Raw F1: 0.8148
+[2026-03-25 05:44:41]   Training XGBoost for surrogate targets...
+[2026-03-25 05:44:45]   Training embedding + surrogate networks...
+[2026-03-25 05:44:45]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 05:45:25]     Epoch 20/100, Loss: 0.008172
+[2026-03-25 05:46:05]     Epoch 40/100, Loss: 0.007571
+[2026-03-25 05:46:45]     Epoch 60/100, Loss: 0.007354
+[2026-03-25 05:47:25]     Epoch 80/100, Loss: 0.006992
+[2026-03-25 05:48:05]     Epoch 100/100, Loss: 0.007144
+[2026-03-25 05:48:05]     Training complete. Final loss: 0.007144
+[2026-03-25 05:48:05]   Creating embeddings...
+[2026-03-25 05:48:05]   Running Optuna tuning for embedded features...
+[2026-03-25 05:49:24]   Embedded F1: 0.7755
+[2026-03-25 05:49:24]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run2_results.json
+[2026-03-25 05:49:24] 
+============================================================
+[2026-03-25 05:49:24] Dataset: creditcard, Run: 3, Seed: 300
+[2026-03-25 05:49:24] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 05:49:24] ============================================================
+[2026-03-25 05:49:24] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 05:49:25]   Loaded: 284807 samples, 29 features
+[2026-03-25 05:49:25]   Train: 227845, Test: 56962
+[2026-03-25 05:49:25]   Running Optuna tuning for raw features...
+[2026-03-25 05:50:58]   Raw F1: 0.8116
+[2026-03-25 05:50:58]   Training XGBoost for surrogate targets...
+[2026-03-25 05:51:03]   Training embedding + surrogate networks...
+[2026-03-25 05:51:03]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 05:51:42]     Epoch 20/100, Loss: 0.008098
+[2026-03-25 05:52:21]     Epoch 40/100, Loss: 0.007380
+[2026-03-25 05:53:00]     Epoch 60/100, Loss: 0.006990
+[2026-03-25 05:53:40]     Epoch 80/100, Loss: 0.006732
+[2026-03-25 05:54:20]     Epoch 100/100, Loss: 0.006660
+[2026-03-25 05:54:20]     Training complete. Final loss: 0.006660
+[2026-03-25 05:54:20]   Creating embeddings...
+[2026-03-25 05:54:20]   Running Optuna tuning for embedded features...
+[2026-03-25 05:55:31]   Embedded F1: 0.7651
+[2026-03-25 05:55:31]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run3_results.json
+[2026-03-25 05:55:31] 
+============================================================
+[2026-03-25 05:55:31] Dataset: creditcard, Run: 4, Seed: 400
+[2026-03-25 05:55:31] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 05:55:31] ============================================================
+[2026-03-25 05:55:31] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 05:55:32]   Loaded: 284807 samples, 29 features
+[2026-03-25 05:55:32]   Train: 227845, Test: 56962
+[2026-03-25 05:55:32]   Running Optuna tuning for raw features...
+[2026-03-25 05:57:22]   Raw F1: 0.8000
+[2026-03-25 05:57:22]   Training XGBoost for surrogate targets...
+[2026-03-25 05:57:29]   Training embedding + surrogate networks...
+[2026-03-25 05:57:29]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 05:58:09]     Epoch 20/100, Loss: 0.008472
+[2026-03-25 05:58:50]     Epoch 40/100, Loss: 0.007600
+[2026-03-25 05:59:29]     Epoch 60/100, Loss: 0.007167
+[2026-03-25 06:00:10]     Epoch 80/100, Loss: 0.007101
+[2026-03-25 06:00:51]     Epoch 100/100, Loss: 0.006757
+[2026-03-25 06:00:51]     Training complete. Final loss: 0.006757
+[2026-03-25 06:00:51]   Creating embeddings...
+[2026-03-25 06:00:51]   Running Optuna tuning for embedded features...
+[2026-03-25 06:02:30]   Embedded F1: 0.7971
+[2026-03-25 06:02:30]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run4_results.json
+[2026-03-25 06:02:30] 
+============================================================
+[2026-03-25 06:02:30] Dataset: creditcard, Run: 5, Seed: 500
+[2026-03-25 06:02:30] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:02:30] ============================================================
+[2026-03-25 06:02:30] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 06:02:30]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:02:30]   Train: 227845, Test: 56962
+[2026-03-25 06:02:30]   Running Optuna tuning for raw features...
+[2026-03-25 06:03:56]   Raw F1: 0.8058
+[2026-03-25 06:03:56]   Training XGBoost for surrogate targets...
+[2026-03-25 06:03:59]   Training embedding + surrogate networks...
+[2026-03-25 06:03:59]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:04:39]     Epoch 20/100, Loss: 0.008418
+[2026-03-25 06:05:20]     Epoch 40/100, Loss: 0.007592
+[2026-03-25 06:06:00]     Epoch 60/100, Loss: 0.007176
+[2026-03-25 06:06:40]     Epoch 80/100, Loss: 0.006757
+[2026-03-25 06:07:20]     Epoch 100/100, Loss: 0.006697
+[2026-03-25 06:07:20]     Training complete. Final loss: 0.006697
+[2026-03-25 06:07:20]   Creating embeddings...
+[2026-03-25 06:07:20]   Running Optuna tuning for embedded features...
+[2026-03-25 06:08:21]   Embedded F1: 0.7778
+[2026-03-25 06:08:21]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run5_results.json
+[2026-03-25 06:08:21] 
+============================================================
+[2026-03-25 06:08:21] Dataset: creditcard, Run: 6, Seed: 600
+[2026-03-25 06:08:21] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:08:21] ============================================================
+[2026-03-25 06:08:21] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 06:08:22]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:08:22]   Train: 227845, Test: 56962
+[2026-03-25 06:08:22]   Running Optuna tuning for raw features...
+[2026-03-25 06:09:50]   Raw F1: 0.7651
+[2026-03-25 06:09:50]   Training XGBoost for surrogate targets...
+[2026-03-25 06:09:55]   Training embedding + surrogate networks...
+[2026-03-25 06:09:55]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:10:34]     Epoch 20/100, Loss: 0.009139
+[2026-03-25 06:11:14]     Epoch 40/100, Loss: 0.008059
+[2026-03-25 06:11:54]     Epoch 60/100, Loss: 0.007483
+[2026-03-25 06:12:34]     Epoch 80/100, Loss: 0.007302
+[2026-03-25 06:13:13]     Epoch 100/100, Loss: 0.006820
+[2026-03-25 06:13:13]     Training complete. Final loss: 0.006820
+[2026-03-25 06:13:13]   Creating embeddings...
+[2026-03-25 06:13:13]   Running Optuna tuning for embedded features...
+[2026-03-25 06:14:07]   Embedded F1: 0.7763
+[2026-03-25 06:14:07]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run6_results.json
+[2026-03-25 06:14:07] 
+============================================================
+[2026-03-25 06:14:07] Dataset: creditcard, Run: 7, Seed: 700
+[2026-03-25 06:14:07] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:14:07] ============================================================
+[2026-03-25 06:14:07] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 06:14:08]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:14:08]   Train: 227845, Test: 56962
+[2026-03-25 06:14:08]   Running Optuna tuning for raw features...
+[2026-03-25 06:16:08]   Raw F1: 0.8060
+[2026-03-25 06:16:08]   Training XGBoost for surrogate targets...
+[2026-03-25 06:16:11]   Training embedding + surrogate networks...
+[2026-03-25 06:16:11]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:16:49]     Epoch 20/100, Loss: 0.008324
+[2026-03-25 06:17:29]     Epoch 40/100, Loss: 0.007440
+[2026-03-25 06:18:09]     Epoch 60/100, Loss: 0.007145
+[2026-03-25 06:18:49]     Epoch 80/100, Loss: 0.006906
+[2026-03-25 06:19:30]     Epoch 100/100, Loss: 0.006959
+[2026-03-25 06:19:30]     Training complete. Final loss: 0.006959
+[2026-03-25 06:19:30]   Creating embeddings...
+[2026-03-25 06:19:30]   Running Optuna tuning for embedded features...
+[2026-03-25 06:20:24]   Embedded F1: 0.7632
+[2026-03-25 06:20:24]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run7_results.json
+[2026-03-25 06:20:24] 
+============================================================
+[2026-03-25 06:20:24] Dataset: creditcard, Run: 8, Seed: 800
+[2026-03-25 06:20:24] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:20:24] ============================================================
+[2026-03-25 06:20:24] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 06:20:24]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:20:24]   Train: 227845, Test: 56962
+[2026-03-25 06:20:24]   Running Optuna tuning for raw features...
+[2026-03-25 06:22:11]   Raw F1: 0.8143
+[2026-03-25 06:22:11]   Training XGBoost for surrogate targets...
+[2026-03-25 06:22:22]   Training embedding + surrogate networks...
+[2026-03-25 06:22:22]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:23:02]     Epoch 20/100, Loss: 0.071029
+[2026-03-25 06:23:44]     Epoch 40/100, Loss: 0.008604
+[2026-03-25 06:24:29]     Epoch 60/100, Loss: 0.007517
+[2026-03-25 06:25:12]     Epoch 80/100, Loss: 0.007304
+[2026-03-25 06:25:56]     Epoch 100/100, Loss: 0.007137
+[2026-03-25 06:25:56]     Training complete. Final loss: 0.007137
+[2026-03-25 06:25:56]   Creating embeddings...
+[2026-03-25 06:25:56]   Running Optuna tuning for embedded features...
+[2026-03-25 06:27:19]   Embedded F1: 0.7179
+[2026-03-25 06:27:19]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run8_results.json
+[2026-03-25 06:27:19] 
+============================================================
+[2026-03-25 06:27:19] Dataset: creditcard, Run: 9, Seed: 900
+[2026-03-25 06:27:19] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:27:19] ============================================================
+[2026-03-25 06:27:19] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 06:27:19]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:27:19]   Train: 227845, Test: 56962
+[2026-03-25 06:27:19]   Running Optuna tuning for raw features...
+[2026-03-25 06:29:00]   Raw F1: 0.8088
+[2026-03-25 06:29:00]   Training XGBoost for surrogate targets...
+[2026-03-25 06:29:04]   Training embedding + surrogate networks...
+[2026-03-25 06:29:04]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:29:44]     Epoch 20/100, Loss: 0.009345
+[2026-03-25 06:30:25]     Epoch 40/100, Loss: 0.007561
+[2026-03-25 06:31:05]     Epoch 60/100, Loss: 0.007260
+[2026-03-25 06:31:45]     Epoch 80/100, Loss: 0.006882
+[2026-03-25 06:32:25]     Epoch 100/100, Loss: 0.006862
+[2026-03-25 06:32:25]     Training complete. Final loss: 0.006862
+[2026-03-25 06:32:25]   Creating embeddings...
+[2026-03-25 06:32:25]   Running Optuna tuning for embedded features...
+[2026-03-25 06:33:32]   Embedded F1: 0.7448
+[2026-03-25 06:33:32]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run9_results.json
+[2026-03-25 06:33:32] 
+============================================================
+[2026-03-25 06:33:32] Dataset: creditcard, Run: 10, Seed: 1000
+[2026-03-25 06:33:32] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:33:32] ============================================================
+[2026-03-25 06:33:32] Loading dataset from: all_datasets/creditcard.csv
+[2026-03-25 06:33:32]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:33:32]   Train: 227845, Test: 56962
+[2026-03-25 06:33:32]   Running Optuna tuning for raw features...
+[2026-03-25 06:35:15]   Raw F1: 0.8201
+[2026-03-25 06:35:15]   Training XGBoost for surrogate targets...
+[2026-03-25 06:35:22]   Training embedding + surrogate networks...
+[2026-03-25 06:35:22]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:36:01]     Epoch 20/100, Loss: 0.008496
+[2026-03-25 06:36:41]     Epoch 40/100, Loss: 0.007524
+[2026-03-25 06:37:21]     Epoch 60/100, Loss: 0.007241
+[2026-03-25 06:38:02]     Epoch 80/100, Loss: 0.007204
+[2026-03-25 06:38:42]     Epoch 100/100, Loss: 0.006918
+[2026-03-25 06:38:42]     Training complete. Final loss: 0.006918
+[2026-03-25 06:38:42]   Creating embeddings...
+[2026-03-25 06:38:42]   Running Optuna tuning for embedded features...
+[2026-03-25 06:39:57]   Embedded F1: 0.7862
+[2026-03-25 06:39:57]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_run10_results.json
+[2026-03-25 06:39:57] 
+============================================================
+[2026-03-25 06:39:57] Dataset: creditcard_sparse, Run: 1, Seed: 100
+[2026-03-25 06:39:57] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:39:57] ============================================================
+[2026-03-25 06:39:57] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 06:39:57]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:39:57]   Train: 227845, Test: 56962
+[2026-03-25 06:39:57]   Running Optuna tuning for raw features...
+[2026-03-25 06:41:40]   Raw F1: 0.7500
+[2026-03-25 06:41:40]   Training XGBoost for surrogate targets...
+[2026-03-25 06:41:47]   Training embedding + surrogate networks...
+[2026-03-25 06:41:47]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:42:25]     Epoch 20/100, Loss: 0.037302
+[2026-03-25 06:43:05]     Epoch 40/100, Loss: 0.036410
+[2026-03-25 06:43:44]     Epoch 60/100, Loss: 0.035846
+[2026-03-25 06:44:23]     Epoch 80/100, Loss: 0.035702
+[2026-03-25 06:45:03]     Epoch 100/100, Loss: 0.035063
+[2026-03-25 06:45:03]     Training complete. Final loss: 0.035063
+[2026-03-25 06:45:03]   Creating embeddings...
+[2026-03-25 06:45:03]   Running Optuna tuning for embedded features...
+[2026-03-25 06:46:10]   Embedded F1: 0.7660
+[2026-03-25 06:46:10]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run1_results.json
+[2026-03-25 06:46:10] 
+============================================================
+[2026-03-25 06:46:10] Dataset: creditcard_sparse, Run: 2, Seed: 200
+[2026-03-25 06:46:10] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:46:10] ============================================================
+[2026-03-25 06:46:10] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 06:46:11]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:46:11]   Train: 227845, Test: 56962
+[2026-03-25 06:46:11]   Running Optuna tuning for raw features...
+[2026-03-25 06:48:04]   Raw F1: 0.7586
+[2026-03-25 06:48:04]   Training XGBoost for surrogate targets...
+[2026-03-25 06:48:08]   Training embedding + surrogate networks...
+[2026-03-25 06:48:08]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:48:47]     Epoch 20/100, Loss: 0.037056
+[2026-03-25 06:49:26]     Epoch 40/100, Loss: 0.036160
+[2026-03-25 06:50:05]     Epoch 60/100, Loss: 0.035794
+[2026-03-25 06:50:44]     Epoch 80/100, Loss: 0.035543
+[2026-03-25 06:51:23]     Epoch 100/100, Loss: 0.035405
+[2026-03-25 06:51:23]     Training complete. Final loss: 0.035405
+[2026-03-25 06:51:23]   Creating embeddings...
+[2026-03-25 06:51:23]   Running Optuna tuning for embedded features...
+[2026-03-25 06:52:16]   Embedded F1: 0.7299
+[2026-03-25 06:52:16]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run2_results.json
+[2026-03-25 06:52:16] 
+============================================================
+[2026-03-25 06:52:16] Dataset: creditcard_sparse, Run: 3, Seed: 300
+[2026-03-25 06:52:16] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:52:16] ============================================================
+[2026-03-25 06:52:16] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 06:52:17]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:52:17]   Train: 227845, Test: 56962
+[2026-03-25 06:52:17]   Running Optuna tuning for raw features...
+[2026-03-25 06:53:46]   Raw F1: 0.7606
+[2026-03-25 06:53:46]   Training XGBoost for surrogate targets...
+[2026-03-25 06:53:46]   Training embedding + surrogate networks...
+[2026-03-25 06:53:46]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 06:54:25]     Epoch 20/100, Loss: 0.037194
+[2026-03-25 06:55:05]     Epoch 40/100, Loss: 0.036360
+[2026-03-25 06:55:44]     Epoch 60/100, Loss: 0.035736
+[2026-03-25 06:56:24]     Epoch 80/100, Loss: 0.035645
+[2026-03-25 06:57:04]     Epoch 100/100, Loss: 0.035257
+[2026-03-25 06:57:04]     Training complete. Final loss: 0.035257
+[2026-03-25 06:57:04]   Creating embeddings...
+[2026-03-25 06:57:04]   Running Optuna tuning for embedded features...
+[2026-03-25 06:58:28]   Embedded F1: 0.7172
+[2026-03-25 06:58:28]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run3_results.json
+[2026-03-25 06:58:28] 
+============================================================
+[2026-03-25 06:58:28] Dataset: creditcard_sparse, Run: 4, Seed: 400
+[2026-03-25 06:58:28] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 06:58:28] ============================================================
+[2026-03-25 06:58:28] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 06:58:29]   Loaded: 284807 samples, 29 features
+[2026-03-25 06:58:29]   Train: 227845, Test: 56962
+[2026-03-25 06:58:29]   Running Optuna tuning for raw features...
+[2026-03-25 07:00:07]   Raw F1: 0.7770
+[2026-03-25 07:00:07]   Training XGBoost for surrogate targets...
+[2026-03-25 07:00:07]   Training embedding + surrogate networks...
+[2026-03-25 07:00:07]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:00:45]     Epoch 20/100, Loss: 0.037251
+[2026-03-25 07:01:24]     Epoch 40/100, Loss: 0.036224
+[2026-03-25 07:02:03]     Epoch 60/100, Loss: 0.035846
+[2026-03-25 07:02:41]     Epoch 80/100, Loss: 0.035567
+[2026-03-25 07:03:20]     Epoch 100/100, Loss: 0.035453
+[2026-03-25 07:03:20]     Training complete. Final loss: 0.035453
+[2026-03-25 07:03:20]   Creating embeddings...
+[2026-03-25 07:03:20]   Running Optuna tuning for embedded features...
+[2026-03-25 07:04:21]   Embedded F1: 0.7248
+[2026-03-25 07:04:21]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run4_results.json
+[2026-03-25 07:04:21] 
+============================================================
+[2026-03-25 07:04:21] Dataset: creditcard_sparse, Run: 5, Seed: 500
+[2026-03-25 07:04:21] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:04:21] ============================================================
+[2026-03-25 07:04:21] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 07:04:21]   Loaded: 284807 samples, 29 features
+[2026-03-25 07:04:21]   Train: 227845, Test: 56962
+[2026-03-25 07:04:21]   Running Optuna tuning for raw features...
+[2026-03-25 07:06:21]   Raw F1: 0.7914
+[2026-03-25 07:06:21]   Training XGBoost for surrogate targets...
+[2026-03-25 07:06:22]   Training embedding + surrogate networks...
+[2026-03-25 07:06:22]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:07:00]     Epoch 20/100, Loss: 0.037602
+[2026-03-25 07:07:39]     Epoch 40/100, Loss: 0.036260
+[2026-03-25 07:08:18]     Epoch 60/100, Loss: 0.035925
+[2026-03-25 07:08:58]     Epoch 80/100, Loss: 0.035503
+[2026-03-25 07:09:37]     Epoch 100/100, Loss: 0.035113
+[2026-03-25 07:09:37]     Training complete. Final loss: 0.035113
+[2026-03-25 07:09:37]   Creating embeddings...
+[2026-03-25 07:09:37]   Running Optuna tuning for embedded features...
+[2026-03-25 07:10:42]   Embedded F1: 0.6883
+[2026-03-25 07:10:42]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run5_results.json
+[2026-03-25 07:10:42] 
+============================================================
+[2026-03-25 07:10:42] Dataset: creditcard_sparse, Run: 6, Seed: 600
+[2026-03-25 07:10:42] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:10:42] ============================================================
+[2026-03-25 07:10:42] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 07:10:42]   Loaded: 284807 samples, 29 features
+[2026-03-25 07:10:42]   Train: 227845, Test: 56962
+[2026-03-25 07:10:42]   Running Optuna tuning for raw features...
+[2026-03-25 07:11:28]   Raw F1: 0.7770
+[2026-03-25 07:11:28]   Training XGBoost for surrogate targets...
+[2026-03-25 07:11:28]   Training embedding + surrogate networks...
+[2026-03-25 07:11:28]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:12:07]     Epoch 20/100, Loss: 0.036957
+[2026-03-25 07:12:46]     Epoch 40/100, Loss: 0.036047
+[2026-03-25 07:13:25]     Epoch 60/100, Loss: 0.035797
+[2026-03-25 07:14:04]     Epoch 80/100, Loss: 0.035433
+[2026-03-25 07:14:43]     Epoch 100/100, Loss: 0.035338
+[2026-03-25 07:14:43]     Training complete. Final loss: 0.035338
+[2026-03-25 07:14:43]   Creating embeddings...
+[2026-03-25 07:14:44]   Running Optuna tuning for embedded features...
+[2026-03-25 07:15:54]   Embedded F1: 0.6792
+[2026-03-25 07:15:54]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run6_results.json
+[2026-03-25 07:15:54] 
+============================================================
+[2026-03-25 07:15:54] Dataset: creditcard_sparse, Run: 7, Seed: 700
+[2026-03-25 07:15:54] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:15:54] ============================================================
+[2026-03-25 07:15:54] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 07:15:54]   Loaded: 284807 samples, 29 features
+[2026-03-25 07:15:54]   Train: 227845, Test: 56962
+[2026-03-25 07:15:54]   Running Optuna tuning for raw features...
+[2026-03-25 07:17:25]   Raw F1: 0.7883
+[2026-03-25 07:17:25]   Training XGBoost for surrogate targets...
+[2026-03-25 07:17:25]   Training embedding + surrogate networks...
+[2026-03-25 07:17:25]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:18:03]     Epoch 20/100, Loss: 0.037531
+[2026-03-25 07:18:42]     Epoch 40/100, Loss: 0.036491
+[2026-03-25 07:19:20]     Epoch 60/100, Loss: 0.035999
+[2026-03-25 07:19:58]     Epoch 80/100, Loss: 0.035423
+[2026-03-25 07:20:36]     Epoch 100/100, Loss: 0.035070
+[2026-03-25 07:20:36]     Training complete. Final loss: 0.035070
+[2026-03-25 07:20:36]   Creating embeddings...
+[2026-03-25 07:20:37]   Running Optuna tuning for embedded features...
+[2026-03-25 07:21:27]   Embedded F1: 0.7034
+[2026-03-25 07:21:27]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run7_results.json
+[2026-03-25 07:21:27] 
+============================================================
+[2026-03-25 07:21:27] Dataset: creditcard_sparse, Run: 8, Seed: 800
+[2026-03-25 07:21:27] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:21:27] ============================================================
+[2026-03-25 07:21:27] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 07:21:27]   Loaded: 284807 samples, 29 features
+[2026-03-25 07:21:27]   Train: 227845, Test: 56962
+[2026-03-25 07:21:27]   Running Optuna tuning for raw features...
+[2026-03-25 07:22:27]   Raw F1: 0.7970
+[2026-03-25 07:22:27]   Training XGBoost for surrogate targets...
+[2026-03-25 07:22:27]   Training embedding + surrogate networks...
+[2026-03-25 07:22:27]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:23:06]     Epoch 20/100, Loss: 0.037928
+[2026-03-25 07:23:45]     Epoch 40/100, Loss: 0.036607
+[2026-03-25 07:24:23]     Epoch 60/100, Loss: 0.036161
+[2026-03-25 07:25:02]     Epoch 80/100, Loss: 0.035705
+[2026-03-25 07:25:41]     Epoch 100/100, Loss: 0.035493
+[2026-03-25 07:25:41]     Training complete. Final loss: 0.035493
+[2026-03-25 07:25:41]   Creating embeddings...
+[2026-03-25 07:25:41]   Running Optuna tuning for embedded features...
+[2026-03-25 07:26:51]   Embedded F1: 0.7075
+[2026-03-25 07:26:51]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run8_results.json
+[2026-03-25 07:26:51] 
+============================================================
+[2026-03-25 07:26:51] Dataset: creditcard_sparse, Run: 9, Seed: 900
+[2026-03-25 07:26:51] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:26:51] ============================================================
+[2026-03-25 07:26:51] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 07:26:51]   Loaded: 284807 samples, 29 features
+[2026-03-25 07:26:51]   Train: 227845, Test: 56962
+[2026-03-25 07:26:51]   Running Optuna tuning for raw features...
+[2026-03-25 07:27:56]   Raw F1: 0.7704
+[2026-03-25 07:27:56]   Training XGBoost for surrogate targets...
+[2026-03-25 07:27:56]   Training embedding + surrogate networks...
+[2026-03-25 07:27:56]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:28:35]     Epoch 20/100, Loss: 0.037254
+[2026-03-25 07:29:14]     Epoch 40/100, Loss: 0.036120
+[2026-03-25 07:29:53]     Epoch 60/100, Loss: 0.035881
+[2026-03-25 07:30:32]     Epoch 80/100, Loss: 0.035524
+[2026-03-25 07:31:12]     Epoch 100/100, Loss: 0.034905
+[2026-03-25 07:31:12]     Training complete. Final loss: 0.034905
+[2026-03-25 07:31:12]   Creating embeddings...
+[2026-03-25 07:31:12]   Running Optuna tuning for embedded features...
+[2026-03-25 07:31:38]   Embedded F1: 0.7519
+[2026-03-25 07:31:38]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run9_results.json
+[2026-03-25 07:31:38] 
+============================================================
+[2026-03-25 07:31:38] Dataset: creditcard_sparse, Run: 10, Seed: 1000
+[2026-03-25 07:31:38] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:31:38] ============================================================
+[2026-03-25 07:31:38] Loading dataset from: all_datasets/creditcard_sparse.csv
+[2026-03-25 07:31:38]   Loaded: 284807 samples, 29 features
+[2026-03-25 07:31:38]   Train: 227845, Test: 56962
+[2026-03-25 07:31:38]   Running Optuna tuning for raw features...
+[2026-03-25 07:33:36]   Raw F1: 0.7260
+[2026-03-25 07:33:36]   Training XGBoost for surrogate targets...
+[2026-03-25 07:33:36]   Training embedding + surrogate networks...
+[2026-03-25 07:33:36]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:34:14]     Epoch 20/100, Loss: 0.037208
+[2026-03-25 07:34:53]     Epoch 40/100, Loss: 0.036332
+[2026-03-25 07:35:31]     Epoch 60/100, Loss: 0.035683
+[2026-03-25 07:36:10]     Epoch 80/100, Loss: 0.035285
+[2026-03-25 07:36:49]     Epoch 100/100, Loss: 0.035063
+[2026-03-25 07:36:49]     Training complete. Final loss: 0.035063
+[2026-03-25 07:36:49]   Creating embeddings...
+[2026-03-25 07:36:49]   Running Optuna tuning for embedded features...
+[2026-03-25 07:38:35]   Embedded F1: 0.7324
+[2026-03-25 07:38:35]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/creditcard_sparse_run10_results.json
+[2026-03-25 07:38:35] 
+============================================================
+[2026-03-25 07:38:35] Dataset: santander, Run: 1, Seed: 100
+[2026-03-25 07:38:35] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:38:35] ============================================================
+[2026-03-25 07:38:35] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 07:38:36]   Loaded: 200000 samples, 200 features
+[2026-03-25 07:38:36]   Train: 160000, Test: 40000
+[2026-03-25 07:38:36]   Running Optuna tuning for raw features...
+[2026-03-25 07:40:00]   Raw F1: 0.4778
+[2026-03-25 07:40:00]   Training XGBoost for surrogate targets...
+[2026-03-25 07:40:04]   Training embedding + surrogate networks...
+[2026-03-25 07:40:04]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:40:38]     Epoch 20/100, Loss: 0.609271
+[2026-03-25 07:41:11]     Epoch 40/100, Loss: 0.606846
+[2026-03-25 07:41:44]     Epoch 60/100, Loss: 0.605769
+[2026-03-25 07:42:18]     Epoch 80/100, Loss: 0.604656
+[2026-03-25 07:42:51]     Epoch 100/100, Loss: 0.604110
+[2026-03-25 07:42:51]     Training complete. Final loss: 0.604110
+[2026-03-25 07:42:51]   Creating embeddings...
+[2026-03-25 07:42:51]   Running Optuna tuning for embedded features...
+[2026-03-25 07:44:03]   Embedded F1: 0.4490
+[2026-03-25 07:44:03]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run1_results.json
+[2026-03-25 07:44:03] 
+============================================================
+[2026-03-25 07:44:03] Dataset: santander, Run: 2, Seed: 200
+[2026-03-25 07:44:03] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:44:03] ============================================================
+[2026-03-25 07:44:03] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 07:44:05]   Loaded: 200000 samples, 200 features
+[2026-03-25 07:44:05]   Train: 160000, Test: 40000
+[2026-03-25 07:44:05]   Running Optuna tuning for raw features...
+[2026-03-25 07:46:04]   Raw F1: 0.4784
+[2026-03-25 07:46:04]   Training XGBoost for surrogate targets...
+[2026-03-25 07:46:06]   Training embedding + surrogate networks...
+[2026-03-25 07:46:06]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:46:38]     Epoch 20/100, Loss: 0.608285
+[2026-03-25 07:47:11]     Epoch 40/100, Loss: 0.606114
+[2026-03-25 07:47:45]     Epoch 60/100, Loss: 0.604635
+[2026-03-25 07:48:17]     Epoch 80/100, Loss: 0.603985
+[2026-03-25 07:48:51]     Epoch 100/100, Loss: 0.603235
+[2026-03-25 07:48:51]     Training complete. Final loss: 0.603235
+[2026-03-25 07:48:51]   Creating embeddings...
+[2026-03-25 07:48:51]   Running Optuna tuning for embedded features...
+[2026-03-25 07:50:09]   Embedded F1: 0.4646
+[2026-03-25 07:50:09]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run2_results.json
+[2026-03-25 07:50:09] 
+============================================================
+[2026-03-25 07:50:09] Dataset: santander, Run: 3, Seed: 300
+[2026-03-25 07:50:09] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:50:09] ============================================================
+[2026-03-25 07:50:09] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 07:50:11]   Loaded: 200000 samples, 200 features
+[2026-03-25 07:50:11]   Train: 160000, Test: 40000
+[2026-03-25 07:50:11]   Running Optuna tuning for raw features...
+[2026-03-25 07:51:25]   Raw F1: 0.4880
+[2026-03-25 07:51:25]   Training XGBoost for surrogate targets...
+[2026-03-25 07:51:27]   Training embedding + surrogate networks...
+[2026-03-25 07:51:27]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:52:00]     Epoch 20/100, Loss: 0.608654
+[2026-03-25 07:52:33]     Epoch 40/100, Loss: 0.606268
+[2026-03-25 07:53:05]     Epoch 60/100, Loss: 0.604805
+[2026-03-25 07:53:38]     Epoch 80/100, Loss: 0.603746
+[2026-03-25 07:54:10]     Epoch 100/100, Loss: 0.603095
+[2026-03-25 07:54:10]     Training complete. Final loss: 0.603095
+[2026-03-25 07:54:10]   Creating embeddings...
+[2026-03-25 07:54:10]   Running Optuna tuning for embedded features...
+[2026-03-25 07:55:23]   Embedded F1: 0.4582
+[2026-03-25 07:55:23]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run3_results.json
+[2026-03-25 07:55:23] 
+============================================================
+[2026-03-25 07:55:23] Dataset: santander, Run: 4, Seed: 400
+[2026-03-25 07:55:23] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 07:55:23] ============================================================
+[2026-03-25 07:55:23] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 07:55:24]   Loaded: 200000 samples, 200 features
+[2026-03-25 07:55:24]   Train: 160000, Test: 40000
+[2026-03-25 07:55:24]   Running Optuna tuning for raw features...
+[2026-03-25 07:57:39]   Raw F1: 0.5098
+[2026-03-25 07:57:39]   Training XGBoost for surrogate targets...
+[2026-03-25 07:57:41]   Training embedding + surrogate networks...
+[2026-03-25 07:57:41]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 07:58:13]     Epoch 20/100, Loss: 0.608689
+[2026-03-25 07:58:46]     Epoch 40/100, Loss: 0.606132
+[2026-03-25 07:59:19]     Epoch 60/100, Loss: 0.604637
+[2026-03-25 07:59:52]     Epoch 80/100, Loss: 0.603924
+[2026-03-25 08:00:25]     Epoch 100/100, Loss: 0.603076
+[2026-03-25 08:00:25]     Training complete. Final loss: 0.603076
+[2026-03-25 08:00:25]   Creating embeddings...
+[2026-03-25 08:00:25]   Running Optuna tuning for embedded features...
+[2026-03-25 08:01:38]   Embedded F1: 0.4551
+[2026-03-25 08:01:38]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run4_results.json
+[2026-03-25 08:01:38] 
+============================================================
+[2026-03-25 08:01:38] Dataset: santander, Run: 5, Seed: 500
+[2026-03-25 08:01:38] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 08:01:38] ============================================================
+[2026-03-25 08:01:38] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 08:01:40]   Loaded: 200000 samples, 200 features
+[2026-03-25 08:01:40]   Train: 160000, Test: 40000
+[2026-03-25 08:01:40]   Running Optuna tuning for raw features...
+[2026-03-25 08:04:53]   Raw F1: 0.5017
+[2026-03-25 08:04:53]   Training XGBoost for surrogate targets...
+[2026-03-25 08:04:54]   Training embedding + surrogate networks...
+[2026-03-25 08:04:54]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 08:05:27]     Epoch 20/100, Loss: 0.609214
+[2026-03-25 08:06:00]     Epoch 40/100, Loss: 0.606873
+[2026-03-25 08:06:34]     Epoch 60/100, Loss: 0.605717
+[2026-03-25 08:07:07]     Epoch 80/100, Loss: 0.604756
+[2026-03-25 08:07:40]     Epoch 100/100, Loss: 0.604093
+[2026-03-25 08:07:40]     Training complete. Final loss: 0.604093
+[2026-03-25 08:07:40]   Creating embeddings...
+[2026-03-25 08:07:40]   Running Optuna tuning for embedded features...
+[2026-03-25 08:08:59]   Embedded F1: 0.4567
+[2026-03-25 08:08:59]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run5_results.json
+[2026-03-25 08:08:59] 
+============================================================
+[2026-03-25 08:08:59] Dataset: santander, Run: 6, Seed: 600
+[2026-03-25 08:08:59] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 08:08:59] ============================================================
+[2026-03-25 08:08:59] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 08:09:01]   Loaded: 200000 samples, 200 features
+[2026-03-25 08:09:01]   Train: 160000, Test: 40000
+[2026-03-25 08:09:01]   Running Optuna tuning for raw features...
+[2026-03-25 08:11:19]   Raw F1: 0.5009
+[2026-03-25 08:11:19]   Training XGBoost for surrogate targets...
+[2026-03-25 08:11:22]   Training embedding + surrogate networks...
+[2026-03-25 08:11:22]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 08:11:55]     Epoch 20/100, Loss: 0.608762
+[2026-03-25 08:12:27]     Epoch 40/100, Loss: 0.606674
+[2026-03-25 08:13:01]     Epoch 60/100, Loss: 0.605282
+[2026-03-25 08:13:34]     Epoch 80/100, Loss: 0.604308
+[2026-03-25 08:14:08]     Epoch 100/100, Loss: 0.603725
+[2026-03-25 08:14:08]     Training complete. Final loss: 0.603725
+[2026-03-25 08:14:08]   Creating embeddings...
+[2026-03-25 08:14:08]   Running Optuna tuning for embedded features...
+[2026-03-25 08:16:00]   Embedded F1: 0.4541
+[2026-03-25 08:16:00]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run6_results.json
+[2026-03-25 08:16:00] 
+============================================================
+[2026-03-25 08:16:00] Dataset: santander, Run: 7, Seed: 700
+[2026-03-25 08:16:00] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 08:16:00] ============================================================
+[2026-03-25 08:16:00] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 08:16:02]   Loaded: 200000 samples, 200 features
+[2026-03-25 08:16:02]   Train: 160000, Test: 40000
+[2026-03-25 08:16:02]   Running Optuna tuning for raw features...
+[2026-03-25 08:17:28]   Raw F1: 0.4837
+[2026-03-25 08:17:28]   Training XGBoost for surrogate targets...
+[2026-03-25 08:17:30]   Training embedding + surrogate networks...
+[2026-03-25 08:17:30]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 08:18:03]     Epoch 20/100, Loss: 0.608769
+[2026-03-25 08:18:36]     Epoch 40/100, Loss: 0.606850
+[2026-03-25 08:19:09]     Epoch 60/100, Loss: 0.605642
+[2026-03-25 08:19:43]     Epoch 80/100, Loss: 0.604697
+[2026-03-25 08:20:16]     Epoch 100/100, Loss: 0.604216
+[2026-03-25 08:20:16]     Training complete. Final loss: 0.604216
+[2026-03-25 08:20:16]   Creating embeddings...
+[2026-03-25 08:20:16]   Running Optuna tuning for embedded features...
+[2026-03-25 08:21:46]   Embedded F1: 0.4492
+[2026-03-25 08:21:46]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run7_results.json
+[2026-03-25 08:21:46] 
+============================================================
+[2026-03-25 08:21:46] Dataset: santander, Run: 8, Seed: 800
+[2026-03-25 08:21:46] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 08:21:46] ============================================================
+[2026-03-25 08:21:46] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 08:21:48]   Loaded: 200000 samples, 200 features
+[2026-03-25 08:21:48]   Train: 160000, Test: 40000
+[2026-03-25 08:21:48]   Running Optuna tuning for raw features...
+[2026-03-25 08:23:06]   Raw F1: 0.4921
+[2026-03-25 08:23:06]   Training XGBoost for surrogate targets...
+[2026-03-25 08:23:07]   Training embedding + surrogate networks...
+[2026-03-25 08:23:07]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 08:23:41]     Epoch 20/100, Loss: 0.608571
+[2026-03-25 08:24:14]     Epoch 40/100, Loss: 0.606346
+[2026-03-25 08:24:47]     Epoch 60/100, Loss: 0.604763
+[2026-03-25 08:25:21]     Epoch 80/100, Loss: 0.603595
+[2026-03-25 08:25:55]     Epoch 100/100, Loss: 0.602584
+[2026-03-25 08:25:55]     Training complete. Final loss: 0.602584
+[2026-03-25 08:25:55]   Creating embeddings...
+[2026-03-25 08:25:55]   Running Optuna tuning for embedded features...
+[2026-03-25 08:27:17]   Embedded F1: 0.4594
+[2026-03-25 08:27:17]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run8_results.json
+[2026-03-25 08:27:17] 
+============================================================
+[2026-03-25 08:27:17] Dataset: santander, Run: 9, Seed: 900
+[2026-03-25 08:27:17] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 08:27:17] ============================================================
+[2026-03-25 08:27:17] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 08:27:19]   Loaded: 200000 samples, 200 features
+[2026-03-25 08:27:19]   Train: 160000, Test: 40000
+[2026-03-25 08:27:19]   Running Optuna tuning for raw features...
+[2026-03-25 08:28:38]   Raw F1: 0.4877
+[2026-03-25 08:28:38]   Training XGBoost for surrogate targets...
+[2026-03-25 08:28:41]   Training embedding + surrogate networks...
+[2026-03-25 08:28:41]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 08:29:13]     Epoch 20/100, Loss: 0.608483
+[2026-03-25 08:29:46]     Epoch 40/100, Loss: 0.605622
+[2026-03-25 08:30:19]     Epoch 60/100, Loss: 0.604287
+[2026-03-25 08:30:52]     Epoch 80/100, Loss: 0.603216
+[2026-03-25 08:31:25]     Epoch 100/100, Loss: 0.602318
+[2026-03-25 08:31:25]     Training complete. Final loss: 0.602318
+[2026-03-25 08:31:25]   Creating embeddings...
+[2026-03-25 08:31:25]   Running Optuna tuning for embedded features...
+[2026-03-25 08:32:28]   Embedded F1: 0.4603
+[2026-03-25 08:32:28]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run9_results.json
+[2026-03-25 08:32:28] 
+============================================================
+[2026-03-25 08:32:28] Dataset: santander, Run: 10, Seed: 1000
+[2026-03-25 08:32:28] Config: {'emb_dim': 32, 'hidden_dim': 64, 'n_layers': 2, 'loss': 'bce', 'lr': 0.001, 'activation': 'relu'}
+[2026-03-25 08:32:28] ============================================================
+[2026-03-25 08:32:28] Loading dataset from: all_datasets/santander.csv
+[2026-03-25 08:32:29]   Loaded: 200000 samples, 200 features
+[2026-03-25 08:32:29]   Train: 160000, Test: 40000
+[2026-03-25 08:32:29]   Running Optuna tuning for raw features...
+[2026-03-25 08:34:09]   Raw F1: 0.4846
+[2026-03-25 08:34:09]   Training XGBoost for surrogate targets...
+[2026-03-25 08:34:12]   Training embedding + surrogate networks...
+[2026-03-25 08:34:12]     Initializing networks (emb_dim=32, layers=2, loss=bce)
+[2026-03-25 08:34:44]     Epoch 20/100, Loss: 0.609726
+[2026-03-25 08:35:17]     Epoch 40/100, Loss: 0.607517
+[2026-03-25 08:35:51]     Epoch 60/100, Loss: 0.606273
+[2026-03-25 08:36:24]     Epoch 80/100, Loss: 0.605362
+[2026-03-25 08:36:57]     Epoch 100/100, Loss: 0.604852
+[2026-03-25 08:36:57]     Training complete. Final loss: 0.604852
+[2026-03-25 08:36:57]   Creating embeddings...
+[2026-03-25 08:36:57]   Running Optuna tuning for embedded features...
+[2026-03-25 08:38:12]   Embedded F1: 0.4499
+[2026-03-25 08:38:12]   SAVED: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce/santander_run10_results.json
+[2026-03-25 08:38:12] 
+============================================================
+[2026-03-25 08:38:12] SUCCESS! Method 2 Complete!
+[2026-03-25 08:38:12] Results in: /home/dpip/Desktop/XGBoost_implementation/results/method2_bce

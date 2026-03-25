@@ -1,0 +1,62 @@
+{
+  "dataset": "creditcard",
+  "run_id": 2,
+  "seed": 200,
+  "n_features": 29,
+  "embedding_dim": 32,
+  "timestamp": "2026-03-23T23:12:06.935560",
+  "raw": {
+    "best_params": {
+      "n_estimators": 192,
+      "max_depth": 5,
+      "learning_rate": 0.09363101740459162,
+      "reg_lambda": 0.10029818481938457,
+      "gamma": 1.042129447030099,
+      "min_child_weight": 0.26037312721225137
+    },
+    "metrics": {
+      "accuracy": 0.9995084442259752,
+      "precision": 0.8507462686567164,
+      "recall": 0.76,
+      "f1": 0.8028169014084507,
+      "auc": 0.986008988579699
+    },
+    "confusion_matrix": [
+      [
+        56877,
+        10
+      ],
+      [
+        18,
+        57
+      ]
+    ]
+  },
+  "embedded": {
+    "best_params": {
+      "n_estimators": 105,
+      "max_depth": 10,
+      "learning_rate": 0.09272861700680192,
+      "reg_lambda": 8.894811836571922,
+      "gamma": 1.9771923215986855,
+      "min_child_weight": 4.37017289553418
+    },
+    "metrics": {
+      "accuracy": 0.9992451107756047,
+      "precision": 0.6904761904761905,
+      "recall": 0.7733333333333333,
+      "f1": 0.7295597484276729,
+      "auc": 0.9578367641113084
+    },
+    "confusion_matrix": [
+      [
+        56861,
+        26
+      ],
+      [
+        17,
+        58
+      ]
+    ]
+  }
+}
