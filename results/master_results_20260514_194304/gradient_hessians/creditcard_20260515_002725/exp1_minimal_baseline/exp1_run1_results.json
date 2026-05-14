@@ -1,0 +1,65 @@
+{
+  "raw": {
+    "f1": 0.7358490566037735,
+    "accuracy": 0.9993445999719114,
+    "precision": 0.7222222222222222,
+    "recall": 0.75,
+    "best_params": {
+      "n_estimators": 368,
+      "max_depth": 4,
+      "learning_rate": 0.10845940499275063,
+      "scale_pos_weight": 491.87129238076767
+    }
+  },
+  "a2qa": {
+    "f1": 0.5531914893617021,
+    "accuracy": 0.9985253499368008,
+    "precision": 0.43820224719101125,
+    "recall": 0.75,
+    "best_params": {
+      "n_estimators": 323,
+      "max_depth": 6,
+      "learning_rate": 0.13232262719729296,
+      "scale_pos_weight": 487.95350259571745
+    }
+  },
+  "gh_first_order": {
+    "f1": 0.27177700348432055,
+    "accuracy": 0.9951079069331961,
+    "precision": 0.16595744680851063,
+    "recall": 0.75,
+    "best_params": {
+      "n_estimators": 299,
+      "max_depth": 7,
+      "learning_rate": 0.11938916657904051,
+      "scale_pos_weight": 420.7246771430809
+    }
+  },
+  "gh_full": {
+    "f1": 0.2085889570552147,
+    "accuracy": 0.993960956884041,
+    "precision": 0.12408759124087591,
+    "recall": 0.6538461538461539,
+    "best_params": {
+      "n_estimators": 341,
+      "max_depth": 7,
+      "learning_rate": 0.1637048638602058,
+      "scale_pos_weight": 419.9607350893531
+    }
+  },
+  "metadata": {
+    "run_id": 1,
+    "seed": 100,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dim": 14,
+    "codebook_size": 56,
+    "epochs": 100,
+    "retention": {
+      "a2qa_vs_raw": 75.17730496453902,
+      "gh_first_vs_raw": 36.933797909407666,
+      "gh_full_vs_raw": 28.346704420324052,
+      "gh_vs_a2qa": 37.70646531382727
+    }
+  }
+}

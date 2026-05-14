@@ -1,0 +1,14 @@
+{
+    "method": "gradient_hessians",
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "duration_seconds": 11382,
+    "dataset": "creditcard",
+    "timestamp": "2026-05-15T03:37:07+05:30",
+    "results": {
+        "phase4_f1": null,
+        "phase4_retention": null
+    },
+    "log_file": "/home/dpip/Desktop/Experiments/master_results_20260514_194304/gradient_hessians.log",
+    "results_dir": "/home/dpip/Desktop/Experiments/gradient_hessians//results"
+}

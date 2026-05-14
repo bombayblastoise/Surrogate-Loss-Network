@@ -1,0 +1,141 @@
+{
+  "raw": {
+    "f1": 0.78,
+    "accuracy": 0.9994850428350732,
+    "precision": 0.8125,
+    "recall": 0.75,
+    "best_params": {
+      "n_estimators": 295,
+      "max_depth": 5,
+      "learning_rate": 0.12546411606279562,
+      "scale_pos_weight": 601.3866068667539
+    }
+  },
+  "dimensions": {
+    "dim_8": {
+      "embedding_dim": 8,
+      "codebook_size": 32,
+      "f1": 0.16565656565656567,
+      "accuracy": 0.9903328495856936,
+      "precision": 0.09255079006772009,
+      "recall": 0.7884615384615384,
+      "retention_vs_raw": 21.23802123802124,
+      "compression_ratio": 3.625,
+      "codebook_utilization_train": 81.25,
+      "codebook_utilization_test": 81.25,
+      "unique_indices_train": 26,
+      "unique_indices_test": 26,
+      "total_codebook_entries": 32,
+      "best_params": {
+        "n_estimators": 385,
+        "max_depth": 6,
+        "learning_rate": 0.16747286579525267,
+        "scale_pos_weight": 568.8582690307613
+      }
+    },
+    "dim_16": {
+      "embedding_dim": 16,
+      "codebook_size": 64,
+      "f1": 0.3153153153153153,
+      "accuracy": 0.9964421141332335,
+      "precision": 0.20588235294117646,
+      "recall": 0.6730769230769231,
+      "retention_vs_raw": 40.42504042504043,
+      "compression_ratio": 1.8125,
+      "codebook_utilization_train": 68.75,
+      "codebook_utilization_test": 56.25,
+      "unique_indices_train": 44,
+      "unique_indices_test": 36,
+      "total_codebook_entries": 64,
+      "best_params": {
+        "n_estimators": 334,
+        "max_depth": 6,
+        "learning_rate": 0.18740846576851317,
+        "scale_pos_weight": 420.35011759817394
+      }
+    },
+    "dim_32": {
+      "embedding_dim": 32,
+      "codebook_size": 128,
+      "f1": 0.7058823529411765,
+      "accuracy": 0.9992977856841908,
+      "precision": 0.72,
+      "recall": 0.6923076923076923,
+      "retention_vs_raw": 90.49773755656109,
+      "compression_ratio": 0.90625,
+      "codebook_utilization_train": 63.28125,
+      "codebook_utilization_test": 48.4375,
+      "unique_indices_train": 81,
+      "unique_indices_test": 62,
+      "total_codebook_entries": 128,
+      "best_params": {
+        "n_estimators": 319,
+        "max_depth": 7,
+        "learning_rate": 0.15975773799668258,
+        "scale_pos_weight": 576.0199721000462
+      }
+    },
+    "dim_48": {
+      "embedding_dim": 48,
+      "codebook_size": 192,
+      "f1": 0.4936708860759494,
+      "accuracy": 0.9981274284911755,
+      "precision": 0.36792452830188677,
+      "recall": 0.75,
+      "retention_vs_raw": 63.29113924050633,
+      "compression_ratio": 0.6041666666666666,
+      "codebook_utilization_train": 55.208333333333336,
+      "codebook_utilization_test": 33.33333333333333,
+      "unique_indices_train": 106,
+      "unique_indices_test": 64,
+      "total_codebook_entries": 192,
+      "best_params": {
+        "n_estimators": 253,
+        "max_depth": 7,
+        "learning_rate": 0.14671998150159365,
+        "scale_pos_weight": 460.4627957777055
+      }
+    },
+    "dim_64": {
+      "embedding_dim": 64,
+      "codebook_size": 256,
+      "f1": 0.4431818181818182,
+      "accuracy": 0.99770609990169,
+      "precision": 0.31451612903225806,
+      "recall": 0.75,
+      "retention_vs_raw": 56.81818181818181,
+      "compression_ratio": 0.453125,
+      "codebook_utilization_train": 50.78125,
+      "codebook_utilization_test": 32.8125,
+      "unique_indices_train": 130,
+      "unique_indices_test": 84,
+      "total_codebook_entries": 256,
+      "best_params": {
+        "n_estimators": 321,
+        "max_depth": 6,
+        "learning_rate": 0.10185058525494552,
+        "scale_pos_weight": 471.1549713293557
+      }
+    }
+  },
+  "summary": {
+    "raw_f1": 0.78,
+    "min_dim_for_target_retention": 32,
+    "target_retention": 90.0,
+    "all_reached_target": true
+  },
+  "metadata": {
+    "run_id": 2,
+    "seed": 200,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dims": [
+      8,
+      16,
+      32,
+      48,
+      64
+    ],
+    "epochs": 100
+  }
+}

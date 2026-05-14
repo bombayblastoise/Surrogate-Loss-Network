@@ -1,0 +1,224 @@
+[2026-05-15 03:22:51] ============================================================
+[2026-05-15 03:22:51] EXPERIMENT 4: Moving Target Analysis
+[2026-05-15 03:22:51] ============================================================
+[2026-05-15 03:22:51] Tracks gradient variance and training stability
+[2026-05-15 03:22:51] Configuration:
+[2026-05-15 03:22:51]   Encoder: 2-layer MLP (hidden=128)
+[2026-05-15 03:22:51]   Embedding dim: 32
+[2026-05-15 03:22:51]   Codebook size: 128
+[2026-05-15 03:22:51]   Epochs: 100
+[2026-05-15 03:22:51]   Runs: 3
+[2026-05-15 03:22:51] ============================================================
+[2026-05-15 03:22:51] 
+============================================================
+[2026-05-15 03:22:51] EXPERIMENT 4 - RUN 1/3
+[2026-05-15 03:22:51] Dataset: creditcard, Seed: 100
+[2026-05-15 03:22:51] ============================================================
+[2026-05-15 03:22:52] Data: Train=199364, Val=42721, Test=42722
+[2026-05-15 03:22:52] 
+  Evaluating RAW baseline...
+[2026-05-15 03:23:33]     Raw F1: 0.8125
+[2026-05-15 03:23:33] 
+--- Training GH-VQ with Diagnostics ---
+[2026-05-15 03:23:33] 
+  Training GH-VQ with diagnostics (emb_dim=32)...
+[2026-05-15 03:23:36]     Epoch   0 | Loss: 0.0307 | Train F1: 0.8182 | G-var: 0.000000 | Pred-change: 0.000000
+[2026-05-15 03:23:56]     Epoch  10 | Loss: 0.0061 | Train F1: 0.6145 | G-var: 0.000208 | Pred-change: 0.000208
+[2026-05-15 03:24:14]     Epoch  20 | Loss: 0.0015 | Train F1: 0.7453 | G-var: 0.000118 | Pred-change: 0.000118
+[2026-05-15 03:24:28]     Epoch  30 | Loss: -0.0023 | Train F1: 0.7332 | G-var: 0.000091 | Pred-change: 0.000091
+[2026-05-15 03:24:48]     Epoch  40 | Loss: -0.0011 | Train F1: 0.8213 | G-var: 0.000074 | Pred-change: 0.000074
+[2026-05-15 03:25:04]     Epoch  50 | Loss: -0.0009 | Train F1: 0.8709 | G-var: 0.000053 | Pred-change: 0.000053
+[2026-05-15 03:25:18]     Epoch  60 | Loss: -0.0013 | Train F1: 0.8501 | G-var: 0.000044 | Pred-change: 0.000044
+[2026-05-15 03:25:36]     Epoch  70 | Loss: -0.0011 | Train F1: 0.8657 | G-var: 0.000044 | Pred-change: 0.000044
+[2026-05-15 03:25:52]     Epoch  80 | Loss: -0.0013 | Train F1: 0.8629 | G-var: 0.000037 | Pred-change: 0.000037
+[2026-05-15 03:26:08]     Epoch  90 | Loss: -0.0009 | Train F1: 0.8794 | G-var: 0.000043 | Pred-change: 0.000043
+[2026-05-15 03:26:30]     Training complete. Final F1: 0.8709
+[2026-05-15 03:26:30] 
+  Instability Analysis:
+[2026-05-15 03:26:30]     Gradient variance (mean): 0.000071
+[2026-05-15 03:26:30]     Gradient variance (max):  0.000285
+[2026-05-15 03:26:30]     Gradient CV:              114332.0937
+[2026-05-15 03:26:30]     Prediction change (mean): 0.000071
+[2026-05-15 03:26:30]     Embedding drift (mean):   0.005011
+[2026-05-15 03:26:30]     High instability epochs:  17 (17.0%)
+[2026-05-15 03:26:30]     F1 improvement:           +0.2225
+[2026-05-15 03:27:12]     GH-VQ F1: 0.6142
+[2026-05-15 03:27:12] 
+------------------------------------------------------------
+[2026-05-15 03:27:12] MOVING TARGET ANALYSIS SUMMARY:
+[2026-05-15 03:27:12]   Raw F1: 0.8125
+[2026-05-15 03:27:12]   GH-VQ F1: 0.6142 (75.6% retention)
+[2026-05-15 03:27:12]   Training stable: True
+[2026-05-15 03:27:12]   Mean gradient variance: 0.000071
+[2026-05-15 03:27:12]   High instability epochs: 17
+[2026-05-15 03:27:12] ------------------------------------------------------------
+[2026-05-15 03:27:12] ERROR: Run 1 failed
+Object of type float32 is not JSON serializable
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/gradient_hessians/experiment4_moving_target.py", line 603, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/gradient_hessians/experiment4_moving_target.py", line 572, in run_single_experiment
+    json.dump(results, f, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type float32 is not JSON serializable
+
+[2026-05-15 03:27:12] 
+============================================================
+[2026-05-15 03:27:12] EXPERIMENT 4 - RUN 2/3
+[2026-05-15 03:27:12] Dataset: creditcard, Seed: 200
+[2026-05-15 03:27:12] ============================================================
+[2026-05-15 03:27:12] Data: Train=199364, Val=42721, Test=42722
+[2026-05-15 03:27:12] 
+  Evaluating RAW baseline...
+[2026-05-15 03:27:54]     Raw F1: 0.7879
+[2026-05-15 03:27:54] 
+--- Training GH-VQ with Diagnostics ---
+[2026-05-15 03:27:54] 
+  Training GH-VQ with diagnostics (emb_dim=32)...
+[2026-05-15 03:27:55]     Epoch   0 | Loss: 0.0212 | Train F1: 0.6715 | G-var: 0.000000 | Pred-change: 0.000000
+[2026-05-15 03:28:12]     Epoch  10 | Loss: 0.0001 | Train F1: 0.7185 | G-var: 0.000167 | Pred-change: 0.000167
+[2026-05-15 03:28:34]     Epoch  20 | Loss: 0.0015 | Train F1: 0.7960 | G-var: 0.000204 | Pred-change: 0.000204
+[2026-05-15 03:28:55]     Epoch  30 | Loss: -0.0014 | Train F1: 0.8046 | G-var: 0.000069 | Pred-change: 0.000069
+[2026-05-15 03:29:18]     Epoch  40 | Loss: -0.0010 | Train F1: 0.8331 | G-var: 0.000043 | Pred-change: 0.000043
+[2026-05-15 03:29:45]     Epoch  50 | Loss: -0.0016 | Train F1: 0.8485 | G-var: 0.000051 | Pred-change: 0.000051
+[2026-05-15 03:30:08]     Epoch  60 | Loss: -0.0014 | Train F1: 0.8421 | G-var: 0.000063 | Pred-change: 0.000063
+[2026-05-15 03:30:27]     Epoch  70 | Loss: -0.0014 | Train F1: 0.8555 | G-var: 0.000053 | Pred-change: 0.000053
+[2026-05-15 03:30:45]     Epoch  80 | Loss: -0.0014 | Train F1: 0.8588 | G-var: 0.000041 | Pred-change: 0.000041
+[2026-05-15 03:31:08]     Epoch  90 | Loss: -0.0013 | Train F1: 0.8776 | G-var: 0.000053 | Pred-change: 0.000053
+[2026-05-15 03:31:22]     Training complete. Final F1: 0.8759
+[2026-05-15 03:31:22] 
+  Instability Analysis:
+[2026-05-15 03:31:22]     Gradient variance (mean): 0.000074
+[2026-05-15 03:31:22]     Gradient variance (max):  0.000333
+[2026-05-15 03:31:22]     Gradient CV:              179739.9813
+[2026-05-15 03:31:22]     Prediction change (mean): 0.000074
+[2026-05-15 03:31:22]     Embedding drift (mean):   0.006509
+[2026-05-15 03:31:22]     High instability epochs:  18 (18.0%)
+[2026-05-15 03:31:22]     F1 improvement:           +0.2746
+[2026-05-15 03:31:49]     GH-VQ F1: 0.5891
+[2026-05-15 03:31:49] 
+------------------------------------------------------------
+[2026-05-15 03:31:49] MOVING TARGET ANALYSIS SUMMARY:
+[2026-05-15 03:31:49]   Raw F1: 0.7879
+[2026-05-15 03:31:49]   GH-VQ F1: 0.5891 (74.8% retention)
+[2026-05-15 03:31:49]   Training stable: True
+[2026-05-15 03:31:49]   Mean gradient variance: 0.000074
+[2026-05-15 03:31:49]   High instability epochs: 18
+[2026-05-15 03:31:49] ------------------------------------------------------------
+[2026-05-15 03:31:49] ERROR: Run 2 failed
+Object of type float32 is not JSON serializable
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/gradient_hessians/experiment4_moving_target.py", line 603, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/gradient_hessians/experiment4_moving_target.py", line 572, in run_single_experiment
+    json.dump(results, f, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type float32 is not JSON serializable
+
+[2026-05-15 03:31:49] 
+============================================================
+[2026-05-15 03:31:49] EXPERIMENT 4 - RUN 3/3
+[2026-05-15 03:31:49] Dataset: creditcard, Seed: 300
+[2026-05-15 03:31:49] ============================================================
+[2026-05-15 03:31:49] Data: Train=199364, Val=42721, Test=42722
+[2026-05-15 03:31:49] 
+  Evaluating RAW baseline...
+[2026-05-15 03:32:43]     Raw F1: 0.7800
+[2026-05-15 03:32:43] 
+--- Training GH-VQ with Diagnostics ---
+[2026-05-15 03:32:43] 
+  Training GH-VQ with diagnostics (emb_dim=32)...
+[2026-05-15 03:32:44]     Epoch   0 | Loss: 0.0294 | Train F1: 0.8126 | G-var: 0.000000 | Pred-change: 0.000000
+[2026-05-15 03:33:04]     Epoch  10 | Loss: -0.0003 | Train F1: 0.7154 | G-var: 0.000178 | Pred-change: 0.000178
+[2026-05-15 03:33:28]     Epoch  20 | Loss: -0.0027 | Train F1: 0.7201 | G-var: 0.000173 | Pred-change: 0.000173
+[2026-05-15 03:33:46]     Epoch  30 | Loss: -0.0006 | Train F1: 0.7888 | G-var: 0.000100 | Pred-change: 0.000100
+[2026-05-15 03:34:03]     Epoch  40 | Loss: -0.0004 | Train F1: 0.8407 | G-var: 0.000065 | Pred-change: 0.000065
+[2026-05-15 03:34:19]     Epoch  50 | Loss: -0.0016 | Train F1: 0.8331 | G-var: 0.000089 | Pred-change: 0.000089
+[2026-05-15 03:34:40]     Epoch  60 | Loss: -0.0011 | Train F1: 0.8583 | G-var: 0.000045 | Pred-change: 0.000045
+[2026-05-15 03:35:20]     Epoch  70 | Loss: -0.0012 | Train F1: 0.8839 | G-var: 0.000034 | Pred-change: 0.000034
+[2026-05-15 03:35:46]     Epoch  80 | Loss: -0.0011 | Train F1: 0.8829 | G-var: 0.000048 | Pred-change: 0.000048
+[2026-05-15 03:36:06]     Epoch  90 | Loss: -0.0012 | Train F1: 0.8808 | G-var: 0.000035 | Pred-change: 0.000035
+[2026-05-15 03:36:29]     Training complete. Final F1: 0.8955
+[2026-05-15 03:36:29] 
+  Instability Analysis:
+[2026-05-15 03:36:29]     Gradient variance (mean): 0.000074
+[2026-05-15 03:36:29]     Gradient variance (max):  0.000284
+[2026-05-15 03:36:29]     Gradient CV:              412716.6218
+[2026-05-15 03:36:29]     Prediction change (mean): 0.000074
+[2026-05-15 03:36:29]     Embedding drift (mean):   0.005944
+[2026-05-15 03:36:29]     High instability epochs:  19 (19.0%)
+[2026-05-15 03:36:29]     F1 improvement:           +0.1886
+[2026-05-15 03:37:06]     GH-VQ F1: 0.6102
+[2026-05-15 03:37:06] 
+------------------------------------------------------------
+[2026-05-15 03:37:06] MOVING TARGET ANALYSIS SUMMARY:
+[2026-05-15 03:37:06]   Raw F1: 0.7800
+[2026-05-15 03:37:06]   GH-VQ F1: 0.6102 (78.2% retention)
+[2026-05-15 03:37:06]   Training stable: True
+[2026-05-15 03:37:06]   Mean gradient variance: 0.000074
+[2026-05-15 03:37:06]   High instability epochs: 19
+[2026-05-15 03:37:06] ------------------------------------------------------------
+[2026-05-15 03:37:06] ERROR: Run 3 failed
+Object of type float32 is not JSON serializable
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/gradient_hessians/experiment4_moving_target.py", line 603, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/gradient_hessians/experiment4_moving_target.py", line 572, in run_single_experiment
+    json.dump(results, f, indent=2)
+  File "/usr/lib/python3.12/json/__init__.py", line 179, in dump
+    for chunk in iterable:
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type float32 is not JSON serializable
+
+[2026-05-15 03:37:06] 
+============================================================
+[2026-05-15 03:37:06] EXPERIMENT 4 SUMMARY
+[2026-05-15 03:37:06] ============================================================
+[2026-05-15 03:37:06] 
+All results saved to: results/creditcard_20260515_002725/exp4_moving_target
+[2026-05-15 03:37:06] 
+To generate plots from diagnostics:
+[2026-05-15 03:37:06]   python plot_diagnostics.py --results-dir results/creditcard_20260515_002725/exp4_moving_target

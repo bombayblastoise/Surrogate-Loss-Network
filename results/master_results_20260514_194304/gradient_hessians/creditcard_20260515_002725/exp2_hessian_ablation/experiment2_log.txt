@@ -1,0 +1,196 @@
+[2026-05-15 01:10:16] ============================================================
+[2026-05-15 01:10:16] EXPERIMENT 2: Hessian Ablation Study
+[2026-05-15 01:10:16] ============================================================
+[2026-05-15 01:10:16] Comparing First-Order (g_i) vs Second-Order (g_i + h_i)
+[2026-05-15 01:10:16] Configuration:
+[2026-05-15 01:10:16]   Encoder: 2-layer MLP (hidden=128)
+[2026-05-15 01:10:16]   Embedding dims: [16, 32, 48]
+[2026-05-15 01:10:16]   Codebook size: embedding_dim * 4
+[2026-05-15 01:10:16]   Epochs: 100
+[2026-05-15 01:10:16]   Runs: 2
+[2026-05-15 01:10:16] ============================================================
+[2026-05-15 01:10:16] 
+============================================================
+[2026-05-15 01:10:16] EXPERIMENT 2 - RUN 1/2
+[2026-05-15 01:10:16] Dataset: creditcard, Seed: 100
+[2026-05-15 01:10:16] ============================================================
+[2026-05-15 01:10:16] Data: Train=199364, Val=42721, Test=42722
+[2026-05-15 01:10:16] 
+--- Testing Embedding Dim = 16 ---
+[2026-05-15 01:10:16] 
+  Training GH-VQ (First-Order, emb_dim=16)...
+[2026-05-15 01:10:18]     Epoch   0 | Loss: -0.0002 | Train F1: 0.7865
+[2026-05-15 01:11:02]     Epoch  20 | Loss: -0.0021 | Train F1: 0.8504
+[2026-05-15 01:11:56]     Epoch  40 | Loss: -0.0016 | Train F1: 0.8425
+[2026-05-15 01:12:50]     Epoch  60 | Loss: -0.0016 | Train F1: 0.8607
+[2026-05-15 01:13:57]     Epoch  80 | Loss: -0.0019 | Train F1: 0.8797
+[2026-05-15 01:14:45]     Final Train F1: 0.8980, Converged at epoch: 4
+[2026-05-15 01:15:20] 
+  Training GH-VQ (Second-Order, emb_dim=16)...
+[2026-05-15 01:15:21]     Epoch   0 | Loss: 0.0123 | Train F1: 0.6751
+[2026-05-15 01:16:18]     Epoch  20 | Loss: 0.0003 | Train F1: 0.8283
+[2026-05-15 01:16:57]     Epoch  40 | Loss: -0.0007 | Train F1: 0.8315
+[2026-05-15 01:17:37]     Epoch  60 | Loss: -0.0004 | Train F1: 0.8690
+[2026-05-15 01:18:32]     Epoch  80 | Loss: -0.0007 | Train F1: 0.8858
+[2026-05-15 01:19:15]     Final Train F1: 0.8803, Converged at epoch: 11
+[2026-05-15 01:19:54] 
+  Comparison (dim=16):
+[2026-05-15 01:19:54]     F1 Difference (2nd - 1st): -0.1886
+[2026-05-15 01:19:54]     Convergence Diff (2nd - 1st): +7 epochs
+[2026-05-15 01:19:54] 
+--- Testing Embedding Dim = 32 ---
+[2026-05-15 01:19:54] 
+  Training GH-VQ (First-Order, emb_dim=32)...
+[2026-05-15 01:19:55]     Epoch   0 | Loss: 0.0012 | Train F1: 0.8182
+[2026-05-15 01:20:45]     Epoch  20 | Loss: -0.0056 | Train F1: 0.8488
+[2026-05-15 01:21:18]     Epoch  40 | Loss: -0.0043 | Train F1: 0.8568
+[2026-05-15 01:22:05]     Epoch  60 | Loss: -0.0065 | Train F1: 0.8253
+[2026-05-15 01:22:34]     Epoch  80 | Loss: -0.0042 | Train F1: 0.8541
+[2026-05-15 01:23:16]     Final Train F1: 0.8895, Converged at epoch: 0
+[2026-05-15 01:23:52] 
+  Training GH-VQ (Second-Order, emb_dim=32)...
+[2026-05-15 01:23:54]     Epoch   0 | Loss: 0.0343 | Train F1: 0.5871
+[2026-05-15 01:24:29]     Epoch  20 | Loss: 0.0003 | Train F1: 0.8493
+[2026-05-15 01:25:05]     Epoch  40 | Loss: -0.0003 | Train F1: 0.8559
+[2026-05-15 01:25:49]     Epoch  60 | Loss: -0.0009 | Train F1: 0.8674
+[2026-05-15 01:26:27]     Epoch  80 | Loss: -0.0010 | Train F1: 0.8816
+[2026-05-15 01:27:12]     Final Train F1: 0.8489, Converged at epoch: 15
+[2026-05-15 01:28:02] 
+  Comparison (dim=32):
+[2026-05-15 01:28:02]     F1 Difference (2nd - 1st): +0.1598
+[2026-05-15 01:28:02]     Convergence Diff (2nd - 1st): +15 epochs
+[2026-05-15 01:28:02] 
+--- Testing Embedding Dim = 48 ---
+[2026-05-15 01:28:02] 
+  Training GH-VQ (First-Order, emb_dim=48)...
+[2026-05-15 01:28:04]     Epoch   0 | Loss: 0.0043 | Train F1: 0.7232
+[2026-05-15 01:29:22]     Epoch  20 | Loss: -0.0059 | Train F1: 0.8778
+[2026-05-15 01:30:42]     Epoch  40 | Loss: -0.0028 | Train F1: 0.8864
+[2026-05-15 01:32:07]     Epoch  60 | Loss: -0.0041 | Train F1: 0.8904
+[2026-05-15 01:33:47]     Epoch  80 | Loss: -0.0040 | Train F1: 0.9144
+[2026-05-15 01:35:10]     Final Train F1: 0.9141, Converged at epoch: 5
+[2026-05-15 01:36:06] 
+  Training GH-VQ (Second-Order, emb_dim=48)...
+[2026-05-15 01:36:10]     Epoch   0 | Loss: 0.0382 | Train F1: 0.7361
+[2026-05-15 01:37:24]     Epoch  20 | Loss: -0.0001 | Train F1: 0.7935
+[2026-05-15 01:38:47]     Epoch  40 | Loss: -0.0017 | Train F1: 0.8484
+[2026-05-15 01:40:11]     Epoch  60 | Loss: -0.0009 | Train F1: 0.8845
+[2026-05-15 01:41:35]     Epoch  80 | Loss: -0.0012 | Train F1: 0.8879
+[2026-05-15 01:42:48]     Final Train F1: 0.8920, Converged at epoch: 17
+[2026-05-15 01:43:22] 
+  Comparison (dim=48):
+[2026-05-15 01:43:22]     F1 Difference (2nd - 1st): +0.1160
+[2026-05-15 01:43:22]     Convergence Diff (2nd - 1st): +12 epochs
+[2026-05-15 01:43:22] 
+------------------------------------------------------------
+[2026-05-15 01:43:22] HESSIAN ABLATION SUMMARY:
+[2026-05-15 01:43:22]   Dim 16: F1 diff=-0.1886, Conv diff=+7
+[2026-05-15 01:43:22]   Dim 32: F1 diff=+0.1598, Conv diff=+15
+[2026-05-15 01:43:22]   Dim 48: F1 diff=+0.1160, Conv diff=+12
+[2026-05-15 01:43:22] 
+SUCCESS: Hessian provides measurable improvement (avg +0.0291 F1)
+[2026-05-15 01:43:22] Results saved to: results/creditcard_20260515_002725/exp2_hessian_ablation/exp2_run1_results.json
+[2026-05-15 01:43:22] 
+============================================================
+[2026-05-15 01:43:22] EXPERIMENT 2 - RUN 2/2
+[2026-05-15 01:43:22] Dataset: creditcard, Seed: 200
+[2026-05-15 01:43:22] ============================================================
+[2026-05-15 01:43:23] Data: Train=199364, Val=42721, Test=42722
+[2026-05-15 01:43:23] 
+--- Testing Embedding Dim = 16 ---
+[2026-05-15 01:43:23] 
+  Training GH-VQ (First-Order, emb_dim=16)...
+[2026-05-15 01:43:26]     Epoch   0 | Loss: -0.0007 | Train F1: 0.7093
+[2026-05-15 01:44:11]     Epoch  20 | Loss: -0.0032 | Train F1: 0.8655
+[2026-05-15 01:45:17]     Epoch  40 | Loss: -0.0018 | Train F1: 0.8471
+[2026-05-15 01:46:06]     Epoch  60 | Loss: -0.0037 | Train F1: 0.8782
+[2026-05-15 01:47:01]     Epoch  80 | Loss: -0.0032 | Train F1: 0.8721
+[2026-05-15 01:47:54]     Final Train F1: 0.8874, Converged at epoch: 3
+[2026-05-15 01:48:43] 
+  Training GH-VQ (Second-Order, emb_dim=16)...
+[2026-05-15 01:48:48]     Epoch   0 | Loss: 0.0127 | Train F1: 0.8052
+[2026-05-15 01:49:36]     Epoch  20 | Loss: -0.0002 | Train F1: 0.7887
+[2026-05-15 01:50:26]     Epoch  40 | Loss: -0.0012 | Train F1: 0.8186
+[2026-05-15 01:51:22]     Epoch  60 | Loss: -0.0009 | Train F1: 0.8479
+[2026-05-15 01:52:30]     Epoch  80 | Loss: -0.0008 | Train F1: 0.8715
+[2026-05-15 01:53:24]     Final Train F1: 0.8867, Converged at epoch: 0
+[2026-05-15 01:54:03] 
+  Comparison (dim=16):
+[2026-05-15 01:54:03]     F1 Difference (2nd - 1st): -0.1427
+[2026-05-15 01:54:03]     Convergence Diff (2nd - 1st): -3 epochs
+[2026-05-15 01:54:03] 
+--- Testing Embedding Dim = 32 ---
+[2026-05-15 01:54:03] 
+  Training GH-VQ (First-Order, emb_dim=32)...
+[2026-05-15 01:54:05]     Epoch   0 | Loss: 0.0001 | Train F1: 0.6715
+[2026-05-15 01:54:50]     Epoch  20 | Loss: -0.0066 | Train F1: 0.8496
+[2026-05-15 01:55:24]     Epoch  40 | Loss: -0.0079 | Train F1: 0.8595
+[2026-05-15 01:55:54]     Epoch  60 | Loss: -0.0086 | Train F1: 0.8421
+[2026-05-15 01:56:21]     Epoch  80 | Loss: -0.0121 | Train F1: 0.8591
+[2026-05-15 01:56:52]     Final Train F1: 0.8583, Converged at epoch: 6
+[2026-05-15 01:57:39] 
+  Training GH-VQ (Second-Order, emb_dim=32)...
+[2026-05-15 01:57:40]     Epoch   0 | Loss: 0.0249 | Train F1: 0.5935
+[2026-05-15 01:58:22]     Epoch  20 | Loss: -0.0019 | Train F1: 0.6947
+[2026-05-15 01:59:12]     Epoch  40 | Loss: -0.0009 | Train F1: 0.8125
+[2026-05-15 01:59:46]     Epoch  60 | Loss: -0.0009 | Train F1: 0.8723
+[2026-05-15 02:00:23]     Epoch  80 | Loss: -0.0009 | Train F1: 0.8648
+[2026-05-15 02:01:01]     Final Train F1: 0.8743, Converged at epoch: 28
+[2026-05-15 02:02:07] 
+  Comparison (dim=32):
+[2026-05-15 02:02:07]     F1 Difference (2nd - 1st): -0.0924
+[2026-05-15 02:02:07]     Convergence Diff (2nd - 1st): +22 epochs
+[2026-05-15 02:02:07] 
+--- Testing Embedding Dim = 48 ---
+[2026-05-15 02:02:07] 
+  Training GH-VQ (First-Order, emb_dim=48)...
+[2026-05-15 02:02:11]     Epoch   0 | Loss: 0.0009 | Train F1: 0.6534
+[2026-05-15 02:03:28]     Epoch  20 | Loss: -0.0145 | Train F1: 0.8221
+[2026-05-15 02:04:48]     Epoch  40 | Loss: -0.0092 | Train F1: 0.8723
+[2026-05-15 02:06:36]     Epoch  60 | Loss: -0.0072 | Train F1: 0.9008
+[2026-05-15 02:07:55]     Epoch  80 | Loss: -0.0071 | Train F1: 0.8922
+[2026-05-15 02:09:28]     Final Train F1: 0.8801, Converged at epoch: 11
+[2026-05-15 02:10:12] 
+  Training GH-VQ (Second-Order, emb_dim=48)...
+[2026-05-15 02:10:16]     Epoch   0 | Loss: 0.0478 | Train F1: 0.7077
+[2026-05-15 02:11:51]     Epoch  20 | Loss: 0.0000 | Train F1: 0.7787
+[2026-05-15 02:13:29]     Epoch  40 | Loss: -0.0027 | Train F1: 0.7742
+[2026-05-15 02:14:52]     Epoch  60 | Loss: -0.0009 | Train F1: 0.8806
+[2026-05-15 02:16:20]     Epoch  80 | Loss: -0.0013 | Train F1: 0.8914
+[2026-05-15 02:18:00]     Final Train F1: 0.8982, Converged at epoch: 47
+[2026-05-15 02:18:44] 
+  Comparison (dim=48):
+[2026-05-15 02:18:44]     F1 Difference (2nd - 1st): +0.1662
+[2026-05-15 02:18:44]     Convergence Diff (2nd - 1st): +36 epochs
+[2026-05-15 02:18:44] 
+------------------------------------------------------------
+[2026-05-15 02:18:44] HESSIAN ABLATION SUMMARY:
+[2026-05-15 02:18:44]   Dim 16: F1 diff=-0.1427, Conv diff=-3
+[2026-05-15 02:18:44]   Dim 32: F1 diff=-0.0924, Conv diff=+22
+[2026-05-15 02:18:44]   Dim 48: F1 diff=+0.1662, Conv diff=+36
+[2026-05-15 02:18:44] 
+NOTE: Hessian did not improve F1 (avg -0.0229)
+[2026-05-15 02:18:44] Results saved to: results/creditcard_20260515_002725/exp2_hessian_ablation/exp2_run2_results.json
+[2026-05-15 02:18:44] 
+============================================================
+[2026-05-15 02:18:44] EXPERIMENT 2 SUMMARY
+[2026-05-15 02:18:44] ============================================================
+[2026-05-15 02:18:44] 
+Embedding Dim = 16:
+[2026-05-15 02:18:44]   First-Order F1:  0.4669 ± 0.0172
+[2026-05-15 02:18:44]   Second-Order F1: 0.3013 ± 0.0058
+[2026-05-15 02:18:44]   Improvement:     -0.1656 ± 0.0230
+[2026-05-15 02:18:44] 
+Embedding Dim = 32:
+[2026-05-15 02:18:44]   First-Order F1:  0.5024 ± 0.0606
+[2026-05-15 02:18:44]   Second-Order F1: 0.5361 ± 0.0655
+[2026-05-15 02:18:44]   Improvement:     +0.0337 ± 0.1261
+[2026-05-15 02:18:44] 
+Embedding Dim = 48:
+[2026-05-15 02:18:44]   First-Order F1:  0.5410 ± 0.0345
+[2026-05-15 02:18:44]   Second-Order F1: 0.6822 ± 0.0094
+[2026-05-15 02:18:44]   Improvement:     +0.1411 ± 0.0251
+[2026-05-15 02:18:44] 
+Overall Hessian Effect: +0.0031 F1
+[2026-05-15 02:18:44] 
+All results saved to: results/creditcard_20260515_002725/exp2_hessian_ablation
