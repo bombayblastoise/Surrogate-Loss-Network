@@ -1,0 +1,251 @@
+[2026-05-13 23:52:00] ============================================================
+[2026-05-13 23:52:00] EXPERIMENT 4: Enhanced Baseline
+[2026-05-13 23:52:00] ============================================================
+[2026-05-13 23:52:00] Comparing:
+[2026-05-13 23:52:00]   1. Baseline: No entropy reg, no feedback
+[2026-05-13 23:52:00]   2. Enhanced: Entropy reg + 1 feedback iteration
+[2026-05-13 23:52:00] 
+[2026-05-13 23:52:00] Dynamic: emb_dim = input_dim // 2 (min 8, max 64), codebook = emb_dim * 4
+[2026-05-13 23:52:00] Lambda entropy: 0.01
+[2026-05-13 23:52:00] ============================================================
+[2026-05-13 23:52:00] 
+============================================================
+[2026-05-13 23:52:00] EXPERIMENT 4 - RUN 1/5
+[2026-05-13 23:52:00] Dataset: creditcard, Seed: 100
+[2026-05-13 23:52:00] ============================================================
+[2026-05-13 23:52:00] Data: Train=199364, Val=42721, Test=42722
+[2026-05-13 23:52:00] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-13 23:52:00] 
+Step 1: Evaluating RAW baseline...
+[2026-05-13 23:54:29]   Raw F1: 0.7879, Acc: 0.9995, Prec: 0.8298, Rec: 0.7500
+[2026-05-13 23:54:29] 
+--- Testing Baseline (Phase 1 only, no entropy reg) ---
+[2026-05-13 23:54:29] 
+  Phase 1: Baseline (no entropy reg) (emb_dim=14)
+[2026-05-13 23:56:32]     Epoch  20 | Cls: 0.0026
+[2026-05-13 23:58:36]     Epoch  40 | Cls: 0.0020
+[2026-05-14 00:00:39]     Epoch  60 | Cls: 0.0017
+[2026-05-14 00:02:42]     Epoch  80 | Cls: 0.0017
+[2026-05-14 00:04:45]     Epoch 100 | Cls: 0.0021
+[2026-05-14 00:04:45] 
+Step 3: Evaluating BASELINE...
+[2026-05-14 00:06:04]   BASELINE F1: 0.5532, Acc: 0.9985, Prec: 0.4382, Rec: 0.7500
+[2026-05-14 00:06:04] 
+--- Testing Enhanced (Entropy reg + Feedback) ---
+[2026-05-14 00:06:04] 
+  Phase 1: Enhanced (w/ entropy reg) (emb_dim=14)
+[2026-05-14 00:08:13]     Epoch  20 | Cls: 0.0131 | Ent: -4.0253
+[2026-05-14 00:10:21]     Epoch  40 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 00:12:30]     Epoch  60 | Cls: 0.0140 | Ent: -4.0254
+[2026-05-14 00:14:40]     Epoch  80 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 00:16:50]     Epoch 100 | Cls: 0.0139 | Ent: -4.0253
+[2026-05-14 00:16:50] 
+  Phase 2: XGBoost Feedback Loop...
+[2026-05-14 00:16:55] ERROR: Run 1 failed
+name 'surrogate' is not defined
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 531, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 461, in run_single_experiment
+    encoder_enh, quantizer_enh = train_phase2(X_train, y_train, X_val, y_val, encoder_enh, quantizer_enh, scaler_enh, embedding_dim, seed, log_file)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 275, in train_phase2
+    pred_surrogate = surrogate(z_q)
+                     ^^^^^^^^^
+NameError: name 'surrogate' is not defined
+
+[2026-05-14 00:16:55] 
+============================================================
+[2026-05-14 00:16:55] EXPERIMENT 4 - RUN 2/5
+[2026-05-14 00:16:55] Dataset: creditcard, Seed: 200
+[2026-05-14 00:16:55] ============================================================
+[2026-05-14 00:16:56] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 00:16:56] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 00:16:56] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 00:19:46]   Raw F1: 0.7959, Acc: 0.9995, Prec: 0.8478, Rec: 0.7500
+[2026-05-14 00:19:46] 
+--- Testing Baseline (Phase 1 only, no entropy reg) ---
+[2026-05-14 00:19:46] 
+  Phase 1: Baseline (no entropy reg) (emb_dim=14)
+[2026-05-14 00:21:49]     Epoch  20 | Cls: 0.0025
+[2026-05-14 00:23:52]     Epoch  40 | Cls: 0.0021
+[2026-05-14 00:25:55]     Epoch  60 | Cls: 0.0024
+[2026-05-14 00:27:58]     Epoch  80 | Cls: 0.0029
+[2026-05-14 00:30:03]     Epoch 100 | Cls: 0.0035
+[2026-05-14 00:30:03] 
+Step 3: Evaluating BASELINE...
+[2026-05-14 00:31:15]   BASELINE F1: 0.3871, Acc: 0.9969, Prec: 0.2545, Rec: 0.8077
+[2026-05-14 00:31:15] 
+--- Testing Enhanced (Entropy reg + Feedback) ---
+[2026-05-14 00:31:15] 
+  Phase 1: Enhanced (w/ entropy reg) (emb_dim=14)
+[2026-05-14 00:33:25]     Epoch  20 | Cls: 0.0136 | Ent: -4.0253
+[2026-05-14 00:35:34]     Epoch  40 | Cls: 0.0140 | Ent: -4.0254
+[2026-05-14 00:37:42]     Epoch  60 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 00:39:52]     Epoch  80 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 00:42:01]     Epoch 100 | Cls: 0.0135 | Ent: -4.0253
+[2026-05-14 00:42:01] 
+  Phase 2: XGBoost Feedback Loop...
+[2026-05-14 00:42:02] ERROR: Run 2 failed
+name 'surrogate' is not defined
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 531, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 461, in run_single_experiment
+    encoder_enh, quantizer_enh = train_phase2(X_train, y_train, X_val, y_val, encoder_enh, quantizer_enh, scaler_enh, embedding_dim, seed, log_file)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 275, in train_phase2
+    pred_surrogate = surrogate(z_q)
+                     ^^^^^^^^^
+NameError: name 'surrogate' is not defined
+
+[2026-05-14 00:42:02] 
+============================================================
+[2026-05-14 00:42:02] EXPERIMENT 4 - RUN 3/5
+[2026-05-14 00:42:02] Dataset: creditcard, Seed: 300
+[2026-05-14 00:42:02] ============================================================
+[2026-05-14 00:42:03] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 00:42:03] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 00:42:03] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 00:44:45]   Raw F1: 0.7879, Acc: 0.9995, Prec: 0.8298, Rec: 0.7500
+[2026-05-14 00:44:45] 
+--- Testing Baseline (Phase 1 only, no entropy reg) ---
+[2026-05-14 00:44:45] 
+  Phase 1: Baseline (no entropy reg) (emb_dim=14)
+[2026-05-14 00:46:49]     Epoch  20 | Cls: 0.0028
+[2026-05-14 00:48:52]     Epoch  40 | Cls: 0.0023
+[2026-05-14 00:50:56]     Epoch  60 | Cls: 0.0022
+[2026-05-14 00:53:00]     Epoch  80 | Cls: 0.0020
+[2026-05-14 00:55:03]     Epoch 100 | Cls: 0.0022
+[2026-05-14 00:55:03] 
+Step 3: Evaluating BASELINE...
+[2026-05-14 00:56:34]   BASELINE F1: 0.5556, Acc: 0.9985, Prec: 0.4348, Rec: 0.7692
+[2026-05-14 00:56:34] 
+--- Testing Enhanced (Entropy reg + Feedback) ---
+[2026-05-14 00:56:34] 
+  Phase 1: Enhanced (w/ entropy reg) (emb_dim=14)
+[2026-05-14 00:58:42]     Epoch  20 | Cls: 0.0128 | Ent: -4.0253
+[2026-05-14 01:00:51]     Epoch  40 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 01:03:00]     Epoch  60 | Cls: 0.0140 | Ent: -4.0254
+[2026-05-14 01:05:10]     Epoch  80 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 01:07:19]     Epoch 100 | Cls: 0.0138 | Ent: -4.0254
+[2026-05-14 01:07:19] 
+  Phase 2: XGBoost Feedback Loop...
+[2026-05-14 01:07:22] ERROR: Run 3 failed
+name 'surrogate' is not defined
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 531, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 461, in run_single_experiment
+    encoder_enh, quantizer_enh = train_phase2(X_train, y_train, X_val, y_val, encoder_enh, quantizer_enh, scaler_enh, embedding_dim, seed, log_file)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 275, in train_phase2
+    pred_surrogate = surrogate(z_q)
+                     ^^^^^^^^^
+NameError: name 'surrogate' is not defined
+
+[2026-05-14 01:07:22] 
+============================================================
+[2026-05-14 01:07:22] EXPERIMENT 4 - RUN 4/5
+[2026-05-14 01:07:22] Dataset: creditcard, Seed: 400
+[2026-05-14 01:07:22] ============================================================
+[2026-05-14 01:07:23] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 01:07:23] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 01:07:23] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 01:09:45]   Raw F1: 0.7800, Acc: 0.9995, Prec: 0.8125, Rec: 0.7500
+[2026-05-14 01:09:45] 
+--- Testing Baseline (Phase 1 only, no entropy reg) ---
+[2026-05-14 01:09:45] 
+  Phase 1: Baseline (no entropy reg) (emb_dim=14)
+[2026-05-14 01:11:48]     Epoch  20 | Cls: 0.0030
+[2026-05-14 01:13:51]     Epoch  40 | Cls: 0.0023
+[2026-05-14 01:15:55]     Epoch  60 | Cls: 0.0023
+[2026-05-14 01:17:59]     Epoch  80 | Cls: 0.0021
+[2026-05-14 01:20:02]     Epoch 100 | Cls: 0.0021
+[2026-05-14 01:20:02] 
+Step 3: Evaluating BASELINE...
+[2026-05-14 01:20:56]   BASELINE F1: 0.4058, Acc: 0.9971, Prec: 0.2710, Rec: 0.8077
+[2026-05-14 01:20:56] 
+--- Testing Enhanced (Entropy reg + Feedback) ---
+[2026-05-14 01:20:56] 
+  Phase 1: Enhanced (w/ entropy reg) (emb_dim=14)
+[2026-05-14 01:23:04]     Epoch  20 | Cls: 0.0135 | Ent: -4.0254
+[2026-05-14 01:25:13]     Epoch  40 | Cls: 0.0140 | Ent: -4.0254
+[2026-05-14 01:27:21]     Epoch  60 | Cls: 0.0140 | Ent: -4.0254
+[2026-05-14 01:29:31]     Epoch  80 | Cls: 0.0139 | Ent: -4.0254
+[2026-05-14 01:31:40]     Epoch 100 | Cls: 0.0136 | Ent: -4.0253
+[2026-05-14 01:31:40] 
+  Phase 2: XGBoost Feedback Loop...
+[2026-05-14 01:31:45] ERROR: Run 4 failed
+name 'surrogate' is not defined
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 531, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 461, in run_single_experiment
+    encoder_enh, quantizer_enh = train_phase2(X_train, y_train, X_val, y_val, encoder_enh, quantizer_enh, scaler_enh, embedding_dim, seed, log_file)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 275, in train_phase2
+    pred_surrogate = surrogate(z_q)
+                     ^^^^^^^^^
+NameError: name 'surrogate' is not defined
+
+[2026-05-14 01:31:45] 
+============================================================
+[2026-05-14 01:31:45] EXPERIMENT 4 - RUN 5/5
+[2026-05-14 01:31:45] Dataset: creditcard, Seed: 500
+[2026-05-14 01:31:45] ============================================================
+[2026-05-14 01:31:45] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 01:31:45] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 01:31:45] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 01:34:10]   Raw F1: 0.7879, Acc: 0.9995, Prec: 0.8298, Rec: 0.7500
+[2026-05-14 01:34:10] 
+--- Testing Baseline (Phase 1 only, no entropy reg) ---
+[2026-05-14 01:34:10] 
+  Phase 1: Baseline (no entropy reg) (emb_dim=14)
+[2026-05-14 01:36:13]     Epoch  20 | Cls: 0.0026
+[2026-05-14 01:38:18]     Epoch  40 | Cls: 0.0022
+[2026-05-14 01:40:22]     Epoch  60 | Cls: 0.0020
+[2026-05-14 01:42:25]     Epoch  80 | Cls: 0.0022
+[2026-05-14 01:44:29]     Epoch 100 | Cls: 0.0023
+[2026-05-14 01:44:29] 
+Step 3: Evaluating BASELINE...
+[2026-05-14 01:45:49]   BASELINE F1: 0.1153, Acc: 0.9853, Prec: 0.0622, Rec: 0.7885
+[2026-05-14 01:45:49] 
+--- Testing Enhanced (Entropy reg + Feedback) ---
+[2026-05-14 01:45:49] 
+  Phase 1: Enhanced (w/ entropy reg) (emb_dim=14)
+[2026-05-14 01:47:58]     Epoch  20 | Cls: 0.0130 | Ent: -4.0254
+[2026-05-14 01:50:06]     Epoch  40 | Cls: 0.0136 | Ent: -4.0254
+[2026-05-14 01:52:14]     Epoch  60 | Cls: 0.0138 | Ent: -4.0254
+[2026-05-14 01:54:22]     Epoch  80 | Cls: 0.0136 | Ent: -4.0254
+[2026-05-14 01:56:32]     Epoch 100 | Cls: 0.0138 | Ent: -4.0253
+[2026-05-14 01:56:32] 
+  Phase 2: XGBoost Feedback Loop...
+[2026-05-14 01:56:36] ERROR: Run 5 failed
+name 'surrogate' is not defined
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 531, in main
+    result = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 461, in run_single_experiment
+    encoder_enh, quantizer_enh = train_phase2(X_train, y_train, X_val, y_val, encoder_enh, quantizer_enh, scaler_enh, embedding_dim, seed, log_file)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment4_enhanced_baseline.py", line 275, in train_phase2
+    pred_surrogate = surrogate(z_q)
+                     ^^^^^^^^^
+NameError: name 'surrogate' is not defined
+
+[2026-05-14 01:56:36] 
+============================================================
+[2026-05-14 01:56:36] EXPERIMENT 4 SUMMARY
+[2026-05-14 01:56:36] ============================================================
+[2026-05-14 01:56:36] 
+All results saved to: results/creditcard_20260513_181108/exp4_enhanced_baseline

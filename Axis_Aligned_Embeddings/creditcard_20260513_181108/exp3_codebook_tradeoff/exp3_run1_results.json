@@ -1,0 +1,75 @@
+{
+  "run_id": 1,
+  "seed": 100,
+  "base_emb_dim": 14,
+  "configs": {
+    "half_x2": {
+      "f1": 0.6666666666666666,
+      "accuracy": 0.9990871213894481,
+      "precision": 0.6,
+      "recall": 0.75,
+      "best_params": {
+        "n_estimators": 258,
+        "max_depth": 6,
+        "learning_rate": 0.11889773951296863,
+        "scale_pos_weight": 537.3143067164681
+      },
+      "emb_ratio": 0.5,
+      "codebook_multiplier": 2,
+      "actual_emb_dim": 7,
+      "actual_codebook_size": 14,
+      "effective_combinations": 98
+    },
+    "full_x1": {
+      "f1": 0.2876712328767123,
+      "accuracy": 0.9951313140770564,
+      "precision": 0.175,
+      "recall": 0.8076923076923077,
+      "best_params": {
+        "n_estimators": 178,
+        "max_depth": 7,
+        "learning_rate": 0.06389006806135876,
+        "scale_pos_weight": 516.2662603059418
+      },
+      "emb_ratio": 1.0,
+      "codebook_multiplier": 1,
+      "actual_emb_dim": 14,
+      "actual_codebook_size": 14,
+      "effective_combinations": 196
+    },
+    "quarter_x4": {
+      "f1": 0.3282442748091603,
+      "accuracy": 0.9958803426805861,
+      "precision": 0.20476190476190476,
+      "recall": 0.8269230769230769,
+      "best_params": {
+        "n_estimators": 181,
+        "max_depth": 3,
+        "learning_rate": 0.1632358569961268,
+        "scale_pos_weight": 502.3580717340964
+      },
+      "emb_ratio": 0.25,
+      "codebook_multiplier": 4,
+      "actual_emb_dim": 4,
+      "actual_codebook_size": 16,
+      "effective_combinations": 64
+    },
+    "full_x4": {
+      "f1": 0.5428571428571428,
+      "accuracy": 0.9985019427929404,
+      "precision": 0.4318181818181818,
+      "recall": 0.7307692307692307,
+      "best_params": {
+        "n_estimators": 317,
+        "max_depth": 6,
+        "learning_rate": 0.18267002009574043,
+        "scale_pos_weight": 528.8976973968407
+      },
+      "emb_ratio": 1.0,
+      "codebook_multiplier": 4,
+      "actual_emb_dim": 14,
+      "actual_codebook_size": 56,
+      "effective_combinations": 784
+    }
+  }
+}

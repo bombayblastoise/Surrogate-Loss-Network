@@ -1,0 +1,75 @@
+{
+  "run_id": 3,
+  "seed": 300,
+  "base_emb_dim": 14,
+  "configs": {
+    "half_x2": {
+      "f1": 0.2144638403990025,
+      "accuracy": 0.9926267496840036,
+      "precision": 0.12320916905444126,
+      "recall": 0.8269230769230769,
+      "best_params": {
+        "n_estimators": 323,
+        "max_depth": 4,
+        "learning_rate": 0.09365193960825477,
+        "scale_pos_weight": 492.7423830444965
+      },
+      "emb_ratio": 0.5,
+      "codebook_multiplier": 2,
+      "actual_emb_dim": 7,
+      "actual_codebook_size": 14,
+      "effective_combinations": 98
+    },
+    "full_x1": {
+      "f1": 0.43956043956043955,
+      "accuracy": 0.9976124713262488,
+      "precision": 0.3076923076923077,
+      "recall": 0.7692307692307693,
+      "best_params": {
+        "n_estimators": 302,
+        "max_depth": 4,
+        "learning_rate": 0.13106054724405847,
+        "scale_pos_weight": 440.50607119399587
+      },
+      "emb_ratio": 1.0,
+      "codebook_multiplier": 1,
+      "actual_emb_dim": 14,
+      "actual_codebook_size": 14,
+      "effective_combinations": 196
+    },
+    "quarter_x4": {
+      "f1": 0.5555555555555556,
+      "accuracy": 0.9985019427929404,
+      "precision": 0.43478260869565216,
+      "recall": 0.7692307692307693,
+      "best_params": {
+        "n_estimators": 285,
+        "max_depth": 5,
+        "learning_rate": 0.1881489287144516,
+        "scale_pos_weight": 537.9935949032156
+      },
+      "emb_ratio": 0.25,
+      "codebook_multiplier": 4,
+      "actual_emb_dim": 4,
+      "actual_codebook_size": 16,
+      "effective_combinations": 64
+    },
+    "full_x4": {
+      "f1": 0.5594405594405595,
+      "accuracy": 0.9985253499368008,
+      "precision": 0.43956043956043955,
+      "recall": 0.7692307692307693,
+      "best_params": {
+        "n_estimators": 183,
+        "max_depth": 7,
+        "learning_rate": 0.09944725588264566,
+        "scale_pos_weight": 444.1134690014058
+      },
+      "emb_ratio": 1.0,
+      "codebook_multiplier": 4,
+      "actual_emb_dim": 14,
+      "actual_codebook_size": 56,
+      "effective_combinations": 784
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "raw": {
+    "f1": 0.78,
+    "accuracy": 0.9994850428350732,
+    "precision": 0.8125,
+    "recall": 0.75,
+    "best_params": {
+      "n_estimators": 225,
+      "max_depth": 4,
+      "learning_rate": 0.17442156672635756,
+      "scale_pos_weight": 589.7967454954884
+    }
+  },
+  "continuous": {
+    "f1": 0.7222222222222222,
+    "accuracy": 0.9992977856841908,
+    "precision": 0.6964285714285714,
+    "recall": 0.75,
+    "best_params": {
+      "n_estimators": 333,
+      "max_depth": 4,
+      "learning_rate": 0.16534981176890526,
+      "scale_pos_weight": 457.32912320764456
+    }
+  },
+  "quantized": {
+    "f1": 0.3870967741935484,
+    "accuracy": 0.9968868498665793,
+    "precision": 0.2545454545454545,
+    "recall": 0.8076923076923077,
+    "best_params": {
+      "n_estimators": 289,
+      "max_depth": 4,
+      "learning_rate": 0.11927588076130746,
+      "scale_pos_weight": 454.0490268709642
+    }
+  },
+  "metadata": {
+    "run_id": 2,
+    "seed": 200,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dim": 14,
+    "codebook_size": 56,
+    "epochs": 100,
+    "retention_vs_raw": 49.62779156327543,
+    "retention_vs_continuous": 53.59801488833747
+  }
+}

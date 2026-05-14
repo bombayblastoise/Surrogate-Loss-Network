@@ -1,0 +1,42 @@
+{
+  "run_id": 3,
+  "seed": 300,
+  "configs": {
+    "2layer": {
+      "f1": 0.5555555555555556,
+      "accuracy": 0.9985019427929404,
+      "precision": 0.43478260869565216,
+      "recall": 0.7692307692307693,
+      "best_params": {
+        "n_estimators": 126,
+        "max_depth": 7,
+        "learning_rate": 0.07270676232732932,
+        "scale_pos_weight": 575.2050962000698
+      }
+    },
+    "3layer": {
+      "f1": 0.4875,
+      "accuracy": 0.9980806142034548,
+      "precision": 0.3611111111111111,
+      "recall": 0.75,
+      "best_params": {
+        "n_estimators": 134,
+        "max_depth": 4,
+        "learning_rate": 0.05035433556743709,
+        "scale_pos_weight": 542.5264248218183
+      }
+    },
+    "4layer": {
+      "f1": 0.30708661417322836,
+      "accuracy": 0.9958803426805861,
+      "precision": 0.19306930693069307,
+      "recall": 0.75,
+      "best_params": {
+        "n_estimators": 394,
+        "max_depth": 7,
+        "learning_rate": 0.16996581142363748,
+        "scale_pos_weight": 512.7289813857238
+      }
+    }
+  }
+}
