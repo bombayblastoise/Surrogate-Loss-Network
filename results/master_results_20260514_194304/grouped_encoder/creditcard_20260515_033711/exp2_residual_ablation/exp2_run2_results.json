@@ -1,0 +1,32 @@
+{
+  "raw_f1": 0.78,
+  "configs": {
+    "structured_only": {
+      "f1": 0.78,
+      "embedding_dim": 30,
+      "retention": 100.0
+    },
+    "structured_resid_s": {
+      "f1": 0.74,
+      "embedding_dim": 36,
+      "retention": 94.87179487179486
+    },
+    "structured_resid_l": {
+      "f1": 0.7326732673267327,
+      "embedding_dim": 42,
+      "retention": 93.93247017009394
+    },
+    "residual_only": {
+      "f1": 0.74,
+      "embedding_dim": 30,
+      "retention": 94.87179487179486
+    }
+  },
+  "metadata": {
+    "run_id": 2,
+    "seed": 200,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "epochs": 100
+  }
+}

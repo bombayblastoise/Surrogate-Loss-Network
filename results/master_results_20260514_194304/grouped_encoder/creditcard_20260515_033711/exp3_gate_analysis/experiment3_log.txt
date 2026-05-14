@@ -1,0 +1,41 @@
+[2026-05-15 04:36:38] ============================================================
+[2026-05-15 04:36:38] EXPERIMENT 3: Gate Analysis
+[2026-05-15 04:36:38] ============================================================
+[2026-05-15 04:36:38]   epochs=100  group_out_dim=6  runs=2
+[2026-05-15 04:36:38] ============================================================
+[2026-05-15 04:36:38] 
+============================================================
+[2026-05-15 04:36:38] EXPERIMENT 3 — RUN 1/2  seed=100
+[2026-05-15 04:36:38] ============================================================
+[2026-05-15 04:37:21] RAW F1: 0.7429
+[2026-05-15 04:41:26]   Group 1 (feat 0..5): mean_gate=0.591  near_zero=0  near_one=0  corr_with_imp=-0.084
+[2026-05-15 04:41:26]   Group 2 (feat 6..11): mean_gate=0.578  near_zero=0  near_one=0  corr_with_imp=-0.202
+[2026-05-15 04:41:26]   Group 3 (feat 12..17): mean_gate=0.578  near_zero=0  near_one=0  corr_with_imp=-0.133
+[2026-05-15 04:41:26]   Group 4 (feat 18..23): mean_gate=0.595  near_zero=0  near_one=0  corr_with_imp=-0.344
+[2026-05-15 04:41:26]   Group 5 (feat 24..28): mean_gate=0.620  near_zero=0  near_one=0  corr_with_imp=0.610
+[2026-05-15 04:41:26]   Group embedding variances: ['2.7908', '2.5759', '1.9236', '1.7547', '2.3201']
+[2026-05-15 04:42:10]   Final F1: 0.7600  (retention=102.3%)
+[2026-05-15 04:42:10] Saved: results/creditcard_20260515_033711/exp3_gate_analysis/exp3_run1_results.json
+[2026-05-15 04:42:10] 
+============================================================
+[2026-05-15 04:42:10] EXPERIMENT 3 — RUN 2/2  seed=200
+[2026-05-15 04:42:10] ============================================================
+[2026-05-15 04:43:05] RAW F1: 0.7879
+[2026-05-15 04:47:21]   Group 1 (feat 0..5): mean_gate=0.627  near_zero=0  near_one=0  corr_with_imp=-0.369
+[2026-05-15 04:47:21]   Group 2 (feat 6..11): mean_gate=0.569  near_zero=0  near_one=0  corr_with_imp=-0.262
+[2026-05-15 04:47:21]   Group 3 (feat 12..17): mean_gate=0.562  near_zero=0  near_one=0  corr_with_imp=0.066
+[2026-05-15 04:47:21]   Group 4 (feat 18..23): mean_gate=0.616  near_zero=0  near_one=0  corr_with_imp=-0.359
+[2026-05-15 04:47:21]   Group 5 (feat 24..28): mean_gate=0.621  near_zero=0  near_one=0  corr_with_imp=0.173
+[2026-05-15 04:47:21]   Group embedding variances: ['2.9441', '1.7212', '1.1602', '1.5758', '4.8446']
+[2026-05-15 04:47:40]   Final F1: 0.7959  (retention=101.0%)
+[2026-05-15 04:47:40] Saved: results/creditcard_20260515_033711/exp3_gate_analysis/exp3_run2_results.json
+[2026-05-15 04:47:40] 
+============================================================
+[2026-05-15 04:47:40] EXPERIMENT 3 SUMMARY
+[2026-05-15 04:47:40] ============================================================
+[2026-05-15 04:47:40] Final F1:           0.7780 ± 0.0180
+[2026-05-15 04:47:40] Retention:          101.7%
+[2026-05-15 04:47:40] Gate-Importance corr (avg across groups & runs): -0.091
+[2026-05-15 04:47:40]   ~ Gates did not strongly correlate with importance (may learn complementary signal)
+[2026-05-15 04:47:40] 
+All results saved to: results/creditcard_20260515_033711/exp3_gate_analysis
