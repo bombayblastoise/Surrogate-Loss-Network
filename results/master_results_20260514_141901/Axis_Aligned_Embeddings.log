@@ -1,0 +1,594 @@
+Detected Linux/other - using native python3
+Results will be saved to: results/creditcard_20260514_141901
+Dataset: creditcard
+
+Activating virtual environment (Linux: ~/Downloads/venv)...
+==============================================
+STARTING A2QA BASELINE EXPERIMENTS
+==============================================
+
+==============================================
+EXPERIMENT 1: Minimal Viable Baseline
+==============================================
+[I 2026-05-14 14:19:03,284] A new study created in memory with name: no-name-d2e84c05-96e5-4891-9bb6-b7786f69a093
+[I 2026-05-14 14:19:04,485] Trial 0 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 311, 'max_depth': 7, 'learning_rate': 0.15257372784439052, 'scale_pos_weight': 561.7482774926185}. Best is trial 0 with value: 0.8380952380952381.
+[I 2026-05-14 14:19:09,870] Trial 1 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 321, 'max_depth': 5, 'learning_rate': 0.0904125196866701, 'scale_pos_weight': 540.1687706040827}. Best is trial 1 with value: 0.8543689320388349.
+[I 2026-05-14 14:19:15,522] Trial 2 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 326, 'max_depth': 4, 'learning_rate': 0.12043377016772422, 'scale_pos_weight': 493.15817865347185}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:20,796] Trial 3 finished with value: 0.7244094488188977 and parameters: {'n_estimators': 161, 'max_depth': 5, 'learning_rate': 0.05166333468858119, 'scale_pos_weight': 452.8447255902105}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:24,284] Trial 4 finished with value: 0.28895184135977336 and parameters: {'n_estimators': 199, 'max_depth': 3, 'learning_rate': 0.060116755352480955, 'scale_pos_weight': 563.8509163899932}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:25,812] Trial 5 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 396, 'max_depth': 5, 'learning_rate': 0.06886508183621037, 'scale_pos_weight': 495.3744113898372}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:30,497] Trial 6 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 199, 'max_depth': 7, 'learning_rate': 0.16089113941065394, 'scale_pos_weight': 496.170835295188}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:33,535] Trial 7 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 120, 'max_depth': 5, 'learning_rate': 0.10904856833580402, 'scale_pos_weight': 583.0479173818228}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:36,560] Trial 8 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 313, 'max_depth': 4, 'learning_rate': 0.13411682438060685, 'scale_pos_weight': 515.8125770736458}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:40,899] Trial 9 finished with value: 0.822429906542056 and parameters: {'n_estimators': 281, 'max_depth': 5, 'learning_rate': 0.05454999595146145, 'scale_pos_weight': 491.56346378285974}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:44,122] Trial 10 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 361, 'max_depth': 3, 'learning_rate': 0.18083990534475725, 'scale_pos_weight': 422.3983940015486}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:52,273] Trial 11 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 348, 'max_depth': 4, 'learning_rate': 0.09673279129651284, 'scale_pos_weight': 610.0481470777805}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:19:59,333] Trial 12 finished with value: 0.819047619047619 and parameters: {'n_estimators': 253, 'max_depth': 6, 'learning_rate': 0.09113258672109634, 'scale_pos_weight': 538.8200409694066}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:01,639] Trial 13 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 330, 'max_depth': 4, 'learning_rate': 0.13567238423486624, 'scale_pos_weight': 458.2184602121998}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:06,030] Trial 14 finished with value: 0.819047619047619 and parameters: {'n_estimators': 270, 'max_depth': 6, 'learning_rate': 0.11267755895292893, 'scale_pos_weight': 532.0598226478999}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:12,774] Trial 15 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 378, 'max_depth': 4, 'learning_rate': 0.08153983358040306, 'scale_pos_weight': 470.3145854978051}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:18,597] Trial 16 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 217, 'max_depth': 6, 'learning_rate': 0.1183203914857799, 'scale_pos_weight': 620.0325629785318}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:22,230] Trial 17 finished with value: 0.5859872611464968 and parameters: {'n_estimators': 294, 'max_depth': 3, 'learning_rate': 0.08499203909591077, 'scale_pos_weight': 526.4811738972476}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:30,839] Trial 18 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 237, 'max_depth': 4, 'learning_rate': 0.19878143551803013, 'scale_pos_weight': 423.0600613992743}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:34,079] Trial 19 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 238, 'max_depth': 4, 'learning_rate': 0.1967919077971403, 'scale_pos_weight': 415.71731244068684}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:36,800] Trial 20 finished with value: 0.5609756097560976 and parameters: {'n_estimators': 155, 'max_depth': 3, 'learning_rate': 0.1575325171463628, 'scale_pos_weight': 438.1875476985951}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:40,504] Trial 21 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 249, 'max_depth': 4, 'learning_rate': 0.19424166329487907, 'scale_pos_weight': 420.232345920912}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:43,170] Trial 22 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 229, 'max_depth': 4, 'learning_rate': 0.1995035231316002, 'scale_pos_weight': 438.47158361337557}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:47,401] Trial 23 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 248, 'max_depth': 4, 'learning_rate': 0.17795697329763846, 'scale_pos_weight': 476.23599745342796}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:47,921] Trial 24 finished with value: 0.7301587301587301 and parameters: {'n_estimators': 172, 'max_depth': 3, 'learning_rate': 0.17760411943975085, 'scale_pos_weight': 436.67275848523997}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:49,192] Trial 25 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 221, 'max_depth': 4, 'learning_rate': 0.14633137817113492, 'scale_pos_weight': 415.03661425234293}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:20:57,404] Trial 26 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 287, 'max_depth': 4, 'learning_rate': 0.18456448102181466, 'scale_pos_weight': 453.0608940445221}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:21:02,304] Trial 27 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 188, 'max_depth': 5, 'learning_rate': 0.1284700481959311, 'scale_pos_weight': 474.6226749800265}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:21:05,074] Trial 28 finished with value: 0.7758620689655172 and parameters: {'n_estimators': 267, 'max_depth': 3, 'learning_rate': 0.168450091341933, 'scale_pos_weight': 442.47163689437735}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:21:06,929] Trial 29 finished with value: 0.7586206896551724 and parameters: {'n_estimators': 125, 'max_depth': 4, 'learning_rate': 0.14590352063080358, 'scale_pos_weight': 510.32264096106866}. Best is trial 2 with value: 0.8627450980392157.
+[I 2026-05-14 14:30:47,842] A new study created in memory with name: no-name-f60dbc08-5c37-4f2e-a0c9-2e8aeb70f11a
+[I 2026-05-14 14:30:51,781] Trial 0 finished with value: 0.7663551401869159 and parameters: {'n_estimators': 193, 'max_depth': 6, 'learning_rate': 0.06612050772191419, 'scale_pos_weight': 537.7683742290336}. Best is trial 0 with value: 0.7663551401869159.
+[I 2026-05-14 14:30:54,934] Trial 1 finished with value: 0.6890756302521008 and parameters: {'n_estimators': 126, 'max_depth': 3, 'learning_rate': 0.13948896063966687, 'scale_pos_weight': 482.1069893485935}. Best is trial 0 with value: 0.7663551401869159.
+[I 2026-05-14 14:31:00,078] Trial 2 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 213, 'max_depth': 7, 'learning_rate': 0.1486712225588651, 'scale_pos_weight': 575.046282706207}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:04,139] Trial 3 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 383, 'max_depth': 5, 'learning_rate': 0.1854220052090897, 'scale_pos_weight': 538.1950912462623}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:08,679] Trial 4 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 398, 'max_depth': 5, 'learning_rate': 0.16786625723309978, 'scale_pos_weight': 477.319755954802}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:15,049] Trial 5 finished with value: 0.7547169811320755 and parameters: {'n_estimators': 314, 'max_depth': 4, 'learning_rate': 0.16380483555942066, 'scale_pos_weight': 612.4305962316165}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:15,245] Trial 6 finished with value: 0.6222222222222222 and parameters: {'n_estimators': 182, 'max_depth': 3, 'learning_rate': 0.05636440960240133, 'scale_pos_weight': 430.67876910878124}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:18,192] Trial 7 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 216, 'max_depth': 6, 'learning_rate': 0.17524433591307798, 'scale_pos_weight': 587.4192844846289}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:23,310] Trial 8 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 389, 'max_depth': 4, 'learning_rate': 0.15543160245691606, 'scale_pos_weight': 509.38448779278235}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:28,348] Trial 9 finished with value: 0.7476635514018691 and parameters: {'n_estimators': 255, 'max_depth': 4, 'learning_rate': 0.19655393848018526, 'scale_pos_weight': 537.3819411540308}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:28,572] Trial 10 finished with value: 0.7592592592592593 and parameters: {'n_estimators': 104, 'max_depth': 7, 'learning_rate': 0.10631442326522905, 'scale_pos_weight': 580.0722760782986}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:40,474] Trial 11 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 306, 'max_depth': 7, 'learning_rate': 0.11119307255030005, 'scale_pos_weight': 562.1285991721301}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:45,195] Trial 12 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 294, 'max_depth': 6, 'learning_rate': 0.19685162664205547, 'scale_pos_weight': 615.7114478730936}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:45,727] Trial 13 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 341, 'max_depth': 5, 'learning_rate': 0.13038092335399193, 'scale_pos_weight': 552.5506689491707}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:47,690] Trial 14 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 264, 'max_depth': 5, 'learning_rate': 0.182190115408534, 'scale_pos_weight': 498.0372474970993}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:52,115] Trial 15 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 155, 'max_depth': 7, 'learning_rate': 0.14421583385562398, 'scale_pos_weight': 575.5464774332706}. Best is trial 2 with value: 0.7692307692307693.
+[I 2026-05-14 14:31:58,881] Trial 16 finished with value: 0.7766990291262136 and parameters: {'n_estimators': 357, 'max_depth': 6, 'learning_rate': 0.10843359710147943, 'scale_pos_weight': 444.96573233496883}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:08,742] Trial 17 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 225, 'max_depth': 6, 'learning_rate': 0.0894033937947923, 'scale_pos_weight': 435.25553614940935}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:14,129] Trial 18 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 329, 'max_depth': 7, 'learning_rate': 0.09066028988059417, 'scale_pos_weight': 415.59492752075107}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:17,787] Trial 19 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 353, 'max_depth': 6, 'learning_rate': 0.11284256214190878, 'scale_pos_weight': 457.64113619063085}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:21,309] Trial 20 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 266, 'max_depth': 7, 'learning_rate': 0.08827278860787552, 'scale_pos_weight': 459.4927535979932}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:24,377] Trial 21 finished with value: 0.7766990291262136 and parameters: {'n_estimators': 367, 'max_depth': 6, 'learning_rate': 0.1501802023351682, 'scale_pos_weight': 533.7289816687601}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:27,923] Trial 22 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 363, 'max_depth': 6, 'learning_rate': 0.15133829076275226, 'scale_pos_weight': 532.9360305589744}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:31,240] Trial 23 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 296, 'max_depth': 6, 'learning_rate': 0.12733914092757403, 'scale_pos_weight': 515.0104854253857}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:36,503] Trial 24 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 220, 'max_depth': 7, 'learning_rate': 0.13557868012549695, 'scale_pos_weight': 595.3080682245911}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:39,576] Trial 25 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 366, 'max_depth': 6, 'learning_rate': 0.12027852732500632, 'scale_pos_weight': 569.5032732072449}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:41,845] Trial 26 finished with value: 0.7663551401869159 and parameters: {'n_estimators': 162, 'max_depth': 7, 'learning_rate': 0.0996179427731101, 'scale_pos_weight': 553.6533185842109}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:44,190] Trial 27 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 279, 'max_depth': 6, 'learning_rate': 0.11803512402146538, 'scale_pos_weight': 495.0562003101694}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:46,629] Trial 28 finished with value: 0.7619047619047619 and parameters: {'n_estimators': 242, 'max_depth': 7, 'learning_rate': 0.15090203292488966, 'scale_pos_weight': 519.7435143122923}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:32:48,990] Trial 29 finished with value: 0.7592592592592593 and parameters: {'n_estimators': 188, 'max_depth': 6, 'learning_rate': 0.07701532268244016, 'scale_pos_weight': 603.025685272552}. Best is trial 16 with value: 0.7766990291262136.
+[I 2026-05-14 14:43:04,715] A new study created in memory with name: no-name-8305323b-b1cb-4afa-bd28-dd56608a0550
+[I 2026-05-14 14:43:07,357] Trial 0 finished with value: 0.6 and parameters: {'n_estimators': 124, 'max_depth': 7, 'learning_rate': 0.0911361614893326, 'scale_pos_weight': 586.7612139683785}. Best is trial 0 with value: 0.6.
+[I 2026-05-14 14:43:10,826] Trial 1 finished with value: 0.569620253164557 and parameters: {'n_estimators': 189, 'max_depth': 5, 'learning_rate': 0.09808773268669571, 'scale_pos_weight': 524.0651754146335}. Best is trial 0 with value: 0.6.
+[I 2026-05-14 14:43:11,028] Trial 2 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 257, 'max_depth': 6, 'learning_rate': 0.18796245484866986, 'scale_pos_weight': 459.2394223677405}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:11,157] Trial 3 finished with value: 0.5906040268456376 and parameters: {'n_estimators': 144, 'max_depth': 7, 'learning_rate': 0.14072539071250995, 'scale_pos_weight': 540.0690766390586}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:11,362] Trial 4 finished with value: 0.6027397260273972 and parameters: {'n_estimators': 210, 'max_depth': 7, 'learning_rate': 0.12568863166042055, 'scale_pos_weight': 455.5240323180104}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:11,630] Trial 5 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 376, 'max_depth': 5, 'learning_rate': 0.17214587780556548, 'scale_pos_weight': 517.8432993059683}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:11,842] Trial 6 finished with value: 0.5660377358490566 and parameters: {'n_estimators': 274, 'max_depth': 5, 'learning_rate': 0.07966601524866111, 'scale_pos_weight': 531.6558977778116}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:13,465] Trial 7 finished with value: 0.5595238095238095 and parameters: {'n_estimators': 123, 'max_depth': 3, 'learning_rate': 0.12984418484385146, 'scale_pos_weight': 549.4571608827139}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:13,653] Trial 8 finished with value: 0.575 and parameters: {'n_estimators': 321, 'max_depth': 3, 'learning_rate': 0.07535311094708994, 'scale_pos_weight': 517.3325466786974}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:13,748] Trial 9 finished with value: 0.5542168674698795 and parameters: {'n_estimators': 150, 'max_depth': 3, 'learning_rate': 0.16246490246656653, 'scale_pos_weight': 548.4649159131479}. Best is trial 2 with value: 0.6153846153846154.
+[I 2026-05-14 14:43:16,123] Trial 10 finished with value: 0.6197183098591549 and parameters: {'n_estimators': 271, 'max_depth': 6, 'learning_rate': 0.19694897965952987, 'scale_pos_weight': 417.0011923332967}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:17,709] Trial 11 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 278, 'max_depth': 6, 'learning_rate': 0.195203419514085, 'scale_pos_weight': 422.28120468656607}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:22,775] Trial 12 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 232, 'max_depth': 6, 'learning_rate': 0.19525728303663062, 'scale_pos_weight': 472.5570326209114}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:23,241] Trial 13 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 321, 'max_depth': 6, 'learning_rate': 0.16818132531846375, 'scale_pos_weight': 416.3653570062718}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:25,383] Trial 14 finished with value: 0.5714285714285714 and parameters: {'n_estimators': 322, 'max_depth': 4, 'learning_rate': 0.05552068295145024, 'scale_pos_weight': 463.69456530733584}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:26,937] Trial 15 finished with value: 0.6111111111111112 and parameters: {'n_estimators': 261, 'max_depth': 6, 'learning_rate': 0.18076996212895527, 'scale_pos_weight': 439.8861281147223}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:30,592] Trial 16 finished with value: 0.5827814569536424 and parameters: {'n_estimators': 399, 'max_depth': 5, 'learning_rate': 0.15040113646845552, 'scale_pos_weight': 483.0296812247803}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:32,473] Trial 17 finished with value: 0.5960264900662252 and parameters: {'n_estimators': 180, 'max_depth': 4, 'learning_rate': 0.1843240215708518, 'scale_pos_weight': 492.1231132783831}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:35,623] Trial 18 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 234, 'max_depth': 6, 'learning_rate': 0.19897520230332197, 'scale_pos_weight': 436.64942955837455}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:37,488] Trial 19 finished with value: 0.5882352941176471 and parameters: {'n_estimators': 307, 'max_depth': 4, 'learning_rate': 0.1583110372842421, 'scale_pos_weight': 611.4795575953025}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:42,231] Trial 20 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 367, 'max_depth': 7, 'learning_rate': 0.11038343572921214, 'scale_pos_weight': 496.4793282894707}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:46,031] Trial 21 finished with value: 0.6111111111111112 and parameters: {'n_estimators': 369, 'max_depth': 5, 'learning_rate': 0.17566700082128062, 'scale_pos_weight': 447.7797823622429}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:49,309] Trial 22 finished with value: 0.6111111111111112 and parameters: {'n_estimators': 292, 'max_depth': 5, 'learning_rate': 0.1826355732691009, 'scale_pos_weight': 569.7753052332984}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:53,317] Trial 23 finished with value: 0.6153846153846154 and parameters: {'n_estimators': 348, 'max_depth': 6, 'learning_rate': 0.1439998038375691, 'scale_pos_weight': 508.1423095636089}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:43:59,043] Trial 24 finished with value: 0.6068965517241379 and parameters: {'n_estimators': 243, 'max_depth': 5, 'learning_rate': 0.17407236732443426, 'scale_pos_weight': 427.94554693265474}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:44:01,764] Trial 25 finished with value: 0.6111111111111112 and parameters: {'n_estimators': 204, 'max_depth': 6, 'learning_rate': 0.18826730116354645, 'scale_pos_weight': 466.0300553203704}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:44:03,673] Trial 26 finished with value: 0.6081081081081081 and parameters: {'n_estimators': 385, 'max_depth': 4, 'learning_rate': 0.16376672752300753, 'scale_pos_weight': 415.26523525057456}. Best is trial 10 with value: 0.6197183098591549.
+[I 2026-05-14 14:44:04,723] Trial 27 finished with value: 0.624113475177305 and parameters: {'n_estimators': 346, 'max_depth': 6, 'learning_rate': 0.19960964825228467, 'scale_pos_weight': 478.1596054468459}. Best is trial 27 with value: 0.624113475177305.
+[I 2026-05-14 14:44:09,331] Trial 28 finished with value: 0.624113475177305 and parameters: {'n_estimators': 347, 'max_depth': 7, 'learning_rate': 0.1978607394862387, 'scale_pos_weight': 483.0136490460164}. Best is trial 27 with value: 0.624113475177305.
+[I 2026-05-14 14:44:13,116] Trial 29 finished with value: 0.6285714285714286 and parameters: {'n_estimators': 345, 'max_depth': 7, 'learning_rate': 0.1992613904025394, 'scale_pos_weight': 483.7043863136362}. Best is trial 29 with value: 0.6285714285714286.
+[I 2026-05-14 14:44:18,778] A new study created in memory with name: no-name-7a26bb56-ad3a-4953-a9f3-4e8347b8b9c2
+[I 2026-05-14 14:44:21,816] Trial 0 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 370, 'max_depth': 5, 'learning_rate': 0.1600004611018731, 'scale_pos_weight': 565.2953925582444}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:44:24,565] Trial 1 finished with value: 0.819047619047619 and parameters: {'n_estimators': 236, 'max_depth': 6, 'learning_rate': 0.0890694859062465, 'scale_pos_weight': 505.00687087050335}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:44:34,688] Trial 2 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 248, 'max_depth': 7, 'learning_rate': 0.1673801210080407, 'scale_pos_weight': 499.97078284250017}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:44:40,301] Trial 3 finished with value: 0.5476190476190477 and parameters: {'n_estimators': 131, 'max_depth': 3, 'learning_rate': 0.16474975622552876, 'scale_pos_weight': 542.9674812500937}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:44:45,798] Trial 4 finished with value: 0.8269230769230769 and parameters: {'n_estimators': 393, 'max_depth': 6, 'learning_rate': 0.0697661004601165, 'scale_pos_weight': 535.0998775487043}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:44:48,832] Trial 5 finished with value: 0.782608695652174 and parameters: {'n_estimators': 151, 'max_depth': 5, 'learning_rate': 0.09034489316448913, 'scale_pos_weight': 617.0955337739229}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:44:53,996] Trial 6 finished with value: 0.822429906542056 and parameters: {'n_estimators': 172, 'max_depth': 4, 'learning_rate': 0.1489875910271286, 'scale_pos_weight': 484.07849713202654}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:45:00,035] Trial 7 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 207, 'max_depth': 6, 'learning_rate': 0.1683093267319551, 'scale_pos_weight': 451.0231532618981}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:45:02,426] Trial 8 finished with value: 0.5644171779141104 and parameters: {'n_estimators': 188, 'max_depth': 3, 'learning_rate': 0.12697121441268416, 'scale_pos_weight': 520.3256802746043}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:45:13,255] Trial 9 finished with value: 0.7692307692307693 and parameters: {'n_estimators': 245, 'max_depth': 3, 'learning_rate': 0.16235292693221848, 'scale_pos_weight': 495.04075272688385}. Best is trial 0 with value: 0.8543689320388349.
+[I 2026-05-14 14:45:14,735] Trial 10 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 354, 'max_depth': 5, 'learning_rate': 0.1971731060709213, 'scale_pos_weight': 590.3179664398473}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:21,993] Trial 11 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 361, 'max_depth': 5, 'learning_rate': 0.19651021740817415, 'scale_pos_weight': 591.3804165759925}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:27,589] Trial 12 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 322, 'max_depth': 5, 'learning_rate': 0.1978632961433133, 'scale_pos_weight': 604.671272527539}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:29,954] Trial 13 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 315, 'max_depth': 4, 'learning_rate': 0.18269323112899732, 'scale_pos_weight': 582.1103568613077}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:32,521] Trial 14 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 325, 'max_depth': 4, 'learning_rate': 0.19036591763988614, 'scale_pos_weight': 578.6785146751829}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:34,870] Trial 15 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 355, 'max_depth': 7, 'learning_rate': 0.13329175363612936, 'scale_pos_weight': 595.2301265729942}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:40,134] Trial 16 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 282, 'max_depth': 6, 'learning_rate': 0.19970276154599678, 'scale_pos_weight': 552.9207782867533}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:43,621] Trial 17 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 290, 'max_depth': 4, 'learning_rate': 0.10421043649143434, 'scale_pos_weight': 621.2444310709063}. Best is trial 10 with value: 0.8627450980392157.
+[I 2026-05-14 14:45:46,891] Trial 18 finished with value: 0.8712871287128713 and parameters: {'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.1809216688091539, 'scale_pos_weight': 464.9119438224863}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:45:54,565] Trial 19 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 383, 'max_depth': 5, 'learning_rate': 0.14186634233624412, 'scale_pos_weight': 420.78567190708634}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:45:57,836] Trial 20 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 345, 'max_depth': 6, 'learning_rate': 0.18465199149573996, 'scale_pos_weight': 469.6178518793862}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:46:06,907] Trial 21 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 397, 'max_depth': 5, 'learning_rate': 0.1808116498578431, 'scale_pos_weight': 441.50843919027926}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:46:15,613] Trial 22 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 356, 'max_depth': 4, 'learning_rate': 0.17777098130466856, 'scale_pos_weight': 567.9156115797421}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:46:28,770] Trial 23 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 288, 'max_depth': 5, 'learning_rate': 0.19709977579390997, 'scale_pos_weight': 523.2581019931421}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:46:36,644] Trial 24 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 339, 'max_depth': 5, 'learning_rate': 0.11307600038901876, 'scale_pos_weight': 600.0228992041859}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:46:50,628] Trial 25 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 372, 'max_depth': 5, 'learning_rate': 0.15369921660523964, 'scale_pos_weight': 469.7982670850709}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:46:57,470] Trial 26 finished with value: 0.8653846153846154 and parameters: {'n_estimators': 400, 'max_depth': 6, 'learning_rate': 0.1743963216640593, 'scale_pos_weight': 422.08740435766055}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:47:05,103] Trial 27 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 396, 'max_depth': 7, 'learning_rate': 0.17649849779724971, 'scale_pos_weight': 425.6148803437662}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:47:07,981] Trial 28 finished with value: 0.8269230769230769 and parameters: {'n_estimators': 308, 'max_depth': 6, 'learning_rate': 0.17533706604258925, 'scale_pos_weight': 445.33124580366035}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:47:11,336] Trial 29 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 378, 'max_depth': 6, 'learning_rate': 0.15311145922705513, 'scale_pos_weight': 458.8865916762524}. Best is trial 18 with value: 0.8712871287128713.
+[I 2026-05-14 14:56:36,449] A new study created in memory with name: no-name-26641fa6-9533-479d-9220-39e0ec0c9d7f
+[I 2026-05-14 14:56:38,339] Trial 0 finished with value: 0.7818181818181819 and parameters: {'n_estimators': 345, 'max_depth': 4, 'learning_rate': 0.1874438208322045, 'scale_pos_weight': 523.7045728423457}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:38,500] Trial 1 finished with value: 0.7304347826086957 and parameters: {'n_estimators': 106, 'max_depth': 6, 'learning_rate': 0.10848561307888376, 'scale_pos_weight': 602.6299037208404}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:38,838] Trial 2 finished with value: 0.7747747747747747 and parameters: {'n_estimators': 272, 'max_depth': 4, 'learning_rate': 0.09881029050222451, 'scale_pos_weight': 576.9104338956381}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:39,319] Trial 3 finished with value: 0.7543859649122807 and parameters: {'n_estimators': 343, 'max_depth': 6, 'learning_rate': 0.06291977557350376, 'scale_pos_weight': 550.8539620404993}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:41,309] Trial 4 finished with value: 0.7433628318584071 and parameters: {'n_estimators': 180, 'max_depth': 7, 'learning_rate': 0.14905494974239225, 'scale_pos_weight': 491.921279249587}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:42,893] Trial 5 finished with value: 0.75 and parameters: {'n_estimators': 195, 'max_depth': 7, 'learning_rate': 0.1688049758605999, 'scale_pos_weight': 423.88515242609805}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:47,130] Trial 6 finished with value: 0.7818181818181819 and parameters: {'n_estimators': 305, 'max_depth': 4, 'learning_rate': 0.08436393083091659, 'scale_pos_weight': 461.83498319963115}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:52,083] Trial 7 finished with value: 0.7433628318584071 and parameters: {'n_estimators': 132, 'max_depth': 7, 'learning_rate': 0.11675483034845917, 'scale_pos_weight': 583.9065332378699}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:56:58,817] Trial 8 finished with value: 0.7678571428571429 and parameters: {'n_estimators': 151, 'max_depth': 5, 'learning_rate': 0.17023471305650695, 'scale_pos_weight': 463.49349986950534}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:57:03,576] Trial 9 finished with value: 0.7433628318584071 and parameters: {'n_estimators': 154, 'max_depth': 7, 'learning_rate': 0.11767195807779787, 'scale_pos_weight': 601.3509466051842}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:57:08,102] Trial 10 finished with value: 0.7678571428571429 and parameters: {'n_estimators': 393, 'max_depth': 3, 'learning_rate': 0.19647192412586167, 'scale_pos_weight': 531.1834541016383}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:57:08,501] Trial 11 finished with value: 0.7747747747747747 and parameters: {'n_estimators': 294, 'max_depth': 4, 'learning_rate': 0.06409325130436451, 'scale_pos_weight': 489.93638572749865}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:57:16,279] Trial 12 finished with value: 0.7719298245614035 and parameters: {'n_estimators': 321, 'max_depth': 3, 'learning_rate': 0.08509167981396569, 'scale_pos_weight': 432.6325399747262}. Best is trial 0 with value: 0.7818181818181819.
+[I 2026-05-14 14:57:21,332] Trial 13 finished with value: 0.7889908256880734 and parameters: {'n_estimators': 375, 'max_depth': 4, 'learning_rate': 0.1438376569101003, 'scale_pos_weight': 503.021874959991}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:24,465] Trial 14 finished with value: 0.75 and parameters: {'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.14264074043943253, 'scale_pos_weight': 514.2220968670179}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:28,548] Trial 15 finished with value: 0.7678571428571429 and parameters: {'n_estimators': 356, 'max_depth': 4, 'learning_rate': 0.19929593218531708, 'scale_pos_weight': 545.6035612231528}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:36,639] Trial 16 finished with value: 0.7413793103448276 and parameters: {'n_estimators': 231, 'max_depth': 5, 'learning_rate': 0.17615486241139833, 'scale_pos_weight': 509.7630481129748}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:41,109] Trial 17 finished with value: 0.7747747747747747 and parameters: {'n_estimators': 360, 'max_depth': 3, 'learning_rate': 0.14197270216030441, 'scale_pos_weight': 466.8616067472205}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:43,591] Trial 18 finished with value: 0.7747747747747747 and parameters: {'n_estimators': 374, 'max_depth': 4, 'learning_rate': 0.1562093707389635, 'scale_pos_weight': 546.8025207335496}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:47,496] Trial 19 finished with value: 0.7678571428571429 and parameters: {'n_estimators': 257, 'max_depth': 5, 'learning_rate': 0.1840004204385997, 'scale_pos_weight': 490.1654864891131}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:50,503] Trial 20 finished with value: 0.7368421052631579 and parameters: {'n_estimators': 332, 'max_depth': 6, 'learning_rate': 0.1305491190734186, 'scale_pos_weight': 564.1205463754917}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:52,953] Trial 21 finished with value: 0.7818181818181819 and parameters: {'n_estimators': 304, 'max_depth': 4, 'learning_rate': 0.07978000937904406, 'scale_pos_weight': 462.9552972597182}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:57:57,384] Trial 22 finished with value: 0.7747747747747747 and parameters: {'n_estimators': 294, 'max_depth': 4, 'learning_rate': 0.09304807101547392, 'scale_pos_weight': 453.51016208850956}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:02,011] Trial 23 finished with value: 0.7678571428571429 and parameters: {'n_estimators': 322, 'max_depth': 3, 'learning_rate': 0.13132388612796725, 'scale_pos_weight': 501.1733685091879}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:05,566] Trial 24 finished with value: 0.7818181818181819 and parameters: {'n_estimators': 380, 'max_depth': 4, 'learning_rate': 0.05117370245404858, 'scale_pos_weight': 530.051456877623}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:09,734] Trial 25 finished with value: 0.7652173913043478 and parameters: {'n_estimators': 236, 'max_depth': 3, 'learning_rate': 0.16104573905217445, 'scale_pos_weight': 444.4140165061046}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:13,323] Trial 26 finished with value: 0.7747747747747747 and parameters: {'n_estimators': 353, 'max_depth': 4, 'learning_rate': 0.18416055771144965, 'scale_pos_weight': 475.9533807648092}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:15,700] Trial 27 finished with value: 0.7433628318584071 and parameters: {'n_estimators': 279, 'max_depth': 5, 'learning_rate': 0.10357293570611285, 'scale_pos_weight': 480.51907584411873}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:23,590] Trial 28 finished with value: 0.7719298245614035 and parameters: {'n_estimators': 313, 'max_depth': 5, 'learning_rate': 0.07448558131576588, 'scale_pos_weight': 532.0896603655599}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 14:58:27,530] Trial 29 finished with value: 0.7433628318584071 and parameters: {'n_estimators': 335, 'max_depth': 6, 'learning_rate': 0.11004347124688688, 'scale_pos_weight': 444.71855459687873}. Best is trial 13 with value: 0.7889908256880734.
+[I 2026-05-14 15:08:44,982] A new study created in memory with name: no-name-6bf689a4-a241-4f69-844e-026d616ed639
+[I 2026-05-14 15:08:45,801] Trial 0 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 387, 'max_depth': 6, 'learning_rate': 0.18085117904888548, 'scale_pos_weight': 456.0686770416536}. Best is trial 0 with value: 0.3904382470119522.
+[I 2026-05-14 15:08:45,978] Trial 1 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 211, 'max_depth': 7, 'learning_rate': 0.18596873622886156, 'scale_pos_weight': 507.6643678412987}. Best is trial 0 with value: 0.3904382470119522.
+[I 2026-05-14 15:08:46,209] Trial 2 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 312, 'max_depth': 4, 'learning_rate': 0.14227168331154544, 'scale_pos_weight': 607.491673519305}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:46,466] Trial 3 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 380, 'max_depth': 6, 'learning_rate': 0.16321064329211965, 'scale_pos_weight': 519.615017119956}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:46,579] Trial 4 finished with value: 0.39215686274509803 and parameters: {'n_estimators': 179, 'max_depth': 4, 'learning_rate': 0.12942784971087085, 'scale_pos_weight': 583.4442015216583}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:46,748] Trial 5 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 279, 'max_depth': 4, 'learning_rate': 0.15393655893722696, 'scale_pos_weight': 464.7365928978197}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:50,431] Trial 6 finished with value: 0.35842293906810035 and parameters: {'n_estimators': 189, 'max_depth': 3, 'learning_rate': 0.054255225830697994, 'scale_pos_weight': 455.57439502574454}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:52,539] Trial 7 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 333, 'max_depth': 6, 'learning_rate': 0.09875584333126927, 'scale_pos_weight': 581.6150983090217}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:55,370] Trial 8 finished with value: 0.36363636363636365 and parameters: {'n_estimators': 322, 'max_depth': 3, 'learning_rate': 0.050825663104088814, 'scale_pos_weight': 432.0686126331269}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:56,031] Trial 9 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 134, 'max_depth': 5, 'learning_rate': 0.19985978854574965, 'scale_pos_weight': 480.4947463123061}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:08:59,429] Trial 10 finished with value: 0.3937007874015748 and parameters: {'n_estimators': 266, 'max_depth': 4, 'learning_rate': 0.10330189818076821, 'scale_pos_weight': 620.9648729307589}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:00,960] Trial 11 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 277, 'max_depth': 4, 'learning_rate': 0.1453568744745591, 'scale_pos_weight': 538.5837138609362}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:03,084] Trial 12 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 301, 'max_depth': 5, 'learning_rate': 0.14991227543479485, 'scale_pos_weight': 416.4026799600735}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:07,331] Trial 13 finished with value: 0.38910505836575876 and parameters: {'n_estimators': 233, 'max_depth': 4, 'learning_rate': 0.11219670994592416, 'scale_pos_weight': 554.8788822977654}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:08,075] Trial 14 finished with value: 0.37735849056603776 and parameters: {'n_estimators': 343, 'max_depth': 3, 'learning_rate': 0.12888433469303576, 'scale_pos_weight': 619.23878674094}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:12,952] Trial 15 finished with value: 0.3888888888888889 and parameters: {'n_estimators': 285, 'max_depth': 5, 'learning_rate': 0.0831067404592837, 'scale_pos_weight': 492.5163106716082}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:18,059] Trial 16 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 238, 'max_depth': 4, 'learning_rate': 0.16130816678289814, 'scale_pos_weight': 465.0325068855981}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:21,429] Trial 17 finished with value: 0.36363636363636365 and parameters: {'n_estimators': 104, 'max_depth': 3, 'learning_rate': 0.1436474151258735, 'scale_pos_weight': 582.7991510565415}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:26,687] Trial 18 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 365, 'max_depth': 4, 'learning_rate': 0.16867959680977157, 'scale_pos_weight': 533.3984039201525}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:31,570] Trial 19 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 303, 'max_depth': 5, 'learning_rate': 0.12236870955588133, 'scale_pos_weight': 562.972447107021}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:36,795] Trial 20 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 258, 'max_depth': 5, 'learning_rate': 0.0811637272483634, 'scale_pos_weight': 491.69924064249653}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:42,072] Trial 21 finished with value: 0.3937007874015748 and parameters: {'n_estimators': 282, 'max_depth': 4, 'learning_rate': 0.14389567398343528, 'scale_pos_weight': 541.4499762922396}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:45,698] Trial 22 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 316, 'max_depth': 4, 'learning_rate': 0.15242320449262128, 'scale_pos_weight': 599.9336403974322}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:47,209] Trial 23 finished with value: 0.38022813688212925 and parameters: {'n_estimators': 348, 'max_depth': 3, 'learning_rate': 0.13162039980391663, 'scale_pos_weight': 523.9704488639326}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:48,052] Trial 24 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 269, 'max_depth': 4, 'learning_rate': 0.17434339800532753, 'scale_pos_weight': 558.9755183332843}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:48,536] Trial 25 finished with value: 0.3937007874015748 and parameters: {'n_estimators': 225, 'max_depth': 4, 'learning_rate': 0.13879541147067678, 'scale_pos_weight': 439.4165414486734}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:53,144] Trial 26 finished with value: 0.38022813688212925 and parameters: {'n_estimators': 299, 'max_depth': 3, 'learning_rate': 0.15637934270891865, 'scale_pos_weight': 502.2508820107508}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:09:58,735] Trial 27 finished with value: 0.3904382470119522 and parameters: {'n_estimators': 204, 'max_depth': 5, 'learning_rate': 0.11695965366077597, 'scale_pos_weight': 474.48537298041754}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:10:01,803] Trial 28 finished with value: 0.3952569169960474 and parameters: {'n_estimators': 254, 'max_depth': 4, 'learning_rate': 0.19215200608728428, 'scale_pos_weight': 600.3669196955545}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:10:04,430] Trial 29 finished with value: 0.392 and parameters: {'n_estimators': 397, 'max_depth': 7, 'learning_rate': 0.17297988320397106, 'scale_pos_weight': 454.5369637335263}. Best is trial 2 with value: 0.3952569169960474.
+[I 2026-05-14 15:10:11,718] A new study created in memory with name: no-name-24dc5afa-1001-488c-be0c-047dabbb1796
+[I 2026-05-14 15:10:21,707] Trial 0 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 285, 'max_depth': 6, 'learning_rate': 0.19175608740504418, 'scale_pos_weight': 443.2644499791941}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:22,191] Trial 1 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 147, 'max_depth': 4, 'learning_rate': 0.1836502517854745, 'scale_pos_weight': 437.4284248088072}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:24,273] Trial 2 finished with value: 0.38461538461538464 and parameters: {'n_estimators': 206, 'max_depth': 3, 'learning_rate': 0.08563751702729133, 'scale_pos_weight': 570.3295149661978}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:27,548] Trial 3 finished with value: 0.6715328467153284 and parameters: {'n_estimators': 117, 'max_depth': 5, 'learning_rate': 0.05973900983839654, 'scale_pos_weight': 510.98810541956146}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:31,436] Trial 4 finished with value: 0.8269230769230769 and parameters: {'n_estimators': 278, 'max_depth': 7, 'learning_rate': 0.07800793564661096, 'scale_pos_weight': 595.0522980472991}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:37,055] Trial 5 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 391, 'max_depth': 3, 'learning_rate': 0.13524237048611393, 'scale_pos_weight': 508.0486634609415}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:41,386] Trial 6 finished with value: 0.6766917293233082 and parameters: {'n_estimators': 108, 'max_depth': 5, 'learning_rate': 0.08192225046094248, 'scale_pos_weight': 542.2005401652763}. Best is trial 0 with value: 0.8461538461538461.
+[I 2026-05-14 15:10:47,631] Trial 7 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 309, 'max_depth': 4, 'learning_rate': 0.17723145408348917, 'scale_pos_weight': 452.4156957558945}. Best is trial 7 with value: 0.8543689320388349.
+[I 2026-05-14 15:11:03,531] Trial 8 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 277, 'max_depth': 7, 'learning_rate': 0.1859002676241518, 'scale_pos_weight': 530.9596605146877}. Best is trial 7 with value: 0.8543689320388349.
+[I 2026-05-14 15:11:07,507] Trial 9 finished with value: 0.5411764705882353 and parameters: {'n_estimators': 190, 'max_depth': 3, 'learning_rate': 0.12033882841116623, 'scale_pos_weight': 602.3055146654472}. Best is trial 7 with value: 0.8543689320388349.
+[I 2026-05-14 15:11:18,150] Trial 10 finished with value: 0.8653846153846154 and parameters: {'n_estimators': 358, 'max_depth': 4, 'learning_rate': 0.1524538105437732, 'scale_pos_weight': 467.20915304252316}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:22,411] Trial 11 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 359, 'max_depth': 4, 'learning_rate': 0.15394819183454128, 'scale_pos_weight': 474.057138239634}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:29,845] Trial 12 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 350, 'max_depth': 4, 'learning_rate': 0.16095134718634257, 'scale_pos_weight': 415.13396164244296}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:32,626] Trial 13 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 320, 'max_depth': 4, 'learning_rate': 0.15722507973120206, 'scale_pos_weight': 477.96740076192236}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:35,708] Trial 14 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 394, 'max_depth': 5, 'learning_rate': 0.12062399467321754, 'scale_pos_weight': 473.97554634116864}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:39,094] Trial 15 finished with value: 0.8431372549019608 and parameters: {'n_estimators': 313, 'max_depth': 5, 'learning_rate': 0.17148563323500213, 'scale_pos_weight': 452.0667394033261}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:50,405] Trial 16 finished with value: 0.819047619047619 and parameters: {'n_estimators': 226, 'max_depth': 6, 'learning_rate': 0.13869097413350961, 'scale_pos_weight': 415.1874223479526}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:11:54,881] Trial 17 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 344, 'max_depth': 4, 'learning_rate': 0.19775143455123, 'scale_pos_weight': 492.68763992332276}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:04,718] Trial 18 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 257, 'max_depth': 6, 'learning_rate': 0.17277507762957345, 'scale_pos_weight': 455.5099829478667}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:08,486] Trial 19 finished with value: 0.7076923076923077 and parameters: {'n_estimators': 313, 'max_depth': 3, 'learning_rate': 0.1059019781375448, 'scale_pos_weight': 545.6548585732227}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:14,801] Trial 20 finished with value: 0.8571428571428571 and parameters: {'n_estimators': 364, 'max_depth': 4, 'learning_rate': 0.14280949328594258, 'scale_pos_weight': 484.92699184201734}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:17,723] Trial 21 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 369, 'max_depth': 4, 'learning_rate': 0.1429532613289597, 'scale_pos_weight': 486.68954882886663}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:19,683] Trial 22 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 372, 'max_depth': 4, 'learning_rate': 0.14394868785763962, 'scale_pos_weight': 490.46812548295634}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:23,008] Trial 23 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 381, 'max_depth': 5, 'learning_rate': 0.10956566876319723, 'scale_pos_weight': 499.6386501342638}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:30,631] Trial 24 finished with value: 0.8148148148148148 and parameters: {'n_estimators': 339, 'max_depth': 3, 'learning_rate': 0.14901749823680882, 'scale_pos_weight': 465.66988380420065}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:35,049] Trial 25 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 374, 'max_depth': 4, 'learning_rate': 0.12840939968517628, 'scale_pos_weight': 519.4262744341685}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:38,550] Trial 26 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 398, 'max_depth': 4, 'learning_rate': 0.16493402484717387, 'scale_pos_weight': 492.8369154531153}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:41,803] Trial 27 finished with value: 0.7419354838709677 and parameters: {'n_estimators': 332, 'max_depth': 3, 'learning_rate': 0.10452175685307508, 'scale_pos_weight': 430.83975040346115}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:45,087] Trial 28 finished with value: 0.84 and parameters: {'n_estimators': 369, 'max_depth': 5, 'learning_rate': 0.14616928710987248, 'scale_pos_weight': 619.9635570951273}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:12:52,112] Trial 29 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 291, 'max_depth': 5, 'learning_rate': 0.13368892120193246, 'scale_pos_weight': 522.8935149014337}. Best is trial 10 with value: 0.8653846153846154.
+[I 2026-05-14 15:22:26,738] A new study created in memory with name: no-name-240ea28a-82c8-4ace-8b6e-4e406032acd4
+[I 2026-05-14 15:22:30,859] Trial 0 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 149, 'max_depth': 5, 'learning_rate': 0.181321980322666, 'scale_pos_weight': 471.7259339055736}. Best is trial 0 with value: 0.8301886792452831.
+[I 2026-05-14 15:22:33,423] Trial 1 finished with value: 0.8113207547169812 and parameters: {'n_estimators': 349, 'max_depth': 7, 'learning_rate': 0.16610794562461062, 'scale_pos_weight': 451.9911402211892}. Best is trial 0 with value: 0.8301886792452831.
+[I 2026-05-14 15:22:34,962] Trial 2 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 139, 'max_depth': 6, 'learning_rate': 0.06990073824078862, 'scale_pos_weight': 446.887048503941}. Best is trial 0 with value: 0.8301886792452831.
+[I 2026-05-14 15:22:36,887] Trial 3 finished with value: 0.8392857142857143 and parameters: {'n_estimators': 104, 'max_depth': 3, 'learning_rate': 0.12431292325102052, 'scale_pos_weight': 563.7571448145728}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:22:42,013] Trial 4 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 235, 'max_depth': 4, 'learning_rate': 0.05548222052747213, 'scale_pos_weight': 605.9355985411858}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:22:44,197] Trial 5 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 249, 'max_depth': 5, 'learning_rate': 0.11214622501779456, 'scale_pos_weight': 458.22296869443215}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:22:52,440] Trial 6 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 310, 'max_depth': 5, 'learning_rate': 0.11111280948528834, 'scale_pos_weight': 468.6443318585501}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:22:58,363] Trial 7 finished with value: 0.8113207547169812 and parameters: {'n_estimators': 173, 'max_depth': 4, 'learning_rate': 0.14559775866867192, 'scale_pos_weight': 614.6503090395316}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:23:01,552] Trial 8 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 342, 'max_depth': 3, 'learning_rate': 0.1922793637185332, 'scale_pos_weight': 480.85784812642214}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:23:07,931] Trial 9 finished with value: 0.8070175438596491 and parameters: {'n_estimators': 139, 'max_depth': 3, 'learning_rate': 0.07054018918045368, 'scale_pos_weight': 613.8581522399661}. Best is trial 3 with value: 0.8392857142857143.
+[I 2026-05-14 15:23:11,681] Trial 10 finished with value: 0.8545454545454545 and parameters: {'n_estimators': 100, 'max_depth': 3, 'learning_rate': 0.13781899742936882, 'scale_pos_weight': 560.8398958297856}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:18,133] Trial 11 finished with value: 0.8468468468468469 and parameters: {'n_estimators': 110, 'max_depth': 3, 'learning_rate': 0.13512645269283682, 'scale_pos_weight': 557.9395861421106}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:21,942] Trial 12 finished with value: 0.8037383177570093 and parameters: {'n_estimators': 199, 'max_depth': 4, 'learning_rate': 0.1476042863402578, 'scale_pos_weight': 545.7692519708283}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:26,466] Trial 13 finished with value: 0.8245614035087719 and parameters: {'n_estimators': 100, 'max_depth': 3, 'learning_rate': 0.09844862803878082, 'scale_pos_weight': 522.4449396550492}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:29,575] Trial 14 finished with value: 0.8113207547169812 and parameters: {'n_estimators': 201, 'max_depth': 4, 'learning_rate': 0.14650508059092504, 'scale_pos_weight': 581.4471029293346}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:31,463] Trial 15 finished with value: 0.8392857142857143 and parameters: {'n_estimators': 107, 'max_depth': 3, 'learning_rate': 0.15792814263913438, 'scale_pos_weight': 509.08075553695085}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:42,138] Trial 16 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 293, 'max_depth': 6, 'learning_rate': 0.13000425360112663, 'scale_pos_weight': 532.5574215528438}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:44,376] Trial 17 finished with value: 0.8113207547169812 and parameters: {'n_estimators': 397, 'max_depth': 4, 'learning_rate': 0.09255153902693372, 'scale_pos_weight': 418.3965272455806}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:46,665] Trial 18 finished with value: 0.819047619047619 and parameters: {'n_estimators': 176, 'max_depth': 6, 'learning_rate': 0.1270235505126396, 'scale_pos_weight': 577.7857956085618}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:55,008] Trial 19 finished with value: 0.8440366972477065 and parameters: {'n_estimators': 133, 'max_depth': 3, 'learning_rate': 0.1792185379129219, 'scale_pos_weight': 499.34778062494814}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:55,350] Trial 20 finished with value: 0.8 and parameters: {'n_estimators': 196, 'max_depth': 7, 'learning_rate': 0.16562876728243092, 'scale_pos_weight': 554.3633761400727}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:57,172] Trial 21 finished with value: 0.8363636363636363 and parameters: {'n_estimators': 130, 'max_depth': 3, 'learning_rate': 0.18384960314216148, 'scale_pos_weight': 499.716386537416}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:57,408] Trial 22 finished with value: 0.8148148148148148 and parameters: {'n_estimators': 159, 'max_depth': 3, 'learning_rate': 0.13732599658910258, 'scale_pos_weight': 586.1926273775748}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:23:59,702] Trial 23 finished with value: 0.819047619047619 and parameters: {'n_estimators': 125, 'max_depth': 4, 'learning_rate': 0.16617914631372205, 'scale_pos_weight': 535.9217542868067}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:24:02,001] Trial 24 finished with value: 0.8333333333333334 and parameters: {'n_estimators': 224, 'max_depth': 3, 'learning_rate': 0.19880566023092083, 'scale_pos_weight': 487.71207596548714}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:24:07,023] Trial 25 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 121, 'max_depth': 4, 'learning_rate': 0.17642821037167639, 'scale_pos_weight': 561.670554084125}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:24:07,260] Trial 26 finished with value: 0.8363636363636363 and parameters: {'n_estimators': 165, 'max_depth': 3, 'learning_rate': 0.10776867134229287, 'scale_pos_weight': 516.6320326800256}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:24:07,679] Trial 27 finished with value: 0.819047619047619 and parameters: {'n_estimators': 272, 'max_depth': 5, 'learning_rate': 0.13772034833073005, 'scale_pos_weight': 595.0371098162594}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:24:07,878] Trial 28 finished with value: 0.8363636363636363 and parameters: {'n_estimators': 125, 'max_depth': 3, 'learning_rate': 0.15548891827552885, 'scale_pos_weight': 542.1773697468942}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:24:11,742] Trial 29 finished with value: 0.8148148148148148 and parameters: {'n_estimators': 147, 'max_depth': 4, 'learning_rate': 0.12036515339370568, 'scale_pos_weight': 568.846893792348}. Best is trial 10 with value: 0.8545454545454545.
+[I 2026-05-14 15:34:27,760] A new study created in memory with name: no-name-dfb74183-32b0-4eb9-8950-27d32dac0600
+[I 2026-05-14 15:34:28,205] Trial 0 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 299, 'max_depth': 7, 'learning_rate': 0.13679542448260829, 'scale_pos_weight': 469.603439142101}. Best is trial 0 with value: 0.5240641711229946.
+[I 2026-05-14 15:34:28,361] Trial 1 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 251, 'max_depth': 5, 'learning_rate': 0.11998363021689128, 'scale_pos_weight': 467.0005530917199}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:28,598] Trial 2 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 294, 'max_depth': 6, 'learning_rate': 0.15610228495298212, 'scale_pos_weight': 475.1425437384259}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:31,045] Trial 3 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 340, 'max_depth': 7, 'learning_rate': 0.18157512137643506, 'scale_pos_weight': 465.9570134532131}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:34,099] Trial 4 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 385, 'max_depth': 4, 'learning_rate': 0.1269363480845, 'scale_pos_weight': 535.6746511193601}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:36,050] Trial 5 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 343, 'max_depth': 5, 'learning_rate': 0.1782634217069829, 'scale_pos_weight': 499.10201859576034}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:38,010] Trial 6 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 118, 'max_depth': 6, 'learning_rate': 0.12395512930237945, 'scale_pos_weight': 524.9944843883171}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:39,209] Trial 7 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 367, 'max_depth': 7, 'learning_rate': 0.10389232606750076, 'scale_pos_weight': 503.51103657287115}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:39,548] Trial 8 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 380, 'max_depth': 7, 'learning_rate': 0.19477060245586075, 'scale_pos_weight': 590.1289999737056}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:46,507] Trial 9 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 358, 'max_depth': 4, 'learning_rate': 0.05724863055669428, 'scale_pos_weight': 535.8964685603239}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:47,968] Trial 10 finished with value: 0.5291005291005291 and parameters: {'n_estimators': 192, 'max_depth': 3, 'learning_rate': 0.07579048893709156, 'scale_pos_weight': 422.62715629482216}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:51,154] Trial 11 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 226, 'max_depth': 4, 'learning_rate': 0.10276297933700959, 'scale_pos_weight': 582.6128177090229}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:55,940] Trial 12 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 163, 'max_depth': 4, 'learning_rate': 0.1392487758576993, 'scale_pos_weight': 560.4034642820623}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:34:59,499] Trial 13 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 266, 'max_depth': 5, 'learning_rate': 0.10391050381503661, 'scale_pos_weight': 423.6775536980863}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:05,091] Trial 14 finished with value: 0.5291005291005291 and parameters: {'n_estimators': 223, 'max_depth': 3, 'learning_rate': 0.12087183597580396, 'scale_pos_weight': 552.1026242472784}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:07,590] Trial 15 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 104, 'max_depth': 5, 'learning_rate': 0.1559575086931784, 'scale_pos_weight': 614.9155613352358}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:11,599] Trial 16 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 394, 'max_depth': 4, 'learning_rate': 0.07997688971028274, 'scale_pos_weight': 443.37585801554155}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:14,363] Trial 17 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 306, 'max_depth': 6, 'learning_rate': 0.1474153049456775, 'scale_pos_weight': 499.2764502641421}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:21,906] Trial 18 finished with value: 0.5291005291005291 and parameters: {'n_estimators': 158, 'max_depth': 3, 'learning_rate': 0.11374645841424148, 'scale_pos_weight': 448.76122418756813}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:22,306] Trial 19 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 255, 'max_depth': 4, 'learning_rate': 0.08771784049304539, 'scale_pos_weight': 485.7691861797593}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:26,775] Trial 20 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 326, 'max_depth': 5, 'learning_rate': 0.16723612773514995, 'scale_pos_weight': 542.1171217704592}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:31,142] Trial 21 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 100, 'max_depth': 6, 'learning_rate': 0.1284795203036789, 'scale_pos_weight': 514.2506478675947}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:34,333] Trial 22 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 142, 'max_depth': 6, 'learning_rate': 0.12459049919006343, 'scale_pos_weight': 526.2709059076485}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:37,711] Trial 23 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 202, 'max_depth': 6, 'learning_rate': 0.11627996434369518, 'scale_pos_weight': 571.1388651233351}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:42,881] Trial 24 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 137, 'max_depth': 5, 'learning_rate': 0.09504209649985827, 'scale_pos_weight': 512.5130056861078}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:45,153] Trial 25 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 272, 'max_depth': 4, 'learning_rate': 0.13523581536865836, 'scale_pos_weight': 528.6089190401639}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:51,208] Trial 26 finished with value: 0.5240641711229946 and parameters: {'n_estimators': 228, 'max_depth': 5, 'learning_rate': 0.14618608390225138, 'scale_pos_weight': 551.468664534594}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:35:59,458] Trial 27 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 189, 'max_depth': 6, 'learning_rate': 0.1133152231041094, 'scale_pos_weight': 486.4022074378657}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:36:01,179] Trial 28 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 286, 'max_depth': 5, 'learning_rate': 0.05252889966169397, 'scale_pos_weight': 453.00362604517284}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:36:03,619] Trial 29 finished with value: 0.5319148936170213 and parameters: {'n_estimators': 317, 'max_depth': 4, 'learning_rate': 0.13182331985386048, 'scale_pos_weight': 522.1080272804642}. Best is trial 1 with value: 0.5319148936170213.
+[I 2026-05-14 15:36:06,407] A new study created in memory with name: no-name-f2619226-961a-42cb-b533-d6c1708b0b79
+[I 2026-05-14 15:36:12,673] Trial 0 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 364, 'max_depth': 5, 'learning_rate': 0.15527036237707648, 'scale_pos_weight': 614.6183957861706}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:16,881] Trial 1 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 192, 'max_depth': 7, 'learning_rate': 0.18778076914177327, 'scale_pos_weight': 423.08897415057726}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:19,641] Trial 2 finished with value: 0.6433566433566433 and parameters: {'n_estimators': 219, 'max_depth': 3, 'learning_rate': 0.1255413863616947, 'scale_pos_weight': 574.9295430700131}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:22,318] Trial 3 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 159, 'max_depth': 7, 'learning_rate': 0.055141038475435195, 'scale_pos_weight': 491.7020790922146}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:28,629] Trial 4 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 325, 'max_depth': 7, 'learning_rate': 0.08946885055638089, 'scale_pos_weight': 427.802913589369}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:37,387] Trial 5 finished with value: 0.8269230769230769 and parameters: {'n_estimators': 338, 'max_depth': 6, 'learning_rate': 0.055045368591225836, 'scale_pos_weight': 538.816737055376}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:43,507] Trial 6 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 289, 'max_depth': 6, 'learning_rate': 0.11231397777423265, 'scale_pos_weight': 551.2527332254542}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:47,235] Trial 7 finished with value: 0.743801652892562 and parameters: {'n_estimators': 372, 'max_depth': 3, 'learning_rate': 0.10120758669172626, 'scale_pos_weight': 419.39831207022274}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:52,501] Trial 8 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 361, 'max_depth': 5, 'learning_rate': 0.07074657054402457, 'scale_pos_weight': 558.6259968418938}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:36:58,330] Trial 9 finished with value: 0.819047619047619 and parameters: {'n_estimators': 106, 'max_depth': 6, 'learning_rate': 0.1451847152543168, 'scale_pos_weight': 548.4744648498456}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:02,810] Trial 10 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 270, 'max_depth': 4, 'learning_rate': 0.17485471419839438, 'scale_pos_weight': 616.0798371016017}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:08,980] Trial 11 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 279, 'max_depth': 5, 'learning_rate': 0.1538485769004994, 'scale_pos_weight': 614.9425569727458}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:23,777] Trial 12 finished with value: 0.8514851485148515 and parameters: {'n_estimators': 397, 'max_depth': 5, 'learning_rate': 0.15642691585360116, 'scale_pos_weight': 620.0437726673543}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:27,336] Trial 13 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 308, 'max_depth': 4, 'learning_rate': 0.15531518547812137, 'scale_pos_weight': 600.046131763646}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:32,492] Trial 14 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 271, 'max_depth': 4, 'learning_rate': 0.19838460860937596, 'scale_pos_weight': 509.8137747319215}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:35,132] Trial 15 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 230, 'max_depth': 5, 'learning_rate': 0.13373348309078498, 'scale_pos_weight': 587.3393428634117}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:43,633] Trial 16 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 394, 'max_depth': 5, 'learning_rate': 0.17139831287069407, 'scale_pos_weight': 484.14359507028763}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:48,628] Trial 17 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 339, 'max_depth': 4, 'learning_rate': 0.14154305906352865, 'scale_pos_weight': 593.0265475301388}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:51,816] Trial 18 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 245, 'max_depth': 6, 'learning_rate': 0.16607714610615232, 'scale_pos_weight': 456.7492736763326}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:55,605] Trial 19 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 306, 'max_depth': 4, 'learning_rate': 0.11472650420559556, 'scale_pos_weight': 573.5509053386913}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:37:58,428] Trial 20 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 192, 'max_depth': 5, 'learning_rate': 0.18356962753296485, 'scale_pos_weight': 532.007605691176}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:38:03,922] Trial 21 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 309, 'max_depth': 4, 'learning_rate': 0.1542146989452008, 'scale_pos_weight': 603.1801866681365}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:38:07,684] Trial 22 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 351, 'max_depth': 3, 'learning_rate': 0.15274115793353016, 'scale_pos_weight': 604.5055406107102}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:38:12,013] Trial 23 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 286, 'max_depth': 5, 'learning_rate': 0.13458117608182146, 'scale_pos_weight': 577.2451862754134}. Best is trial 0 with value: 0.8627450980392157.
+[I 2026-05-14 15:38:18,185] Trial 24 finished with value: 0.8712871287128713 and parameters: {'n_estimators': 269, 'max_depth': 5, 'learning_rate': 0.13251661155583588, 'scale_pos_weight': 575.6738431802323}. Best is trial 24 with value: 0.8712871287128713.
+[I 2026-05-14 15:38:23,573] Trial 25 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 259, 'max_depth': 6, 'learning_rate': 0.12781776821126742, 'scale_pos_weight': 618.9858707164187}. Best is trial 24 with value: 0.8712871287128713.
+[I 2026-05-14 15:38:30,397] Trial 26 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 210, 'max_depth': 5, 'learning_rate': 0.11344082640858232, 'scale_pos_weight': 562.2936300664027}. Best is trial 24 with value: 0.8712871287128713.
+[I 2026-05-14 15:38:32,378] Trial 27 finished with value: 0.8269230769230769 and parameters: {'n_estimators': 133, 'max_depth': 6, 'learning_rate': 0.16232308285605737, 'scale_pos_weight': 584.239384403995}. Best is trial 24 with value: 0.8712871287128713.
+[I 2026-05-14 15:38:37,262] Trial 28 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 240, 'max_depth': 5, 'learning_rate': 0.14454818704234343, 'scale_pos_weight': 605.5140829167315}. Best is trial 24 with value: 0.8712871287128713.
+[I 2026-05-14 15:38:40,262] Trial 29 finished with value: 0.8823529411764706 and parameters: {'n_estimators': 173, 'max_depth': 5, 'learning_rate': 0.19440908370862237, 'scale_pos_weight': 518.7928890363766}. Best is trial 29 with value: 0.8823529411764706.
+[2026-05-14 14:19:02] ============================================================
+[2026-05-14 14:19:02] EXPERIMENT 1: Minimal Viable Baseline
+[2026-05-14 14:19:02] ============================================================
+[2026-05-14 14:19:02] Configuration:
+[2026-05-14 14:19:02]   Encoder: 2-layer MLP (hidden=128)
+[2026-05-14 14:19:02]   Embedding dim: half of input features (min 8, max 64)
+[2026-05-14 14:19:02]   Codebook size: embedding_dim * 4
+[2026-05-14 14:19:02]   Quantization: STE
+[2026-05-14 14:19:02]   Epochs: 100
+[2026-05-14 14:19:02]   Runs: 5
+[2026-05-14 14:19:02] ============================================================
+[2026-05-14 14:19:02] 
+============================================================
+[2026-05-14 14:19:02] EXPERIMENT 1 - RUN 1/5
+[2026-05-14 14:19:02] Dataset: creditcard, Seed: 100
+[2026-05-14 14:19:02] ============================================================
+[2026-05-14 14:19:03] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 14:19:03] Fraud ratio: Train=0.0019, Test=0.0012
+[2026-05-14 14:19:03] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 14:19:03] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 14:21:12]   Raw F1: 0.7379, Acc: 0.9994, Prec: 0.7451, Rec: 0.7308
+[2026-05-14 14:21:12] 
+  Training CONTINUOUS encoder (emb_dim=14)...
+[2026-05-14 14:22:56]     Epoch  20 | Cls Loss: 0.0014
+[2026-05-14 14:24:49]     Epoch  40 | Cls Loss: 0.0010
+[2026-05-14 14:26:49]     Epoch  60 | Cls Loss: 0.0009
+[2026-05-14 14:28:49]     Epoch  80 | Cls Loss: 0.0009
+[2026-05-14 14:30:47]     Epoch 100 | Cls Loss: 0.0009
+[2026-05-14 14:30:47] 
+Step 2: Evaluating CONTINUOUS embeddings...
+[2026-05-14 14:32:54]   CONTINUOUS F1: 0.7423, Acc: 0.9994, Prec: 0.8000, Rec: 0.6923
+[2026-05-14 14:32:54] 
+  Training QUANTIZED encoder (emb_dim=14)...
+[2026-05-14 14:34:56]     Epoch  20 | Cls Loss: 0.0026
+[2026-05-14 14:36:59]     Epoch  40 | Cls Loss: 0.0020
+[2026-05-14 14:39:01]     Epoch  60 | Cls Loss: 0.0017
+[2026-05-14 14:41:02]     Epoch  80 | Cls Loss: 0.0017
+[2026-05-14 14:43:04]     Epoch 100 | Cls Loss: 0.0021
+[2026-05-14 14:43:04] 
+Step 2: Evaluating QUANTIZED embeddings...
+[2026-05-14 14:44:18]   QUANTIZED F1: 0.5429, Acc: 0.9985, Prec: 0.4318, Rec: 0.7308
+[2026-05-14 14:44:18] 
+------------------------------------------------------------
+[2026-05-14 14:44:18] RETENTION SUMMARY:
+[2026-05-14 14:44:18]   Raw F1:           0.7379
+[2026-05-14 14:44:18]   Continuous F1:    0.7423 (100.6% of raw)
+[2026-05-14 14:44:18]   Quantized F1:     0.5429 (73.6% of raw)
+[2026-05-14 14:44:18]   Quant vs Cont:    73.1% retention
+[2026-05-14 14:44:18] ------------------------------------------------------------
+[2026-05-14 14:44:18] WARNING: Quantized F1 < 0.70 - consider debugging!
+[2026-05-14 14:44:18] WARNING: Quantized retains <90% of continuous - check VQ configuration!
+[2026-05-14 14:44:18] Results saved to: results/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run1_results.json
+[2026-05-14 14:44:18] 
+============================================================
+[2026-05-14 14:44:18] EXPERIMENT 1 - RUN 2/5
+[2026-05-14 14:44:18] Dataset: creditcard, Seed: 200
+[2026-05-14 14:44:18] ============================================================
+[2026-05-14 14:44:18] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 14:44:18] Fraud ratio: Train=0.0019, Test=0.0012
+[2026-05-14 14:44:18] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 14:44:18] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 14:47:14]   Raw F1: 0.7647, Acc: 0.9994, Prec: 0.7800, Rec: 0.7500
+[2026-05-14 14:47:14] 
+  Training CONTINUOUS encoder (emb_dim=14)...
+[2026-05-14 14:48:58]     Epoch  20 | Cls Loss: 0.0014
+[2026-05-14 14:50:45]     Epoch  40 | Cls Loss: 0.0010
+[2026-05-14 14:52:40]     Epoch  60 | Cls Loss: 0.0005
+[2026-05-14 14:54:40]     Epoch  80 | Cls Loss: 0.0008
+[2026-05-14 14:56:36]     Epoch 100 | Cls Loss: 0.0010
+[2026-05-14 14:56:36] 
+Step 2: Evaluating CONTINUOUS embeddings...
+[2026-05-14 14:58:30]   CONTINUOUS F1: 0.7290, Acc: 0.9993, Prec: 0.7091, Rec: 0.7500
+[2026-05-14 14:58:30] 
+  Training QUANTIZED encoder (emb_dim=14)...
+[2026-05-14 15:00:32]     Epoch  20 | Cls Loss: 0.0025
+[2026-05-14 15:02:34]     Epoch  40 | Cls Loss: 0.0021
+[2026-05-14 15:04:38]     Epoch  60 | Cls Loss: 0.0024
+[2026-05-14 15:06:41]     Epoch  80 | Cls Loss: 0.0029
+[2026-05-14 15:08:44]     Epoch 100 | Cls Loss: 0.0035
+[2026-05-14 15:08:44] 
+Step 2: Evaluating QUANTIZED embeddings...
+[2026-05-14 15:10:11]   QUANTIZED F1: 0.3871, Acc: 0.9969, Prec: 0.2545, Rec: 0.8077
+[2026-05-14 15:10:11] 
+------------------------------------------------------------
+[2026-05-14 15:10:11] RETENTION SUMMARY:
+[2026-05-14 15:10:11]   Raw F1:           0.7647
+[2026-05-14 15:10:11]   Continuous F1:    0.7290 (95.3% of raw)
+[2026-05-14 15:10:11]   Quantized F1:     0.3871 (50.6% of raw)
+[2026-05-14 15:10:11]   Quant vs Cont:    53.1% retention
+[2026-05-14 15:10:11] ------------------------------------------------------------
+[2026-05-14 15:10:11] WARNING: Quantized F1 < 0.70 - consider debugging!
+[2026-05-14 15:10:11] WARNING: Quantized retains <90% of continuous - check VQ configuration!
+[2026-05-14 15:10:11] Results saved to: results/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run2_results.json
+[2026-05-14 15:10:11] 
+============================================================
+[2026-05-14 15:10:11] EXPERIMENT 1 - RUN 3/5
+[2026-05-14 15:10:11] Dataset: creditcard, Seed: 300
+[2026-05-14 15:10:11] ============================================================
+[2026-05-14 15:10:11] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 15:10:11] Fraud ratio: Train=0.0019, Test=0.0012
+[2026-05-14 15:10:11] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 15:10:11] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 15:12:55]   Raw F1: 0.7677, Acc: 0.9995, Prec: 0.8085, Rec: 0.7308
+[2026-05-14 15:12:55] 
+  Training CONTINUOUS encoder (emb_dim=14)...
+[2026-05-14 15:14:39]     Epoch  20 | Cls Loss: 0.0018
+[2026-05-14 15:16:29]     Epoch  40 | Cls Loss: 0.0015
+[2026-05-14 15:18:28]     Epoch  60 | Cls Loss: 0.0013
+[2026-05-14 15:20:26]     Epoch  80 | Cls Loss: 0.0013
+[2026-05-14 15:22:26]     Epoch 100 | Cls Loss: 0.0009
+[2026-05-14 15:22:26] 
+Step 2: Evaluating CONTINUOUS embeddings...
+[2026-05-14 15:24:13]   CONTINUOUS F1: 0.6190, Acc: 0.9989, Prec: 0.5270, Rec: 0.7500
+[2026-05-14 15:24:13] 
+  Training QUANTIZED encoder (emb_dim=14)...
+[2026-05-14 15:26:16]     Epoch  20 | Cls Loss: 0.0028
+[2026-05-14 15:28:18]     Epoch  40 | Cls Loss: 0.0023
+[2026-05-14 15:30:21]     Epoch  60 | Cls Loss: 0.0022
+[2026-05-14 15:32:24]     Epoch  80 | Cls Loss: 0.0020
+[2026-05-14 15:34:27]     Epoch 100 | Cls Loss: 0.0022
+[2026-05-14 15:34:27] 
+Step 2: Evaluating QUANTIZED embeddings...
+[2026-05-14 15:36:05]   QUANTIZED F1: 0.5556, Acc: 0.9985, Prec: 0.4348, Rec: 0.7692
+[2026-05-14 15:36:05] 
+------------------------------------------------------------
+[2026-05-14 15:36:05] RETENTION SUMMARY:
+[2026-05-14 15:36:05]   Raw F1:           0.7677
+[2026-05-14 15:36:05]   Continuous F1:    0.6190 (80.6% of raw)
+[2026-05-14 15:36:05]   Quantized F1:     0.5556 (72.4% of raw)
+[2026-05-14 15:36:05]   Quant vs Cont:    89.7% retention
+[2026-05-14 15:36:05] ------------------------------------------------------------
+[2026-05-14 15:36:05] WARNING: Quantized F1 < 0.70 - consider debugging!
+[2026-05-14 15:36:05] WARNING: Quantized retains <90% of continuous - check VQ configuration!
+[2026-05-14 15:36:05] Results saved to: results/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run3_results.json
+[2026-05-14 15:36:05] 
+============================================================
+[2026-05-14 15:36:05] EXPERIMENT 1 - RUN 4/5
+[2026-05-14 15:36:05] Dataset: creditcard, Seed: 400
+[2026-05-14 15:36:05] ============================================================
+[2026-05-14 15:36:06] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 15:36:06] Fraud ratio: Train=0.0019, Test=0.0012
+[2026-05-14 15:36:06] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 15:36:06] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 15:38:41]   Raw F1: 0.7800, Acc: 0.9995, Prec: 0.8125, Rec: 0.7500[I 2026-05-14 15:48:08,881] A new study created in memory with name: no-name-9a5f758e-a822-4e45-890d-e73a54c0e97e
+[I 2026-05-14 15:48:14,840] Trial 0 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 395, 'max_depth': 4, 'learning_rate': 0.1677400946372008, 'scale_pos_weight': 608.3732870660809}. Best is trial 0 with value: 0.7850467289719626.
+[I 2026-05-14 15:48:17,824] Trial 1 finished with value: 0.8 and parameters: {'n_estimators': 391, 'max_depth': 6, 'learning_rate': 0.14066066914160624, 'scale_pos_weight': 432.86344285072295}. Best is trial 1 with value: 0.8.
+[I 2026-05-14 15:48:18,865] Trial 2 finished with value: 0.782608695652174 and parameters: {'n_estimators': 110, 'max_depth': 5, 'learning_rate': 0.0623596312401727, 'scale_pos_weight': 415.4003352417245}. Best is trial 1 with value: 0.8.
+[I 2026-05-14 15:48:21,141] Trial 3 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 251, 'max_depth': 7, 'learning_rate': 0.1497223415714944, 'scale_pos_weight': 571.8244453756815}. Best is trial 1 with value: 0.8.
+[I 2026-05-14 15:48:24,389] Trial 4 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 128, 'max_depth': 6, 'learning_rate': 0.10667177904092762, 'scale_pos_weight': 496.5438015852732}. Best is trial 1 with value: 0.8.
+[I 2026-05-14 15:48:35,099] Trial 5 finished with value: 0.8 and parameters: {'n_estimators': 302, 'max_depth': 7, 'learning_rate': 0.07666098804373185, 'scale_pos_weight': 433.986495619883}. Best is trial 1 with value: 0.8.
+[I 2026-05-14 15:48:48,693] Trial 6 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 397, 'max_depth': 3, 'learning_rate': 0.1562360684363316, 'scale_pos_weight': 509.8687484871923}. Best is trial 1 with value: 0.8.
+[I 2026-05-14 15:48:52,633] Trial 7 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 398, 'max_depth': 6, 'learning_rate': 0.13708760033833875, 'scale_pos_weight': 595.7776744285733}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:48:55,166] Trial 8 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 327, 'max_depth': 6, 'learning_rate': 0.06071396529189703, 'scale_pos_weight': 446.73696698065106}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:02,341] Trial 9 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 309, 'max_depth': 6, 'learning_rate': 0.11685500219694843, 'scale_pos_weight': 607.2266649787402}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:03,029] Trial 10 finished with value: 0.7706422018348624 and parameters: {'n_estimators': 182, 'max_depth': 4, 'learning_rate': 0.0981086753390196, 'scale_pos_weight': 556.4234827231297}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:07,626] Trial 11 finished with value: 0.8 and parameters: {'n_estimators': 352, 'max_depth': 5, 'learning_rate': 0.19779065890546274, 'scale_pos_weight': 480.7868292823547}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:10,554] Trial 12 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 357, 'max_depth': 6, 'learning_rate': 0.13558623182650573, 'scale_pos_weight': 540.4858162182205}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:10,983] Trial 13 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 259, 'max_depth': 7, 'learning_rate': 0.17756176841579538, 'scale_pos_weight': 550.2426486287429}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:14,886] Trial 14 finished with value: 0.7777777777777778 and parameters: {'n_estimators': 353, 'max_depth': 5, 'learning_rate': 0.13145813432843742, 'scale_pos_weight': 578.484734530932}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:24,783] Trial 15 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 193, 'max_depth': 6, 'learning_rate': 0.09052723832559777, 'scale_pos_weight': 529.0298133920456}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:30,712] Trial 16 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 355, 'max_depth': 5, 'learning_rate': 0.12366694179033752, 'scale_pos_weight': 621.2327334683281}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:36,418] Trial 17 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 281, 'max_depth': 4, 'learning_rate': 0.17188270308119274, 'scale_pos_weight': 592.8786908564286}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:38,840] Trial 18 finished with value: 0.8 and parameters: {'n_estimators': 208, 'max_depth': 7, 'learning_rate': 0.13244064006291947, 'scale_pos_weight': 538.7884188236577}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:46,451] Trial 19 finished with value: 0.8 and parameters: {'n_estimators': 367, 'max_depth': 6, 'learning_rate': 0.19099335612105675, 'scale_pos_weight': 570.7155784843601}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:52,521] Trial 20 finished with value: 0.7850467289719626 and parameters: {'n_estimators': 329, 'max_depth': 3, 'learning_rate': 0.15266060469454965, 'scale_pos_weight': 475.3326803000044}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:56,714] Trial 21 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 396, 'max_depth': 6, 'learning_rate': 0.14437318609172647, 'scale_pos_weight': 513.9779588016595}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:49:59,785] Trial 22 finished with value: 0.8 and parameters: {'n_estimators': 371, 'max_depth': 6, 'learning_rate': 0.14178982900236312, 'scale_pos_weight': 518.553794149645}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:08,083] Trial 23 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 399, 'max_depth': 5, 'learning_rate': 0.11086602171120884, 'scale_pos_weight': 491.49323650201126}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:12,987] Trial 24 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 333, 'max_depth': 7, 'learning_rate': 0.16244330499047482, 'scale_pos_weight': 548.8261271358941}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:25,365] Trial 25 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 377, 'max_depth': 6, 'learning_rate': 0.136740632994176, 'scale_pos_weight': 467.50669952847903}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:25,799] Trial 26 finished with value: 0.7924528301886793 and parameters: {'n_estimators': 290, 'max_depth': 5, 'learning_rate': 0.12112018983853534, 'scale_pos_weight': 512.7938148573891}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:26,377] Trial 27 finished with value: 0.8076923076923077 and parameters: {'n_estimators': 333, 'max_depth': 6, 'learning_rate': 0.17923824634835295, 'scale_pos_weight': 524.4957709970794}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:28,007] Trial 28 finished with value: 0.8 and parameters: {'n_estimators': 375, 'max_depth': 7, 'learning_rate': 0.1454252076827981, 'scale_pos_weight': 581.4413223037625}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 15:50:33,192] Trial 29 finished with value: 0.8 and parameters: {'n_estimators': 222, 'max_depth': 6, 'learning_rate': 0.16887442701808691, 'scale_pos_weight': 596.8121854045835}. Best is trial 7 with value: 0.8076923076923077.
+[I 2026-05-14 16:00:49,572] A new study created in memory with name: no-name-07777901-cab9-4ec7-ab0f-3ff64e2326a7
+[I 2026-05-14 16:00:51,192] Trial 0 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 240, 'max_depth': 3, 'learning_rate': 0.17517032729229154, 'scale_pos_weight': 432.7143272613846}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:51,284] Trial 1 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 133, 'max_depth': 7, 'learning_rate': 0.11335590015757772, 'scale_pos_weight': 479.9625174599285}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:51,372] Trial 2 finished with value: 0.35379061371841153 and parameters: {'n_estimators': 151, 'max_depth': 4, 'learning_rate': 0.06354762643879748, 'scale_pos_weight': 575.4462922651753}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:51,529] Trial 3 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 268, 'max_depth': 5, 'learning_rate': 0.18278372575224827, 'scale_pos_weight': 485.55780191285265}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:51,622] Trial 4 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 148, 'max_depth': 4, 'learning_rate': 0.12808746333942975, 'scale_pos_weight': 531.1871444065262}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:51,796] Trial 5 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 313, 'max_depth': 3, 'learning_rate': 0.1353077872919469, 'scale_pos_weight': 423.92358741706255}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:51,897] Trial 6 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 140, 'max_depth': 3, 'learning_rate': 0.15223517203877418, 'scale_pos_weight': 457.27445093619116}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:52,057] Trial 7 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 322, 'max_depth': 3, 'learning_rate': 0.16938757770187993, 'scale_pos_weight': 521.8122578721155}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:53,226] Trial 8 finished with value: 0.35379061371841153 and parameters: {'n_estimators': 218, 'max_depth': 3, 'learning_rate': 0.05862085529302058, 'scale_pos_weight': 461.62816821829597}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:53,459] Trial 9 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 359, 'max_depth': 7, 'learning_rate': 0.1829284050334627, 'scale_pos_weight': 513.0228675531856}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:00:55,788] Trial 10 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 218, 'max_depth': 6, 'learning_rate': 0.09617751910034066, 'scale_pos_weight': 417.081400580282}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:01,779] Trial 11 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 192, 'max_depth': 4, 'learning_rate': 0.14866157495085724, 'scale_pos_weight': 568.1640110870596}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:03,175] Trial 12 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 280, 'max_depth': 4, 'learning_rate': 0.19765396090105342, 'scale_pos_weight': 616.6080495772467}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:05,312] Trial 13 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 171, 'max_depth': 5, 'learning_rate': 0.0971363950642403, 'scale_pos_weight': 536.0241684699341}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:07,427] Trial 14 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 106, 'max_depth': 4, 'learning_rate': 0.12366496256519209, 'scale_pos_weight': 543.4214268673292}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:08,460] Trial 15 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 229, 'max_depth': 4, 'learning_rate': 0.15781857883731648, 'scale_pos_weight': 496.8369411629371}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:10,508] Trial 16 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 394, 'max_depth': 5, 'learning_rate': 0.08134839344924163, 'scale_pos_weight': 565.5609393734617}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:11,918] Trial 17 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 104, 'max_depth': 6, 'learning_rate': 0.1370755094353988, 'scale_pos_weight': 438.92135613056564}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:13,869] Trial 18 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 185, 'max_depth': 3, 'learning_rate': 0.11188931697340748, 'scale_pos_weight': 604.6845824149179}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:16,596] Trial 19 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 244, 'max_depth': 5, 'learning_rate': 0.17560277374750585, 'scale_pos_weight': 504.2123259646572}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:20,386] Trial 20 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 289, 'max_depth': 4, 'learning_rate': 0.19505504587483025, 'scale_pos_weight': 545.5502255645866}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:24,782] Trial 21 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 312, 'max_depth': 3, 'learning_rate': 0.12892407177068504, 'scale_pos_weight': 431.04861221604324}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:28,012] Trial 22 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 339, 'max_depth': 3, 'learning_rate': 0.14325805104124195, 'scale_pos_weight': 457.2349115556365}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:33,635] Trial 23 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 371, 'max_depth': 3, 'learning_rate': 0.16193421446902242, 'scale_pos_weight': 422.4300451834967}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:36,227] Trial 24 finished with value: 0.35036496350364965 and parameters: {'n_estimators': 256, 'max_depth': 4, 'learning_rate': 0.1306304655303009, 'scale_pos_weight': 443.28618595969385}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:37,896] Trial 25 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 310, 'max_depth': 3, 'learning_rate': 0.11272477017380896, 'scale_pos_weight': 476.14988011545523}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:40,019] Trial 26 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 204, 'max_depth': 4, 'learning_rate': 0.0965607448609711, 'scale_pos_weight': 527.2822883236173}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:43,102] Trial 27 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 293, 'max_depth': 3, 'learning_rate': 0.1396366665760857, 'scale_pos_weight': 446.88007037818716}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:45,092] Trial 28 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 172, 'max_depth': 3, 'learning_rate': 0.1632887311718439, 'scale_pos_weight': 428.9296114798295}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:50,287] Trial 29 finished with value: 0.3563636363636364 and parameters: {'n_estimators': 124, 'max_depth': 4, 'learning_rate': 0.11586614982221966, 'scale_pos_weight': 467.5697248052334}. Best is trial 0 with value: 0.3563636363636364.
+[I 2026-05-14 16:01:55,270] A new study created in memory with name: no-name-9862806a-fb10-4796-bd77-053422afaa73
+[I 2026-05-14 16:01:57,682] Trial 0 finished with value: 0.8380952380952381 and parameters: {'n_estimators': 374, 'max_depth': 5, 'learning_rate': 0.054452176489617615, 'scale_pos_weight': 573.7478522706092}. Best is trial 0 with value: 0.8380952380952381.
+[I 2026-05-14 16:01:58,566] Trial 1 finished with value: 0.8113207547169812 and parameters: {'n_estimators': 278, 'max_depth': 5, 'learning_rate': 0.06105664441860922, 'scale_pos_weight': 537.261618212523}. Best is trial 0 with value: 0.8380952380952381.
+[I 2026-05-14 16:02:03,966] Trial 2 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 394, 'max_depth': 6, 'learning_rate': 0.14578728030946614, 'scale_pos_weight': 421.2573688714753}. Best is trial 2 with value: 0.8461538461538461.
+[I 2026-05-14 16:02:09,724] Trial 3 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 237, 'max_depth': 5, 'learning_rate': 0.08136310556341972, 'scale_pos_weight': 519.9318170940301}. Best is trial 2 with value: 0.8461538461538461.
+[I 2026-05-14 16:02:15,497] Trial 4 finished with value: 0.7787610619469026 and parameters: {'n_estimators': 156, 'max_depth': 4, 'learning_rate': 0.14105719722197396, 'scale_pos_weight': 588.5288560433046}. Best is trial 2 with value: 0.8461538461538461.
+[I 2026-05-14 16:02:21,542] Trial 5 finished with value: 0.8301886792452831 and parameters: {'n_estimators': 386, 'max_depth': 3, 'learning_rate': 0.16068080701993848, 'scale_pos_weight': 414.9413764828705}. Best is trial 2 with value: 0.8461538461538461.
+[I 2026-05-14 16:02:24,802] Trial 6 finished with value: 0.36162361623616235 and parameters: {'n_estimators': 217, 'max_depth': 3, 'learning_rate': 0.0683746782529174, 'scale_pos_weight': 510.16401365123994}. Best is trial 2 with value: 0.8461538461538461.
+[I 2026-05-14 16:02:31,400] Trial 7 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 367, 'max_depth': 5, 'learning_rate': 0.1590219364773987, 'scale_pos_weight': 425.458503997929}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:02:40,403] Trial 8 finished with value: 0.8269230769230769 and parameters: {'n_estimators': 389, 'max_depth': 7, 'learning_rate': 0.06683694151106222, 'scale_pos_weight': 583.9477674089302}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:02:43,588] Trial 9 finished with value: 0.822429906542056 and parameters: {'n_estimators': 128, 'max_depth': 5, 'learning_rate': 0.14362926980609603, 'scale_pos_weight': 619.0135325062962}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:02:47,123] Trial 10 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 315, 'max_depth': 7, 'learning_rate': 0.1951794662434882, 'scale_pos_weight': 467.95179937059976}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:02:52,699] Trial 11 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 331, 'max_depth': 6, 'learning_rate': 0.11062910912458593, 'scale_pos_weight': 420.4063365771359}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:02:57,052] Trial 12 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 337, 'max_depth': 6, 'learning_rate': 0.17988547454670217, 'scale_pos_weight': 453.9387047349678}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:01,042] Trial 13 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 327, 'max_depth': 6, 'learning_rate': 0.1843917450840065, 'scale_pos_weight': 463.33665895165285}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:08,076] Trial 14 finished with value: 0.8627450980392157 and parameters: {'n_estimators': 306, 'max_depth': 4, 'learning_rate': 0.17168991607514608, 'scale_pos_weight': 460.4387505541193}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:11,383] Trial 15 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 279, 'max_depth': 4, 'learning_rate': 0.11489325938475542, 'scale_pos_weight': 480.6622551226211}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:18,144] Trial 16 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 287, 'max_depth': 4, 'learning_rate': 0.16642907168018556, 'scale_pos_weight': 490.75551956343526}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:22,505] Trial 17 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 198, 'max_depth': 4, 'learning_rate': 0.15855667113736144, 'scale_pos_weight': 443.8588357093337}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:31,691] Trial 18 finished with value: 0.8 and parameters: {'n_estimators': 346, 'max_depth': 3, 'learning_rate': 0.12837166305871311, 'scale_pos_weight': 444.2389747565763}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:35,766] Trial 19 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 355, 'max_depth': 4, 'learning_rate': 0.19818333688673784, 'scale_pos_weight': 495.62516274792694}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:44,108] Trial 20 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 294, 'max_depth': 4, 'learning_rate': 0.17403198817444787, 'scale_pos_weight': 438.0450526227669}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:48,742] Trial 21 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 361, 'max_depth': 6, 'learning_rate': 0.18011858968439953, 'scale_pos_weight': 463.01477495605246}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:52,928] Trial 22 finished with value: 0.8349514563106796 and parameters: {'n_estimators': 305, 'max_depth': 6, 'learning_rate': 0.1881003012075398, 'scale_pos_weight': 442.4415277760878}. Best is trial 7 with value: 0.8627450980392157.
+[I 2026-05-14 16:03:57,687] Trial 23 finished with value: 0.8653846153846154 and parameters: {'n_estimators': 255, 'max_depth': 5, 'learning_rate': 0.16677764446137874, 'scale_pos_weight': 459.70562085930567}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:03:59,924] Trial 24 finished with value: 0.8461538461538461 and parameters: {'n_estimators': 252, 'max_depth': 5, 'learning_rate': 0.1508385108877611, 'scale_pos_weight': 539.3960076464258}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:04:03,191] Trial 25 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 246, 'max_depth': 5, 'learning_rate': 0.12801715406178718, 'scale_pos_weight': 476.90195208858927}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:04:06,330] Trial 26 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 190, 'max_depth': 5, 'learning_rate': 0.17081670900218857, 'scale_pos_weight': 431.0481315137725}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:04:13,323] Trial 27 finished with value: 0.8148148148148148 and parameters: {'n_estimators': 264, 'max_depth': 4, 'learning_rate': 0.0967935889434643, 'scale_pos_weight': 507.3677203613206}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:04:18,736] Trial 28 finished with value: 0.8431372549019608 and parameters: {'n_estimators': 310, 'max_depth': 5, 'learning_rate': 0.15794394921726243, 'scale_pos_weight': 454.27625490301966}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:04:20,065] Trial 29 finished with value: 0.8543689320388349 and parameters: {'n_estimators': 266, 'max_depth': 5, 'learning_rate': 0.13590542786111054, 'scale_pos_weight': 429.0495273687216}. Best is trial 23 with value: 0.8653846153846154.
+[I 2026-05-14 16:13:48,234] A new study created in memory with name: no-name-37ede388-0444-4cbf-a026-838da38180c0
+[I 2026-05-14 16:13:50,464] Trial 0 finished with value: 0.7457627118644068 and parameters: {'n_estimators': 135, 'max_depth': 4, 'learning_rate': 0.0630245311995874, 'scale_pos_weight': 421.6493477854712}. Best is trial 0 with value: 0.7457627118644068.
+[I 2026-05-14 16:13:52,623] Trial 1 finished with value: 0.7927927927927928 and parameters: {'n_estimators': 270, 'max_depth': 5, 'learning_rate': 0.13599178755992858, 'scale_pos_weight': 603.5370244726787}. Best is trial 1 with value: 0.7927927927927928.
+[I 2026-05-14 16:13:59,018] Trial 2 finished with value: 0.8 and parameters: {'n_estimators': 394, 'max_depth': 5, 'learning_rate': 0.1284970881434961, 'scale_pos_weight': 431.81856753874865}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:04,628] Trial 3 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 239, 'max_depth': 7, 'learning_rate': 0.139783357447866, 'scale_pos_weight': 503.36443089268306}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:05,123] Trial 4 finished with value: 0.8 and parameters: {'n_estimators': 339, 'max_depth': 4, 'learning_rate': 0.12527582669324688, 'scale_pos_weight': 588.2968024771725}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:08,651] Trial 5 finished with value: 0.7652173913043478 and parameters: {'n_estimators': 301, 'max_depth': 4, 'learning_rate': 0.052467162009203594, 'scale_pos_weight': 447.02667512571867}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:18,623] Trial 6 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 234, 'max_depth': 4, 'learning_rate': 0.17207978828354095, 'scale_pos_weight': 453.7349564018712}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:19,196] Trial 7 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 378, 'max_depth': 6, 'learning_rate': 0.16747379631777065, 'scale_pos_weight': 537.7735973400728}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:19,378] Trial 8 finished with value: 0.75 and parameters: {'n_estimators': 145, 'max_depth': 3, 'learning_rate': 0.07756322238808791, 'scale_pos_weight': 464.5135028322213}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:19,821] Trial 9 finished with value: 0.7787610619469026 and parameters: {'n_estimators': 292, 'max_depth': 6, 'learning_rate': 0.19935712835684644, 'scale_pos_weight': 541.3058120894543}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:25,051] Trial 10 finished with value: 0.7787610619469026 and parameters: {'n_estimators': 395, 'max_depth': 6, 'learning_rate': 0.09410557831784165, 'scale_pos_weight': 500.0144236908725}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:28,811] Trial 11 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 351, 'max_depth': 5, 'learning_rate': 0.11327996900898828, 'scale_pos_weight': 619.1584560972034}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:33,635] Trial 12 finished with value: 0.7927927927927928 and parameters: {'n_estimators': 338, 'max_depth': 3, 'learning_rate': 0.10706258165253597, 'scale_pos_weight': 576.2184774861968}. Best is trial 2 with value: 0.8.
+[I 2026-05-14 16:14:35,756] Trial 13 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 339, 'max_depth': 4, 'learning_rate': 0.1523416283905392, 'scale_pos_weight': 572.2098087423094}. Best is trial 13 with value: 0.8073394495412844.
+[I 2026-05-14 16:14:40,561] Trial 14 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 400, 'max_depth': 5, 'learning_rate': 0.15629655870464346, 'scale_pos_weight': 561.4294606109509}. Best is trial 13 with value: 0.8073394495412844.
+[I 2026-05-14 16:14:43,394] Trial 15 finished with value: 0.7787610619469026 and parameters: {'n_estimators': 203, 'max_depth': 5, 'learning_rate': 0.16319565105256212, 'scale_pos_weight': 563.9751202385912}. Best is trial 13 with value: 0.8073394495412844.
+[I 2026-05-14 16:14:45,654] Trial 16 finished with value: 0.7927927927927928 and parameters: {'n_estimators': 311, 'max_depth': 3, 'learning_rate': 0.15416300057864613, 'scale_pos_weight': 554.6008297888683}. Best is trial 13 with value: 0.8073394495412844.
+[I 2026-05-14 16:14:49,774] Trial 17 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 361, 'max_depth': 7, 'learning_rate': 0.19014735346754855, 'scale_pos_weight': 517.758820108416}. Best is trial 13 with value: 0.8073394495412844.
+[I 2026-05-14 16:14:57,464] Trial 18 finished with value: 0.8148148148148148 and parameters: {'n_estimators': 330, 'max_depth': 4, 'learning_rate': 0.18233803351621483, 'scale_pos_weight': 587.933572721358}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:14:59,119] Trial 19 finished with value: 0.8 and parameters: {'n_estimators': 196, 'max_depth': 4, 'learning_rate': 0.17768214781870664, 'scale_pos_weight': 593.4858997229056}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:02,319] Trial 20 finished with value: 0.7586206896551724 and parameters: {'n_estimators': 100, 'max_depth': 3, 'learning_rate': 0.18582153005031005, 'scale_pos_weight': 615.3550635341049}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:05,841] Trial 21 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 318, 'max_depth': 4, 'learning_rate': 0.15535433799662857, 'scale_pos_weight': 573.3146492527837}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:08,543] Trial 22 finished with value: 0.8 and parameters: {'n_estimators': 365, 'max_depth': 5, 'learning_rate': 0.14655791063798707, 'scale_pos_weight': 545.829839496365}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:12,652] Trial 23 finished with value: 0.7927927927927928 and parameters: {'n_estimators': 272, 'max_depth': 5, 'learning_rate': 0.17940135542267813, 'scale_pos_weight': 581.7371488486198}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:14,639] Trial 24 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 330, 'max_depth': 4, 'learning_rate': 0.15712093465176355, 'scale_pos_weight': 600.652321688212}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:22,403] Trial 25 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 399, 'max_depth': 6, 'learning_rate': 0.199729846055734, 'scale_pos_weight': 522.1668934290973}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:27,092] Trial 26 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 372, 'max_depth': 4, 'learning_rate': 0.13989586708585744, 'scale_pos_weight': 559.7156099833071}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:35,059] Trial 27 finished with value: 0.8073394495412844 and parameters: {'n_estimators': 270, 'max_depth': 3, 'learning_rate': 0.16794460983014428, 'scale_pos_weight': 528.2290049664126}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:38,530] Trial 28 finished with value: 0.7857142857142857 and parameters: {'n_estimators': 350, 'max_depth': 5, 'learning_rate': 0.14849431931969057, 'scale_pos_weight': 568.0081717075788}. Best is trial 18 with value: 0.8148148148148148.
+[I 2026-05-14 16:15:42,433] Trial 29 finished with value: 0.8 and parameters: {'n_estimators': 379, 'max_depth': 4, 'learning_rate': 0.11676571217756357, 'scale_pos_weight': 485.17600562970904}. Best is trial 18 with value: 0.8148148148148148.
+Terminated

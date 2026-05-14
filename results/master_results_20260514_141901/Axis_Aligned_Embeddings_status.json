@@ -1,0 +1,9 @@
+{
+    "method": "Axis_Aligned_Embeddings",
+    "status": "FAILED",
+    "exit_code": 143,
+    "duration_seconds": 7305,
+    "dataset": "creditcard",
+    "timestamp": "2026-05-14T16:20:46+05:30",
+    "error": "See log: /home/dpip/Desktop/Experiments/master_results_20260514_141901/Axis_Aligned_Embeddings.log"
+}

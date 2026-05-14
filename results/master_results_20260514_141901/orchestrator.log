@@ -1,0 +1,65 @@
+[2026-05-14 14:19:01] Dataset: creditcard
+[2026-05-14 14:19:01] Results directory: /home/dpip/Desktop/Experiments/master_results_20260514_141901
+[2026-05-14 14:19:01] Parallel execution: false
+[2026-05-14 14:19:01] Max parallel jobs: 3
+[2026-05-14 14:19:01] GitHub push: true
+[2026-05-14 14:19:01] Push existing only: false
+[2026-05-14 14:19:01] Skip new runs: false
+[2026-05-14 14:19:01] Target repo: /home/dpip/Surrogate-Loss-Network
+[2026-05-14 14:19:01] Branch: embedding-results-20260514_141901
+[2026-05-14 14:19:01] ========================================
+[2026-05-14 14:19:01] Initializing GitHub Push
+[2026-05-14 14:19:01] ========================================
+[2026-05-14 14:19:01] Target repo: /home/dpip/Surrogate-Loss-Network
+[2026-05-14 14:19:01] Branch: embedding-results-20260514_141901
+Switched to a new branch 'embedding-results-20260514_141901'
+[2026-05-14 14:19:01] Orphan branch created — branch will contain only result files
+[2026-05-14 14:19:01] Found 6 methods to run:
+[2026-05-14 14:19:01]   - Axis_Aligned_Embeddings
+[2026-05-14 14:19:01]   - gradient_hessians
+[2026-05-14 14:19:01]   - grouped_encoder
+[2026-05-14 14:19:01]   - joint_optimized
+[2026-05-14 14:19:01]   - leaf_distillation
+[2026-05-14 14:19:01]   - random_projection
+[2026-05-14 14:19:01] Running methods sequentially...
+[2026-05-14 14:19:01] Starting: Axis_Aligned_Embeddings
+[2026-05-14 16:20:46] ✗ Failed: Axis_Aligned_Embeddings (Exit code: 143)
+[2026-05-14 16:20:46] Pushing results for Axis_Aligned_Embeddings to GitHub...
+[embedding-results-20260514_141901 (root-commit) f291cae] Add results: Axis_Aligned_Embeddings
+ 27 files changed, 1958 insertions(+)
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/Axis_Aligned_Embeddings_status.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_180432/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_180546/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_180943/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp1_minimal_baseline/exp1_run1_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp1_minimal_baseline/exp1_run2_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp1_minimal_baseline/exp1_run3_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp1_minimal_baseline/exp1_run4_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp1_minimal_baseline/exp1_run5_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp2_encoder_depth/exp2_run1_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp2_encoder_depth/exp2_run2_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp2_encoder_depth/exp2_run3_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp2_encoder_depth/experiment2_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp3_codebook_tradeoff/exp3_run1_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp3_codebook_tradeoff/exp3_run2_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp3_codebook_tradeoff/exp3_run3_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp3_codebook_tradeoff/experiment3_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260513_181108/exp4_enhanced_baseline/experiment4_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141440/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141514/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141833/exp1_minimal_baseline/experiment1_log.txt
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run1_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run2_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run3_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141901/exp1_minimal_baseline/exp1_run4_results.json
+ create mode 100644 results/master_results_20260514_141901/Axis_Aligned_Embeddings/creditcard_20260514_141901/exp1_minimal_baseline/experiment1_log.txt
+remote: 
+remote: Create a pull request for 'embedding-results-20260514_141901' on GitHub by visiting:        
+remote:      https://github.com/bombayblastoise/Surrogate-Loss-Network/pull/new/embedding-results-20260514_141901        
+remote: 
+To github.com:bombayblastoise/Surrogate-Loss-Network.git
+ * [new branch]      embedding-results-20260514_141901 -> embedding-results-20260514_141901
+branch 'embedding-results-20260514_141901' set up to track 'origin/embedding-results-20260514_141901'.
+[2026-05-14 16:20:50] ✓ Pushed Axis_Aligned_Embeddings results to GitHub (branch: embedding-results-20260514_141901)
+[2026-05-14 16:20:50] Starting: gradient_hessians
