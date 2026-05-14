@@ -1,0 +1,107 @@
+[2026-05-14 19:43:06] ============================================================
+[2026-05-14 19:43:06] EXPERIMENT 1: Minimal Viable Baseline
+[2026-05-14 19:43:06] ============================================================
+[2026-05-14 19:43:06] Configuration:
+[2026-05-14 19:43:06]   Encoder: 2-layer MLP (hidden=128)
+[2026-05-14 19:43:06]   Embedding dim: half of input features (min 8, max 64)
+[2026-05-14 19:43:06]   Codebook size: embedding_dim * 4
+[2026-05-14 19:43:06]   Quantization: STE
+[2026-05-14 19:43:06]   Epochs: 100
+[2026-05-14 19:43:06]   Runs: 2
+[2026-05-14 19:43:06] ============================================================
+[2026-05-14 19:43:06] 
+============================================================
+[2026-05-14 19:43:06] EXPERIMENT 1 - RUN 1/2
+[2026-05-14 19:43:06] Dataset: creditcard, Seed: 100
+[2026-05-14 19:43:06] ============================================================
+[2026-05-14 19:43:06] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 19:43:06] Fraud ratio: Train=0.0019, Test=0.0012
+[2026-05-14 19:43:06] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 19:43:06] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 19:43:50]   Raw F1: 0.7500, Acc: 0.9994, Prec: 0.7500, Rec: 0.7500
+[2026-05-14 19:43:50] 
+  Training CONTINUOUS encoder (emb_dim=14)...
+[2026-05-14 19:45:35]     Epoch  20 | Cls Loss: 0.0014
+[2026-05-14 19:47:27]     Epoch  40 | Cls Loss: 0.0010
+[2026-05-14 19:49:27]     Epoch  60 | Cls Loss: 0.0009
+[2026-05-14 19:51:26]     Epoch  80 | Cls Loss: 0.0009
+[2026-05-14 19:53:24]     Epoch 100 | Cls Loss: 0.0009
+[2026-05-14 19:53:24] 
+Step 2: Evaluating CONTINUOUS embeddings...
+[2026-05-14 19:53:53]   CONTINUOUS F1: 0.7451, Acc: 0.9994, Prec: 0.7600, Rec: 0.7308
+[2026-05-14 19:53:53] 
+  Training QUANTIZED encoder (emb_dim=14)...
+[2026-05-14 19:55:56]     Epoch  20 | Cls Loss: 0.0026
+[2026-05-14 19:57:58]     Epoch  40 | Cls Loss: 0.0020
+[2026-05-14 20:00:00]     Epoch  60 | Cls Loss: 0.0017
+[2026-05-14 20:02:03]     Epoch  80 | Cls Loss: 0.0017
+[2026-05-14 20:04:05]     Epoch 100 | Cls Loss: 0.0021
+[2026-05-14 20:04:05] 
+Step 2: Evaluating QUANTIZED embeddings...
+[2026-05-14 20:04:15]   QUANTIZED F1: 0.5429, Acc: 0.9985, Prec: 0.4318, Rec: 0.7308
+[2026-05-14 20:04:15] 
+------------------------------------------------------------
+[2026-05-14 20:04:15] RETENTION SUMMARY:
+[2026-05-14 20:04:15]   Raw F1:           0.7500
+[2026-05-14 20:04:15]   Continuous F1:    0.7451 (99.3% of raw)
+[2026-05-14 20:04:15]   Quantized F1:     0.5429 (72.4% of raw)
+[2026-05-14 20:04:15]   Quant vs Cont:    72.9% retention
+[2026-05-14 20:04:15] ------------------------------------------------------------
+[2026-05-14 20:04:15] WARNING: Quantized F1 < 0.70 - consider debugging!
+[2026-05-14 20:04:15] WARNING: Quantized retains <90% of continuous - check VQ configuration!
+[2026-05-14 20:04:15] Results saved to: results/creditcard_20260514_194305/exp1_minimal_baseline/exp1_run1_results.json
+[2026-05-14 20:04:15] 
+============================================================
+[2026-05-14 20:04:15] EXPERIMENT 1 - RUN 2/2
+[2026-05-14 20:04:15] Dataset: creditcard, Seed: 200
+[2026-05-14 20:04:15] ============================================================
+[2026-05-14 20:04:15] Data: Train=199364, Val=42721, Test=42722
+[2026-05-14 20:04:15] Fraud ratio: Train=0.0019, Test=0.0012
+[2026-05-14 20:04:15] Input features: 29, Embedding dim: 14, Codebook: 56
+[2026-05-14 20:04:15] 
+Step 1: Evaluating RAW baseline...
+[2026-05-14 20:05:04]   Raw F1: 0.8125, Acc: 0.9996, Prec: 0.8864, Rec: 0.7500
+[2026-05-14 20:05:04] 
+  Training CONTINUOUS encoder (emb_dim=14)...
+[2026-05-14 20:06:48]     Epoch  20 | Cls Loss: 0.0014
+[2026-05-14 20:08:36]     Epoch  40 | Cls Loss: 0.0010
+[2026-05-14 20:10:29]     Epoch  60 | Cls Loss: 0.0005
+[2026-05-14 20:12:29]     Epoch  80 | Cls Loss: 0.0008
+[2026-05-14 20:14:24]     Epoch 100 | Cls Loss: 0.0010
+[2026-05-14 20:14:24] 
+Step 2: Evaluating CONTINUOUS embeddings...
+[2026-05-14 20:14:59]   CONTINUOUS F1: 0.6964, Acc: 0.9992, Prec: 0.6500, Rec: 0.7500
+[2026-05-14 20:14:59] 
+  Training QUANTIZED encoder (emb_dim=14)...
+[2026-05-14 20:17:00]     Epoch  20 | Cls Loss: 0.0025
+[2026-05-14 20:19:02]     Epoch  40 | Cls Loss: 0.0021
+[2026-05-14 20:21:04]     Epoch  60 | Cls Loss: 0.0024
+[2026-05-14 20:23:06]     Epoch  80 | Cls Loss: 0.0029
+[2026-05-14 20:25:08]     Epoch 100 | Cls Loss: 0.0035
+[2026-05-14 20:25:08] 
+Step 2: Evaluating QUANTIZED embeddings...
+[2026-05-14 20:25:17]   QUANTIZED F1: 0.3871, Acc: 0.9969, Prec: 0.2545, Rec: 0.8077
+[2026-05-14 20:25:17] 
+------------------------------------------------------------
+[2026-05-14 20:25:17] RETENTION SUMMARY:
+[2026-05-14 20:25:17]   Raw F1:           0.8125
+[2026-05-14 20:25:17]   Continuous F1:    0.6964 (85.7% of raw)
+[2026-05-14 20:25:17]   Quantized F1:     0.3871 (47.6% of raw)
+[2026-05-14 20:25:17]   Quant vs Cont:    55.6% retention
+[2026-05-14 20:25:17] ------------------------------------------------------------
+[2026-05-14 20:25:17] WARNING: Quantized F1 < 0.70 - consider debugging!
+[2026-05-14 20:25:17] WARNING: Quantized retains <90% of continuous - check VQ configuration!
+[2026-05-14 20:25:17] Results saved to: results/creditcard_20260514_194305/exp1_minimal_baseline/exp1_run2_results.json
+[2026-05-14 20:25:17] 
+============================================================
+[2026-05-14 20:25:17] EXPERIMENT 1 SUMMARY
+[2026-05-14 20:25:17] ============================================================
+[2026-05-14 20:25:17] Raw F1:           0.7812 ± 0.0312
+[2026-05-14 20:25:17] Continuous F1:    0.7208 ± 0.0243
+[2026-05-14 20:25:17] Quantized F1:     0.4650 ± 0.0779
+[2026-05-14 20:25:17] Retention (raw):  60.0% ± 12.4%
+[2026-05-14 20:25:17] 
+CAUTION: Baseline below expectations. Review before proceeding.
+[2026-05-14 20:25:17] 
+All results saved to: results/creditcard_20260514_194305/exp1_minimal_baseline

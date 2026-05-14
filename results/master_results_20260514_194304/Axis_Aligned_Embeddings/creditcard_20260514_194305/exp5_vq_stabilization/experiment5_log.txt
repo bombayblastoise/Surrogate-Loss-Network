@@ -1,0 +1,68 @@
+[2026-05-14 23:38:29] ============================================================
+[2026-05-14 23:38:29] EXPERIMENT 5: VQ Stabilization
+[2026-05-14 23:38:29] ============================================================
+[2026-05-14 23:38:29]   Variants: baseline / EMA / cyclic_reset / EMA+cyclic
+[2026-05-14 23:38:29]   LAMBDA_ENTROPY=0.1  EMA_DECAY=0.99
+[2026-05-14 23:38:29]   RESET_FREQ=10  PRECISION_GUARD=0.25@ep30
+[2026-05-14 23:38:29]   Codebook ratio: 4×  Runs: 2
+[2026-05-14 23:38:29] ============================================================
+[2026-05-14 23:38:29] 
+============================================================
+[2026-05-14 23:38:29] EXPERIMENT 5 — RUN 1/2  seed=100
+[2026-05-14 23:38:29] ============================================================
+[2026-05-14 23:38:29] input_dim=29  emb_dim=14  codebook=56
+[2026-05-14 23:38:29] 
+--- RAW baseline ---
+[2026-05-14 23:39:15]   RAW F1=0.7835  P=0.8444  R=0.7308
+[2026-05-14 23:39:15] 
+--- Variant: baseline ---
+[2026-05-14 23:39:15]     Training [Baseline] (emb_dim=14, codebook=56)...
+[2026-05-14 23:39:16] ERROR: Run 1 failed
+Using a target size (torch.Size([256])) that is different to the input size (torch.Size([256, 1])) is deprecated. Please ensure they have the same size.
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment5_vq_stabilization.py", line 498, in main
+    r = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment5_vq_stabilization.py", line 408, in run_single_experiment
+    enc, qnt, scaler_v, aborted, usage_hist, reset_hist = train_variant(
+                                                          ^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment5_vq_stabilization.py", line 307, in train_variant
+    loss_cls = LAMBDA_CLS * F.binary_cross_entropy(pred, batch_y)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3517, in binary_cross_entropy
+    raise ValueError(
+ValueError: Using a target size (torch.Size([256])) that is different to the input size (torch.Size([256, 1])) is deprecated. Please ensure they have the same size.
+
+[2026-05-14 23:39:16] 
+============================================================
+[2026-05-14 23:39:16] EXPERIMENT 5 — RUN 2/2  seed=200
+[2026-05-14 23:39:16] ============================================================
+[2026-05-14 23:39:16] input_dim=29  emb_dim=14  codebook=56
+[2026-05-14 23:39:16] 
+--- RAW baseline ---
+[2026-05-14 23:40:05]   RAW F1=0.7959  P=0.8478  R=0.7500
+[2026-05-14 23:40:05] 
+--- Variant: baseline ---
+[2026-05-14 23:40:05]     Training [Baseline] (emb_dim=14, codebook=56)...
+[2026-05-14 23:40:05] ERROR: Run 2 failed
+Using a target size (torch.Size([256])) that is different to the input size (torch.Size([256, 1])) is deprecated. Please ensure they have the same size.
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment5_vq_stabilization.py", line 498, in main
+    r = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment5_vq_stabilization.py", line 408, in run_single_experiment
+    enc, qnt, scaler_v, aborted, usage_hist, reset_hist = train_variant(
+                                                          ^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/Axis_Aligned_Embeddings/experiment5_vq_stabilization.py", line 307, in train_variant
+    loss_cls = LAMBDA_CLS * F.binary_cross_entropy(pred, batch_y)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Downloads/venv/lib/python3.12/site-packages/torch/nn/functional.py", line 3517, in binary_cross_entropy
+    raise ValueError(
+ValueError: Using a target size (torch.Size([256])) that is different to the input size (torch.Size([256, 1])) is deprecated. Please ensure they have the same size.
+
+[2026-05-14 23:40:05] 
+============================================================
+[2026-05-14 23:40:05] EXPERIMENT 5 SUMMARY
+[2026-05-14 23:40:05] ============================================================
+[2026-05-14 23:40:05] 
+All results saved to: results/creditcard_20260514_194305/exp5_vq_stabilization
