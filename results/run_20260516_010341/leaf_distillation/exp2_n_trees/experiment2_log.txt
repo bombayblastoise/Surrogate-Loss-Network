@@ -1,0 +1,67 @@
+[2026-05-16 01:45:46] ============================================================
+[2026-05-16 01:45:46] EXPERIMENT 2: Number of Trees Sensitivity
+[2026-05-16 01:45:46] ============================================================
+[2026-05-16 01:45:46]   n_trees options: [10, 50, 100]  runs: 2
+[2026-05-16 01:45:46] ============================================================
+[2026-05-16 01:45:46] 
+============================================================
+[2026-05-16 01:45:46] EXPERIMENT 2 — RUN 1/2  seed=100
+[2026-05-16 01:45:46] ============================================================
+[2026-05-16 01:45:46] input_dim=29  embedding_dim=14
+[2026-05-16 01:45:47] 
+--- RAW baseline ---
+[2026-05-16 01:46:37]   RAW F1: 0.7800
+[2026-05-16 01:46:37] 
+--- n_trees=10 ---
+[2026-05-16 01:46:37]     Training with n_trees=10...
+[2026-05-16 01:46:38] ERROR: Run 1 failed
+too many indices for tensor of dimension 1
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 285, in main
+    r = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 249, in run_single_experiment
+    res = train_and_evaluate(X_tr, y_tr, X_val, y_val, X_te, y_te,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 187, in train_and_evaluate
+    total_loss = sum(F.cross_entropy(leaf_logits[t], leaf_idx[:, t]) for t in range(n_live_trees))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 187, in <genexpr>
+    total_loss = sum(F.cross_entropy(leaf_logits[t], leaf_idx[:, t]) for t in range(n_live_trees))
+                                                     ~~~~~~~~^^^^^^
+IndexError: too many indices for tensor of dimension 1
+
+[2026-05-16 01:46:38] 
+============================================================
+[2026-05-16 01:46:38] EXPERIMENT 2 — RUN 2/2  seed=200
+[2026-05-16 01:46:38] ============================================================
+[2026-05-16 01:46:38] input_dim=29  embedding_dim=14
+[2026-05-16 01:46:39] 
+--- RAW baseline ---
+[2026-05-16 01:47:34]   RAW F1: 0.7879
+[2026-05-16 01:47:34] 
+--- n_trees=10 ---
+[2026-05-16 01:47:34]     Training with n_trees=10...
+[2026-05-16 01:47:34] ERROR: Run 2 failed
+too many indices for tensor of dimension 1
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 285, in main
+    r = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 249, in run_single_experiment
+    res = train_and_evaluate(X_tr, y_tr, X_val, y_val, X_te, y_te,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 187, in train_and_evaluate
+    total_loss = sum(F.cross_entropy(leaf_logits[t], leaf_idx[:, t]) for t in range(n_live_trees))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment2_n_trees_sensitivity.py", line 187, in <genexpr>
+    total_loss = sum(F.cross_entropy(leaf_logits[t], leaf_idx[:, t]) for t in range(n_live_trees))
+                                                     ~~~~~~~~^^^^^^
+IndexError: too many indices for tensor of dimension 1
+
+[2026-05-16 01:47:34] 
+============================================================
+[2026-05-16 01:47:34] EXPERIMENT 2 SUMMARY
+[2026-05-16 01:47:34] ============================================================
+[2026-05-16 01:47:34] 
+All results saved to: /home/dpip/Desktop/Experiments/leaf_distillation/results/creditcard_20260516_013036/exp2_n_trees

@@ -1,0 +1,51 @@
+[2026-05-16 02:02:22] PHASE 4: Leaf Distillation on X3 only
+[2026-05-16 02:02:22] 
+============================================================
+[2026-05-16 02:02:22] PHASE 4 — RUN 1/2  seed=100
+[2026-05-16 02:02:22] Features: total=29  X3=11
+[2026-05-16 02:02:22] 
+--- Phase 1: Raw [X1|X2|X3] ---
+[2026-05-16 02:03:05]     Raw F1=0.8041
+[2026-05-16 02:03:05] 
+--- Phase 4: Leaf distillation on X3 (hard targets) ---
+[2026-05-16 02:03:20]     Epoch  25 | trees=15 | loss=3.8689 | f1=0.3958
+[2026-05-16 02:03:40]     Epoch  50 | trees=25 | loss=3.5013 | f1=0.4635
+[2026-05-16 02:04:05]     Epoch  75 | trees=40 | loss=3.6704 | f1=0.6592
+[2026-05-16 02:04:39]     Epoch 100 | trees=50 | loss=3.2570 | f1=0.7148
+[2026-05-16 02:05:31]     Hard leaf on X3: F1=0.7677  P=0.8085  R=0.7308
+[2026-05-16 02:05:31] 
+--- Phase 5: Soft targets variant on X3 ---
+[2026-05-16 02:05:50]     Epoch  25 | trees=15 | loss=0.0174 | f1=0.5034
+[2026-05-16 02:06:20]     Epoch  50 | trees=25 | loss=0.0140 | f1=0.6124
+[2026-05-16 02:07:07]     Epoch  75 | trees=40 | loss=0.0123 | f1=0.5824
+[2026-05-16 02:08:04]     Epoch 100 | trees=50 | loss=0.0099 | f1=0.6563
+[2026-05-16 02:08:49]     Soft leaf on X3: F1=0.8125  P=0.8864  R=0.7500
+[2026-05-16 02:08:49] 
+  Raw=0.8041  Hard=0.7677(95.5%)  Soft=0.8125(101.0%)
+[2026-05-16 02:08:49] Saved: /home/dpip/Desktop/Experiments/leaf_distillation/results/creditcard_20260516_013036/phase4_partial_embedding/phase4_run1_results.json
+[2026-05-16 02:08:49] 
+============================================================
+[2026-05-16 02:08:49] PHASE 4 — RUN 2/2  seed=200
+[2026-05-16 02:08:49] Features: total=29  X3=11
+[2026-05-16 02:08:49] 
+--- Phase 1: Raw [X1|X2|X3] ---
+[2026-05-16 02:09:48]     Raw F1=0.7879
+[2026-05-16 02:09:48] 
+--- Phase 4: Leaf distillation on X3 (hard targets) ---
+[2026-05-16 02:10:02]     Epoch  25 | trees=15 | loss=3.9692 | f1=0.4543
+[2026-05-16 02:10:20]     Epoch  50 | trees=25 | loss=3.6985 | f1=0.4894
+[2026-05-16 02:10:47]     Epoch  75 | trees=40 | loss=3.4982 | f1=0.5636
+[2026-05-16 02:11:19]     Epoch 100 | trees=50 | loss=3.1939 | f1=0.5962
+[2026-05-16 02:12:07]     Hard leaf on X3: F1=0.8298  P=0.9286  R=0.7500
+[2026-05-16 02:12:07] 
+--- Phase 5: Soft targets variant on X3 ---
+[2026-05-16 02:12:27]     Epoch  25 | trees=15 | loss=0.0173 | f1=0.3050
+[2026-05-16 02:12:59]     Epoch  50 | trees=25 | loss=0.0144 | f1=0.4699
+[2026-05-16 02:13:43]     Epoch  75 | trees=40 | loss=0.0126 | f1=0.5212
+[2026-05-16 02:14:40]     Epoch 100 | trees=50 | loss=0.0099 | f1=0.5719
+[2026-05-16 02:15:39]     Soft leaf on X3: F1=0.7959  P=0.8478  R=0.7500
+[2026-05-16 02:15:39] 
+  Raw=0.7879  Hard=0.8298(105.3%)  Soft=0.7959(101.0%)
+[2026-05-16 02:15:39] Saved: /home/dpip/Desktop/Experiments/leaf_distillation/results/creditcard_20260516_013036/phase4_partial_embedding/phase4_run2_results.json
+[2026-05-16 02:15:39] 
+SUMMARY: Raw=0.7960  Hard=0.7987

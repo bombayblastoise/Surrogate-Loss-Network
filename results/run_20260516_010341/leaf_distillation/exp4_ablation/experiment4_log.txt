@@ -1,0 +1,51 @@
+[2026-05-16 02:00:23] ============================================================
+[2026-05-16 02:00:23] EXPERIMENT 4: Leaf Head Ablation Analysis
+[2026-05-16 02:00:23] ============================================================
+[2026-05-16 02:00:23]   n_trees=50  epochs=100  checkpoint_freq=20  runs=2
+[2026-05-16 02:00:23] ============================================================
+[2026-05-16 02:00:23] 
+============================================================
+[2026-05-16 02:00:23] EXPERIMENT 4 — RUN 1/2  seed=100
+[2026-05-16 02:00:23] ============================================================
+[2026-05-16 02:00:24] input_dim=29  embedding_dim=14  max_leaves=64
+[2026-05-16 02:01:07] RAW F1: 0.7358
+[2026-05-16 02:01:19] ERROR: Run 1 failed
+index 10 is out of bounds for dimension 1 with size 10
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment4_leaf_head_ablation.py", line 331, in main
+    r = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment4_leaf_head_ablation.py", line 233, in run_single_experiment
+    per_tree_acc = compute_per_tree_accuracy(lf, leaf_idx_np, max_leaves)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment4_leaf_head_ablation.py", line 150, in compute_per_tree_accuracy
+    acc = (preds == leaf_targets[:, t]).float().mean().item()
+                    ~~~~~~~~~~~~^^^^^^
+IndexError: index 10 is out of bounds for dimension 1 with size 10
+
+[2026-05-16 02:01:19] 
+============================================================
+[2026-05-16 02:01:19] EXPERIMENT 4 — RUN 2/2  seed=200
+[2026-05-16 02:01:19] ============================================================
+[2026-05-16 02:01:20] input_dim=29  embedding_dim=14  max_leaves=64
+[2026-05-16 02:02:09] RAW F1: 0.7879
+[2026-05-16 02:02:20] ERROR: Run 2 failed
+index 10 is out of bounds for dimension 1 with size 10
+Traceback (most recent call last):
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment4_leaf_head_ablation.py", line 331, in main
+    r = run_single_experiment(args.dataset, run_id, run_id * 100, args.results_dir, log_f)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment4_leaf_head_ablation.py", line 233, in run_single_experiment
+    per_tree_acc = compute_per_tree_accuracy(lf, leaf_idx_np, max_leaves)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dpip/Desktop/Experiments/leaf_distillation/experiment4_leaf_head_ablation.py", line 150, in compute_per_tree_accuracy
+    acc = (preds == leaf_targets[:, t]).float().mean().item()
+                    ~~~~~~~~~~~~^^^^^^
+IndexError: index 10 is out of bounds for dimension 1 with size 10
+
+[2026-05-16 02:02:20] 
+============================================================
+[2026-05-16 02:02:20] EXPERIMENT 4 SUMMARY
+[2026-05-16 02:02:20] ============================================================
+[2026-05-16 02:02:20] 
+All results saved to: /home/dpip/Desktop/Experiments/leaf_distillation/results/creditcard_20260516_013036/exp4_ablation
