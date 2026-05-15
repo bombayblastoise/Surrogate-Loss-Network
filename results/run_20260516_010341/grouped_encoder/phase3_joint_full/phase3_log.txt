@@ -1,0 +1,85 @@
+[2026-05-16 02:57:30] ============================================================
+[2026-05-16 02:57:30] PHASE 3: Joint Training (Full Embedding) — Grouped Encoder
+[2026-05-16 02:57:30] ============================================================
+[2026-05-16 02:57:30]   Groups: 5 × 6 dims  |  Joint epochs: 50
+[2026-05-16 02:57:30]   XGB retrain freq: every 10 epochs  |  Runs: 2
+[2026-05-16 02:57:30] ============================================================
+[2026-05-16 02:57:30] 
+============================================================
+[2026-05-16 02:57:30] PHASE 3 — RUN 1/2  seed=100
+[2026-05-16 02:57:30] ============================================================
+[2026-05-16 02:57:31] Features: 29 → 5 groups × 6 dims = 30-dim embedding
+[2026-05-16 02:57:31] Groups: [6, 6, 6, 6, 5] features each
+[2026-05-16 02:57:31] 
+--- Phase 1: Raw XGBoost on all features ---
+[2026-05-16 02:58:33]     Raw: F1=0.8125  P=0.8864  R=0.7500
+[2026-05-16 02:58:33] 
+--- Phase 2: Sequential grouped encoder (BCE, frozen) ---
+[2026-05-16 02:59:01]     Sequential epoch  25 | BCE
+[2026-05-16 02:59:29]     Sequential epoch  50 | BCE
+[2026-05-16 02:59:57]     Sequential epoch  75 | BCE
+[2026-05-16 03:00:26]     Sequential epoch 100 | BCE
+[2026-05-16 03:01:25]     Sequential: F1=0.7835  P=0.8444  R=0.7308
+[2026-05-16 03:01:25] 
+--- Phase 3: Joint training (SHAP bridge, full X) ---
+[2026-05-16 03:01:55]     Joint epoch  10 | train_f1=0.7574
+[2026-05-16 03:02:25]     Joint epoch  20 | train_f1=0.8390
+[2026-05-16 03:02:55]     Joint epoch  30 | train_f1=0.8050
+[2026-05-16 03:03:24]     Joint epoch  40 | train_f1=0.8417
+[2026-05-16 03:03:51]     Joint epoch  50 | train_f1=0.8329
+[2026-05-16 03:04:45]     Joint Full: F1=0.7647  P=0.7800  R=0.7500
+[2026-05-16 03:04:45] 
+------------------------------------------------------------
+[2026-05-16 03:04:45] PHASE 3 SUMMARY:
+[2026-05-16 03:04:45]   Raw:        F1=0.8125
+[2026-05-16 03:04:45]   Sequential: F1=0.7835  retention=96.4%
+[2026-05-16 03:04:45]   Joint Full: F1=0.7647  retention=94.1%
+[2026-05-16 03:04:45]   Joint vs Sequential: -0.0188
+[2026-05-16 03:04:45]   ✗ Joint did not beat sequential — SHAP signal may need tuning
+[2026-05-16 03:04:45] ------------------------------------------------------------
+[2026-05-16 03:04:45] Saved: results/creditcard_phase4_20260516_025729/phase3_joint_full/phase3_run1_results.json
+[2026-05-16 03:04:45] 
+============================================================
+[2026-05-16 03:04:45] PHASE 3 — RUN 2/2  seed=200
+[2026-05-16 03:04:45] ============================================================
+[2026-05-16 03:04:46] Features: 29 → 5 groups × 6 dims = 30-dim embedding
+[2026-05-16 03:04:46] Groups: [6, 6, 6, 6, 5] features each
+[2026-05-16 03:04:46] 
+--- Phase 1: Raw XGBoost on all features ---
+[2026-05-16 03:05:47]     Raw: F1=0.7879  P=0.8298  R=0.7500
+[2026-05-16 03:05:47] 
+--- Phase 2: Sequential grouped encoder (BCE, frozen) ---
+[2026-05-16 03:06:16]     Sequential epoch  25 | BCE
+[2026-05-16 03:06:44]     Sequential epoch  50 | BCE
+[2026-05-16 03:07:13]     Sequential epoch  75 | BCE
+[2026-05-16 03:07:42]     Sequential epoch 100 | BCE
+[2026-05-16 03:08:31]     Sequential: F1=0.7573  P=0.7647  R=0.7500
+[2026-05-16 03:08:31] 
+--- Phase 3: Joint training (SHAP bridge, full X) ---
+[2026-05-16 03:08:58]     Joint epoch  10 | train_f1=0.8052
+[2026-05-16 03:09:27]     Joint epoch  20 | train_f1=0.8131
+[2026-05-16 03:09:58]     Joint epoch  30 | train_f1=0.8280
+[2026-05-16 03:10:25]     Joint epoch  40 | train_f1=0.8235
+[2026-05-16 03:10:55]     Joint epoch  50 | train_f1=0.7825
+[2026-05-16 03:11:23]     Joint Full: F1=0.7156  P=0.6842  R=0.7500
+[2026-05-16 03:11:23] 
+------------------------------------------------------------
+[2026-05-16 03:11:23] PHASE 3 SUMMARY:
+[2026-05-16 03:11:23]   Raw:        F1=0.7879
+[2026-05-16 03:11:23]   Sequential: F1=0.7573  retention=96.1%
+[2026-05-16 03:11:23]   Joint Full: F1=0.7156  retention=90.8%
+[2026-05-16 03:11:23]   Joint vs Sequential: -0.0417
+[2026-05-16 03:11:23]   ✗ Joint did not beat sequential — SHAP signal may need tuning
+[2026-05-16 03:11:23] ------------------------------------------------------------
+[2026-05-16 03:11:23] Saved: results/creditcard_phase4_20260516_025729/phase3_joint_full/phase3_run2_results.json
+[2026-05-16 03:11:23] 
+============================================================
+[2026-05-16 03:11:23] PHASE 3 SUMMARY ACROSS RUNS
+[2026-05-16 03:11:23] ============================================================
+[2026-05-16 03:11:23] Raw:        0.8002 ± 0.0123
+[2026-05-16 03:11:23] Sequential: 0.7704 ± 0.0131  (96.3% retention)
+[2026-05-16 03:11:23] Joint Full: 0.7402 ± 0.0246  (92.5% retention)
+[2026-05-16 03:11:23] 
+CAUTION: Joint did not beat sequential. Review SHAP bridge for grouped encoder.
+[2026-05-16 03:11:23] 
+All results saved to: results/creditcard_phase4_20260516_025729/phase3_joint_full
