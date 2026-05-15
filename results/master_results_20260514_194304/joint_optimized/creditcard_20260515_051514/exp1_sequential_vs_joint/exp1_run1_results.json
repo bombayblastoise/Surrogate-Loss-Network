@@ -1,0 +1,53 @@
+{
+  "raw": {
+    "f1": 0.8041237113402062
+  },
+  "sequential": {
+    "f1": 0.7551020408163265,
+    "accuracy": 0.9994382285473526,
+    "precision": 0.8043478260869565,
+    "recall": 0.7115384615384616
+  },
+  "joint": {
+    "f1": 0.7741935483870968,
+    "accuracy": 0.9995084499789336,
+    "precision": 0.8780487804878049,
+    "recall": 0.6923076923076923,
+    "training_history": [
+      {
+        "epoch": 10,
+        "train_f1": 0.7406340057636888
+      },
+      {
+        "epoch": 20,
+        "train_f1": 0.7272727272727273
+      },
+      {
+        "epoch": 30,
+        "train_f1": 0.7881241565452092
+      },
+      {
+        "epoch": 40,
+        "train_f1": 0.8152173913043478
+      },
+      {
+        "epoch": 50,
+        "train_f1": 0.8108108108108109
+      }
+    ]
+  },
+  "metadata": {
+    "run_id": 1,
+    "seed": 100,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dim": 14,
+    "joint_epochs": 50,
+    "xgb_retrain_freq": 5,
+    "retention": {
+      "sequential_vs_raw": 93.90371533228675,
+      "joint_vs_raw": 96.27791563275434,
+      "joint_vs_seq": 102.52833478639931
+    }
+  }
+}

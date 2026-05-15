@@ -1,0 +1,55 @@
+[2026-05-15 06:13:31] ============================================================
+[2026-05-15 06:13:31] EXPERIMENT 4: Convergence Analysis
+[2026-05-15 06:13:31] ============================================================
+[2026-05-15 06:13:31]   joint_epochs=100  checkpoint_freq=10  runs=2
+[2026-05-15 06:13:31] ============================================================
+[2026-05-15 06:13:31] 
+============================================================
+[2026-05-15 06:13:31] EXPERIMENT 4 — RUN 1/2  seed=100
+[2026-05-15 06:13:31] ============================================================
+[2026-05-15 06:13:31] input_dim=29  embedding_dim=14
+[2026-05-15 06:14:23] RAW F1: 0.7800
+[2026-05-15 06:14:55]   Epoch  10 | val_f1=0.5067  grad_norm=10748.4385  drift=0.4508  sparsity=0.98
+[2026-05-15 06:15:24]   Epoch  20 | val_f1=0.6875  grad_norm=3713.1921  drift=0.7323  sparsity=0.98
+[2026-05-15 06:15:56]   Epoch  30 | val_f1=0.7843  grad_norm=6090.6699  drift=0.9908  sparsity=0.98
+[2026-05-15 06:16:25]   Epoch  40 | val_f1=0.7400  grad_norm=7552.0527  drift=1.2275  sparsity=0.98
+[2026-05-15 06:16:52]   Epoch  50 | val_f1=0.8081  grad_norm=4521.8184  drift=1.4586  sparsity=0.98
+[2026-05-15 06:17:18]   Epoch  60 | val_f1=0.8454  grad_norm=3312.2886  drift=1.6709  sparsity=0.98
+[2026-05-15 06:17:41]   Epoch  70 | val_f1=0.8247  grad_norm=2179.1265  drift=1.8927  sparsity=0.98
+[2026-05-15 06:18:06]   Epoch  80 | val_f1=0.8571  grad_norm=6476.8105  drift=2.1518  sparsity=0.98
+[2026-05-15 06:18:29]   Epoch  90 | val_f1=0.8039  grad_norm=5310.8193  drift=2.4771  sparsity=0.98
+[2026-05-15 06:18:49]   Epoch 100 | val_f1=0.8163  grad_norm=4352.5410  drift=2.8220  sparsity=0.98
+[2026-05-15 06:19:31] 
+  Final F1: 0.7629  (retention=97.8%)
+[2026-05-15 06:19:31]   Convergence stability (last-3 std): 0.0227  ✗ oscillating
+[2026-05-15 06:19:31] Saved: results/creditcard_20260515_051514/exp4_convergence_analysis/exp4_run1_results.json
+[2026-05-15 06:19:31] 
+============================================================
+[2026-05-15 06:19:31] EXPERIMENT 4 — RUN 2/2  seed=200
+[2026-05-15 06:19:31] ============================================================
+[2026-05-15 06:19:32] input_dim=29  embedding_dim=14
+[2026-05-15 06:20:37] RAW F1: 0.7959
+[2026-05-15 06:21:11]   Epoch  10 | val_f1=0.7111  grad_norm=2635.4480  drift=0.4572  sparsity=0.97
+[2026-05-15 06:21:42]   Epoch  20 | val_f1=0.7234  grad_norm=2115.9951  drift=0.7548  sparsity=0.98
+[2026-05-15 06:22:11]   Epoch  30 | val_f1=0.6863  grad_norm=9591.5684  drift=1.0236  sparsity=0.98
+[2026-05-15 06:22:43]   Epoch  40 | val_f1=0.7593  grad_norm=2638.6826  drift=1.3215  sparsity=0.98
+[2026-05-15 06:23:09]   Epoch  50 | val_f1=0.7573  grad_norm=4276.9199  drift=1.5876  sparsity=0.98
+[2026-05-15 06:23:36]   Epoch  60 | val_f1=0.7885  grad_norm=2800.3154  drift=1.7957  sparsity=0.98
+[2026-05-15 06:24:03]   Epoch  70 | val_f1=0.8119  grad_norm=3463.8977  drift=1.9756  sparsity=0.98
+[2026-05-15 06:24:33]   Epoch  80 | val_f1=0.7500  grad_norm=11115.4688  drift=2.1400  sparsity=0.98
+[2026-05-15 06:24:57]   Epoch  90 | val_f1=0.7879  grad_norm=3016.5642  drift=2.2923  sparsity=0.98
+[2026-05-15 06:25:20]   Epoch 100 | val_f1=0.7963  grad_norm=3453.4575  drift=2.4825  sparsity=0.98
+[2026-05-15 06:25:48] 
+  Final F1: 0.5741  (retention=72.1%)
+[2026-05-15 06:25:48]   Convergence stability (last-3 std): 0.0201  ✗ oscillating
+[2026-05-15 06:25:48] Saved: results/creditcard_20260515_051514/exp4_convergence_analysis/exp4_run2_results.json
+[2026-05-15 06:25:48] 
+============================================================
+[2026-05-15 06:25:48] EXPERIMENT 4 SUMMARY
+[2026-05-15 06:25:48] ============================================================
+[2026-05-15 06:25:48] Final embedding F1:  0.6685 ± 0.0944
+[2026-05-15 06:25:48] Retention:           85.0%
+[2026-05-15 06:25:48] Convergence std:     0.0214 (< 0.01 = stable)
+[2026-05-15 06:25:48] Stable runs:         0/2
+[2026-05-15 06:25:48] 
+All results saved to: results/creditcard_20260515_051514/exp4_convergence_analysis

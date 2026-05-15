@@ -1,0 +1,31 @@
+{
+  "raw_f1": 0.7959183673469388,
+  "bridges": {
+    "shap": {
+      "f1": 0.7115384615384616,
+      "retention": 89.3984220907298,
+      "wall_time_s": 126.56079411506653
+    },
+    "numerical": {
+      "f1": 0.7572815533980582,
+      "retention": 95.14563106796116,
+      "wall_time_s": 50.96320414543152
+    },
+    "random": {
+      "f1": 0.7789473684210526,
+      "retention": 97.86774628879891,
+      "wall_time_s": 47.724188804626465
+    }
+  },
+  "metadata": {
+    "run_id": 1,
+    "seed": 100,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dim": 14,
+    "joint_epochs": 50,
+    "retrain_freq": 5,
+    "numerical_epsilon": 0.001,
+    "max_numerical_dims": 16
+  }
+}

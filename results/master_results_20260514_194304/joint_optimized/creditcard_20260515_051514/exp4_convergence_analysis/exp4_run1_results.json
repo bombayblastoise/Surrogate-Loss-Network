@@ -1,0 +1,92 @@
+{
+  "raw_f1": 0.78,
+  "final_f1": 0.7628865979381443,
+  "retention": 97.80597409463387,
+  "checkpoints": [
+    {
+      "epoch": 10,
+      "val_f1": 0.5066666666666667,
+      "grad_norm": 10748.4384765625,
+      "weight_drift": 0.4507715702056885,
+      "shap_sparsity": 0.9803449970907486
+    },
+    {
+      "epoch": 20,
+      "val_f1": 0.6875,
+      "grad_norm": 3713.192138671875,
+      "weight_drift": 0.7322542667388916,
+      "shap_sparsity": 0.9779405652833152
+    },
+    {
+      "epoch": 30,
+      "val_f1": 0.7843137254901961,
+      "grad_norm": 6090.669921875,
+      "weight_drift": 0.9908044338226318,
+      "shap_sparsity": 0.9787320106510131
+    },
+    {
+      "epoch": 40,
+      "val_f1": 0.74,
+      "grad_norm": 7552.052734375,
+      "weight_drift": 1.227506160736084,
+      "shap_sparsity": 0.9824384399533374
+    },
+    {
+      "epoch": 50,
+      "val_f1": 0.8080808080808081,
+      "grad_norm": 4521.818359375,
+      "weight_drift": 1.4585907459259033,
+      "shap_sparsity": 0.9838135270159106
+    },
+    {
+      "epoch": 60,
+      "val_f1": 0.845360824742268,
+      "grad_norm": 3312.28857421875,
+      "weight_drift": 1.6709495782852173,
+      "shap_sparsity": 0.9845784595012138
+    },
+    {
+      "epoch": 70,
+      "val_f1": 0.8247422680412371,
+      "grad_norm": 2179.12646484375,
+      "weight_drift": 1.892742395401001,
+      "shap_sparsity": 0.9812930117774523
+    },
+    {
+      "epoch": 80,
+      "val_f1": 0.8571428571428571,
+      "grad_norm": 6476.810546875,
+      "weight_drift": 2.1518144607543945,
+      "shap_sparsity": 0.9808953185415336
+    },
+    {
+      "epoch": 90,
+      "val_f1": 0.803921568627451,
+      "grad_norm": 5310.8193359375,
+      "weight_drift": 2.4771363735198975,
+      "shap_sparsity": 0.9779835591466578
+    },
+    {
+      "epoch": 100,
+      "val_f1": 0.8163265306122449,
+      "grad_norm": 4352.541015625,
+      "weight_drift": 2.822028636932373,
+      "shap_sparsity": 0.9781232892025211
+    }
+  ],
+  "convergence": {
+    "max_val_f1": 0.8571428571428571,
+    "final_val_std": 0.02273607301316037,
+    "is_stable": false
+  },
+  "metadata": {
+    "run_id": 1,
+    "seed": 100,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dim": 14,
+    "joint_epochs": 100,
+    "retrain_freq": 5,
+    "checkpoint_freq": 10
+  }
+}
