@@ -1,0 +1,14 @@
+{
+    "method": "random_projection",
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "duration_seconds": 1374,
+    "dataset": "creditcard",
+    "timestamp": "2026-05-15T08:11:19+05:30",
+    "results": {
+        "phase4_f1": null,
+        "phase4_retention": null
+    },
+    "log_file": "/home/dpip/Desktop/Experiments/master_results_20260514_194304/random_projection.log",
+    "results_dir": "/home/dpip/Desktop/Experiments/random_projection//results"
+}
