@@ -1,0 +1,53 @@
+[2026-05-15 17:46:14] PHASE 4: Grouped Encoder on X3 only
+[2026-05-15 17:46:14] 
+============================================================
+[2026-05-15 17:46:14] PHASE 4 — RUN 1/2  seed=100
+[2026-05-15 17:46:14] Features: total=29  X1=9  X2=9  X3=11
+[2026-05-15 17:46:14] 
+--- Phase 1: Raw [X1|X2|X3] ---
+[2026-05-15 17:47:07]     Raw F1=0.8125
+[2026-05-15 17:47:07] 
+--- Phase 3: Sequential grouped encoder on X3 ---
+[2026-05-15 17:47:55]     Epoch  25 | BCE training on X3
+[2026-05-15 17:48:42]     Epoch  50 | BCE training on X3
+[2026-05-15 17:49:28]     Epoch  75 | BCE training on X3
+[2026-05-15 17:50:15]     Epoch 100 | BCE training on X3
+[2026-05-15 17:50:59]     Sequential on X3: F1=0.8041  P=0.8667  R=0.7500
+[2026-05-15 17:50:59] 
+--- Phase 4: Joint grouped encoder on X3 (SHAP bridge) ---
+[2026-05-15 17:51:26]     Epoch  10 | train_f1=0.9145
+[2026-05-15 17:51:52]     Epoch  20 | train_f1=0.8907
+[2026-05-15 17:52:20]     Epoch  30 | train_f1=0.8655
+[2026-05-15 17:52:46]     Epoch  40 | train_f1=0.8904
+[2026-05-15 17:53:15]     Epoch  50 | train_f1=0.8975
+[2026-05-15 17:54:13]     Joint on X3: F1=0.7835  P=0.8444  R=0.7308
+[2026-05-15 17:54:13] 
+  Raw=0.8125  Seq=0.8041(99.0%)  Joint=0.7835(96.4%)
+[2026-05-15 17:54:13] Saved: results/creditcard_phase4_20260515_173253/phase4_partial_embedding/phase4_run1_results.json
+[2026-05-15 17:54:13] 
+============================================================
+[2026-05-15 17:54:13] PHASE 4 — RUN 2/2  seed=200
+[2026-05-15 17:54:14] Features: total=29  X1=9  X2=9  X3=11
+[2026-05-15 17:54:14] 
+--- Phase 1: Raw [X1|X2|X3] ---
+[2026-05-15 17:55:05]     Raw F1=0.8125
+[2026-05-15 17:55:05] 
+--- Phase 3: Sequential grouped encoder on X3 ---
+[2026-05-15 17:55:52]     Epoch  25 | BCE training on X3
+[2026-05-15 17:56:39]     Epoch  50 | BCE training on X3
+[2026-05-15 17:57:27]     Epoch  75 | BCE training on X3
+[2026-05-15 17:58:14]     Epoch 100 | BCE training on X3
+[2026-05-15 17:58:58]     Sequential on X3: F1=0.8041  P=0.8667  R=0.7500
+[2026-05-15 17:58:58] 
+--- Phase 4: Joint grouped encoder on X3 (SHAP bridge) ---
+[2026-05-15 17:59:25]     Epoch  10 | train_f1=0.8764
+[2026-05-15 17:59:52]     Epoch  20 | train_f1=0.8904
+[2026-05-15 18:00:19]     Epoch  30 | train_f1=0.9068
+[2026-05-15 18:00:43]     Epoch  40 | train_f1=0.9162
+[2026-05-15 18:01:11]     Epoch  50 | train_f1=0.9194
+[2026-05-15 18:02:10]     Joint on X3: F1=0.7835  P=0.8444  R=0.7308
+[2026-05-15 18:02:10] 
+  Raw=0.8125  Seq=0.8041(99.0%)  Joint=0.7835(96.4%)
+[2026-05-15 18:02:10] Saved: results/creditcard_phase4_20260515_173253/phase4_partial_embedding/phase4_run2_results.json
+[2026-05-15 18:02:10] 
+SUMMARY: Raw=0.8125  Joint=0.7835
