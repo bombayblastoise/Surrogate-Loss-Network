@@ -1,0 +1,34 @@
+{
+  "raw": {
+    "f1": 0.8125,
+    "accuracy": 0.9995786714105145,
+    "precision": 0.8863636363636364,
+    "recall": 0.75
+  },
+  "bce": {
+    "f1": 0.7254901960784313,
+    "accuracy": 0.9993445999719114,
+    "precision": 0.74,
+    "recall": 0.7115384615384616
+  },
+  "leaf": {
+    "f1": 0.3025210084033613,
+    "accuracy": 0.9980572070595946,
+    "precision": 0.26865671641791045,
+    "recall": 0.34615384615384615
+  },
+  "metadata": {
+    "run_id": 2,
+    "seed": 200,
+    "dataset": "creditcard",
+    "input_dim": 29,
+    "embedding_dim": 14,
+    "n_trees": 50,
+    "epochs": 100,
+    "retention": {
+      "bce_vs_raw": 89.29110105580693,
+      "leaf_vs_raw": 37.2333548804137,
+      "leaf_vs_bce": 41.6988416988417
+    }
+  }
+}

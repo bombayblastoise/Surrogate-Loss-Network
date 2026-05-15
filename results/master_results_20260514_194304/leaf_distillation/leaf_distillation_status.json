@@ -1,0 +1,14 @@
+{
+    "method": "leaf_distillation",
+    "status": "COMPLETED",
+    "exit_code": 0,
+    "duration_seconds": 4950,
+    "dataset": "creditcard",
+    "timestamp": "2026-05-15T07:48:22+05:30",
+    "results": {
+        "phase4_f1": null,
+        "phase4_retention": null
+    },
+    "log_file": "/home/dpip/Desktop/Experiments/master_results_20260514_194304/leaf_distillation.log",
+    "results_dir": "/home/dpip/Desktop/Experiments/leaf_distillation//results"
+}
